@@ -91,12 +91,6 @@ border-left:4px solid gold;
 background:#ddd;
 }
 
-.show.conflict{
-background:#ffb3b3;
-border:2px solid #ff4d4d;
-color:#700;
-}
-
 /* ROUTE RESULT */
 
 .route-item{
@@ -104,11 +98,6 @@ background:#dfffdc;
 padding:10px;
 margin:8px 0;
 border-radius:6px;
-}
-
-.route-item.conflict{
-background:#ffb3b3;
-border:2px solid #ff4d4d;
 }
 
 .route-segment{
@@ -224,6 +213,8 @@ outline-offset:2px;
 background:#fff8e1;
 }
 
+/* SELECTED */
+
 .show.selected{
 background:#4da6ff;
 color:#111;
@@ -234,6 +225,22 @@ outline:2px solid #1a73e8;
 background:#4da6ff;
 outline:2px solid #1a73e8;
 }
+
+/* CONFLICT */
+
+.show.conflict{
+background:#ffb3b3;
+border:2px solid #ff4d4d;
+color:#700;
+}
+
+.show.selected.conflict{
+background:#ffb3b3;
+border:2px solid #ff4d4d;
+color:#700;
+}
+
+/* ROUTE (máxima prioridad visual) */
 
 .show.route{
 outline:3px solid #00c853;
@@ -258,4 +265,20 @@ border:2px solid #00c853;
 outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
+}
+
+/* si un show de la ruta también estaba en conflicto, la ruta gana */
+
+.show.route.conflict{
+outline:3px solid #00c853;
+background:#e8f9f0;
+border:2px solid #00c853;
+color:#111;
+}
+
+.show.route.selected.conflict{
+outline:3px solid #00c853;
+background:#e8f9f0;
+border:2px solid #00c853;
+color:#111;
 }
