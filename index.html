@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Festival Route Planner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<main class="container">
+
+<header>
+<h1>🎵 Festival Route Planner</h1>
+<p>Planifica tu ruta ideal entre escenarios</p>
+</header>
+
+<!-- CONTROLES -->
+
+<div class="panel controls">
+
+<div class="grid">
+
+<div>
+<label for="daySelector">Selecciona día</label>
+<select id="daySelector">
+<option value="friday">Viernes</option>
+<option value="saturday">Sábado</option>
+<option value="sunday">Domingo</option>
+</select>
+</div>
+
+<div>
+<label for="walkingTimeSelector">Tiempo entre escenarios</label>
+<select id="walkingTimeSelector">
+<option value="1">1 min (corriendo)</option>
+<option value="2">2 min (rápido)</option>
+<option value="3" selected>3 min (normal)</option>
+<option value="4">4 min (lento)</option>
+</select>
+</div>
+
+<div>
+
+<label for="artistSearch">Buscar artista</label>
+<input 
+type="text" 
+id="artistSearch" 
+placeholder="Ej: Skrillex, Interpol..."
+>
+
+</div>
+
+</div>
+
+<div class="button-row">
+
+<button id="generateRoute">Generar ruta</button>
+<button id="clearSelection" class="secondary">Limpiar selección</button>
+<button id="shareRoute">Compartir ruta</button>
+
+</div>
+
+</div>
+
+<!-- LINEUP -->
+
+<div class="panel">
+
+<h2>Lineup</h2>
+
+<div id="lineupGrid"></div>
+
+</div>
+
+<!-- ROUTE -->
+
+<div class="panel">
+
+<h2>Mi ruta</h2>
+
+<div id="routeResult"></div>
+
+</div>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

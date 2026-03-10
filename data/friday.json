@@ -1,0 +1,57 @@
+{
+  "festival": "Lollapalooza Chile 2026",
+  "stageOrder": [
+    "Cenco Malls",
+    "Banco de Chile",
+    "Alternative",
+    "Perry's",
+    "Lotus",
+    "Kidzapalooza"
+  ],
+  "day": "Friday",
+  "shows": [
+    {"artist":"Dracma","stage":"Banco de Chile","start":"13:45","end":"14:30"},
+    {"artist":"The Warning","stage":"Cenco Malls","start":"14:30","end":"15:15"},
+    {"artist":"Cleaver","stage":"Alternative","start":"14:15","end":"15:00"},
+    {"artist":"Benja Valencia","stage":"Perry's","start":"14:00","end":"14:45"},
+
+    {"artist":"Bad Nerves","stage":"Banco de Chile","start":"15:15","end":"16:00"},
+    {"artist":"Bryartz","stage":"Perry's","start":"15:00","end":"15:45"},
+    {"artist":"Los Machinga","stage":"Kidzapalooza","start":"15:30","end":"16:00"},
+
+    {"artist":"Gepe","stage":"Cenco Malls","start":"16:00","end":"17:00"},
+    {"artist":"LANY","stage":"Alternative","start":"16:00","end":"17:00"},
+    {"artist":"Saske","stage":"Perry's","start":"16:00","end":"16:45"},
+    {"artist":"Consequence of Energy","stage":"Lotus","start":"16:15","end":"17:00"},
+    {"artist":"Despertando las Neuronas","stage":"Kidzapalooza","start":"16:45","end":"17:30"},
+
+    {"artist":"Airbag","stage":"Banco de Chile","start":"17:00","end":"18:00"},
+    {"artist":"3BallMTY","stage":"Perry's","start":"17:00","end":"17:45"},
+
+    {"artist":"Ruel","stage":"Cenco Malls","start":"18:00","end":"19:00"},
+    {"artist":"Viagra Boys","stage":"Alternative","start":"18:00","end":"19:00"},
+    {"artist":"Six Sex","stage":"Perry's","start":"18:00","end":"18:45"},
+    {"artist":"Drink the Sea","stage":"Lotus","start":"18:00","end":"18:45"},
+    {"artist":"31 Minutos","stage":"Kidzapalooza","start":"18:30","end":"19:50"},
+
+    {"artist":"Interpol","stage":"Banco de Chile","start":"19:00","end":"20:00"},
+    {"artist":"Horsegiirl","stage":"Perry's","start":"19:00","end":"20:00"},
+    {"artist":"Amigo de Artistas","stage":"Lotus","start":"19:30","end":"20:15"},
+
+    {"artist":"Doechii","stage":"Cenco Malls","start":"20:00","end":"21:00"},
+    {"artist":"Men I Trust","stage":"Alternative","start":"20:00","end":"21:00"},
+    {"artist":"BUNT.","stage":"Perry's","start":"20:15","end":"21:15"},
+
+    {"artist":"Deftones","stage":"Banco de Chile","start":"21:00","end":"22:15"},
+    {"artist":"The La Planta","stage":"Lotus","start":"21:00","end":"21:45"},
+
+    {"artist":"Ben Böhmer","stage":"Perry's","start":"21:30","end":"22:45"},
+
+    {"artist":"Sabrina Carpenter","stage":"Cenco Malls","start":"22:15","end":"23:35"},
+    {"artist":"Tom Morello","stage":"Alternative","start":"22:30","end":"23:30"},
+    {"artist":"Gondwana","stage":"Lotus","start":"22:45","end":"23:45"},
+
+    {"artist":"Kygo","stage":"Perry's","start":"23:15","end":"00:30"},
+    {"artist":"Young Cister","stage":"Banco de Chile","start":"23:35","end":"00:50"}
+  ]
+}

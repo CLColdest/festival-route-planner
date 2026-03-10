@@ -1,0 +1,56 @@
+{
+  "festival": "Lollapalooza Chile 2026",
+  "stageOrder": [
+    "Cenco Malls",
+    "Banco de Chile",
+    "Alternative",
+    "Perry's",
+    "Lotus",
+    "Kidzapalooza"
+  ],
+  "day": "Sunday",
+  "shows": [
+    {"artist":"Los Borne","stage":"Lotus","start":"13:30","end":"14:00"},
+    {"artist":"Hesse Kassel","stage":"Alternative","start":"13:45","end":"14:15"},
+    {"artist":"Santo Barrio","stage":"Banco de Chile","start":"14:00","end":"14:45"},
+    {"artist":"Miss Javi","stage":"Perry's","start":"14:00","end":"14:45"},
+
+    {"artist":"Cristobal Briceño y Grupo Crisis","stage":"Cenco Malls","start":"14:45","end":"15:30"},
+    {"artist":"Anttonias","stage":"Alternative","start":"14:45","end":"15:30"},
+    {"artist":"Mauricio Hernandez","stage":"Perry's","start":"15:00","end":"15:45"},
+    {"artist":"La Caravana Magica","stage":"Lotus","start":"14:45","end":"15:30"},
+
+    {"artist":"Joaquina","stage":"Banco de Chile","start":"15:30","end":"16:15"},
+    {"artist":"Caleb Calloway","stage":"Perry's","start":"16:00","end":"16:45"},
+    {"artist":"Caleuchistico","stage":"Kidzapalooza","start":"15:30","end":"16:15"},
+
+    {"artist":"Bandalos Chinos","stage":"Cenco Malls","start":"16:15","end":"17:00"},
+    {"artist":"Manuel Garcia","stage":"Alternative","start":"16:15","end":"17:15"},
+    {"artist":"Niebla Niebla","stage":"Lotus","start":"16:15","end":"17:00"},
+
+    {"artist":"Danny Ocean","stage":"Banco de Chile","start":"17:00","end":"18:00"},
+    {"artist":"Hamdi","stage":"Perry's","start":"17:00","end":"18:00"},
+    {"artist":"Otroarte Musica","stage":"Kidzapalooza","start":"17:00","end":"17:45"},
+
+    {"artist":"Marina","stage":"Cenco Malls","start":"18:00","end":"19:00"},
+    {"artist":"TV Girl","stage":"Alternative","start":"18:00","end":"19:00"},
+    {"artist":"Facebookllyn","stage":"Perry's","start":"18:15","end":"19:15"},
+    {"artist":"Claudio Valenzuela Trio","stage":"Lotus","start":"17:45","end":"18:45"},
+    {"artist":"Tikitiklip","stage":"Kidzapalooza","start":"18:30","end":"19:30"},
+
+    {"artist":"Addison Rae","stage":"Banco de Chile","start":"19:00","end":"20:00"},
+    {"artist":"2Hollis & Rommulas","stage":"Perry's","start":"19:30","end":"20:30"},
+    {"artist":"Ricky & Mau","stage":"Lotus","start":"19:30","end":"20:30"},
+
+    {"artist":"Lewis Capaldi","stage":"Cenco Malls","start":"20:00","end":"21:00"},
+    {"artist":"2 Minutos","stage":"Alternative","start":"20:00","end":"21:00"},
+    {"artist":"Akrilla","stage":"Perry's","start":"20:45","end":"22:00"},
+    {"artist":"Quilapayún","stage":"Lotus","start":"21:15","end":"22:15"},
+
+    {"artist":"Skrillex","stage":"Banco de Chile","start":"21:00","end":"22:30"},
+    {"artist":"Ruize","stage":"Alternative","start":"22:15","end":"23:15"},
+    {"artist":"Brutalismus 3000","stage":"Perry's","start":"22:30","end":"23:45"},
+
+    {"artist":"Chappell Roan","stage":"Cenco Malls","start":"22:30","end":"00:00"}
+  ]
+}
