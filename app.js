@@ -608,7 +608,9 @@ walkingTime: walkingTime,
 shows: selectedShows
 }
 
-const encoded = btoa(JSON.stringify(routeData))
+const encoded = LZString.compressToEncodedURIComponent(
+JSON.stringify(routeData)
+)
 
 const url = `${window.location.origin}${window.location.pathname}?route=${encoded}`
 
@@ -627,7 +629,9 @@ if(!route) return
 
 try{
 
-const data = JSON.parse(atob(route))
+const data = JSON.parse(
+LZString.decompressFromEncodedURIComponent(route)
+)
 
 walkingTime = data.walkingTime
 daySelector.value = data.day
