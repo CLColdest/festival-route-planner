@@ -24,8 +24,9 @@ const data = await response.json()
 
 stageOrder = data.stageOrder
 
-shows = data.shows.map(s => ({
+shows = data.shows.map((s,i) => ({
   ...s,
+  id: i,
   priority: 2
 }))
 selectedShows = []
@@ -603,9 +604,9 @@ inline:"center"
 function shareRoute(){
 
 const routeData = {
-day: daySelector.value,
-walkingTime: walkingTime,
-shows: selectedShows
+d: daySelector.value,
+w: walkingTime,
+s: selectedShows.map(s=>s.id)
 }
 
 const encoded = LZString.compressToEncodedURIComponent(
@@ -633,21 +634,27 @@ const data = JSON.parse(
 LZString.decompressFromEncodedURIComponent(route)
 )
 
-walkingTime = data.walkingTime
-daySelector.value = data.day
+// usar claves cortas
+walkingTime = data.w
+walkingTimeSelector.value = data.w
+daySelector.value = data.d
 
-loadDay(data.day).then(()=>{
+loadDay(data.d).then(()=>{
 
-data.shows.forEach(show=>{
+clearSelection()
+
+data.s.forEach(id=>{
+
+const show = shows.find(s=>s.id === id)
+
+if(!show) return
 
 const el = document.querySelector(
 `.show[data-artist="${show.artist}"][data-start="${show.start}"][data-stage="${show.stage}"]`
 )
 
 if(el){
-
 toggleShow(show, el)
-
 }
 
 })
