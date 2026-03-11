@@ -7,6 +7,7 @@ const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
 const daySelector = document.getElementById("daySelector")
 const artistSearch = document.getElementById("artistSearch")
+const MIN_VISIBLE_MINUTES = 15
 
 
 walkingTimeSelector.onchange = (e)=>{
@@ -259,109 +260,136 @@ return endA + walkingTime > startB
 
 function generateRoute(){
 
-const candidates=[...selectedShows]
+const groups = buildConflictGroups(selectedShows)
 
-candidates.sort((a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start))
+let route = []
+let currentTime = 0
+let currentStage = null
 
-let bestRoute=[]
-let bestScore=0
+groups.forEach(group => {
 
-function explore(route,index,score){
+const chosen = resolveGroup(group)
 
-if(index>=candidates.length){
+chosen.sort(
+(a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start)
+)
 
-if(score>bestScore){
-bestScore=score
-bestRoute=[...route]
+if(chosen.length === 1){
+
+const show = chosen[0]
+
+let start = timeToMinutes(show.start)
+let end   = timeToMinutes(show.end)
+
+if(currentStage && currentStage !== show.stage){
+start = Math.max(start, currentTime + walkingTime)
+}else{
+start = Math.max(start, currentTime)
 }
 
-return
-}
+if(end - start >= MIN_VISIBLE_MINUTES){
 
-const show=candidates[index]
+route.push({
+...show,
+startReal:start,
+endReal:end
+})
 
-// opción 1: saltar
-explore(route,index+1,score)
+currentTime = end
+currentStage = show.stage
 
-// opción 2: ver show
-let minutes=timeToMinutes(show.end)-timeToMinutes(show.start)
-
-if(route.length>0){
-
-const prev=route[route.length-1]
-
-minutes=visibleMinutes(prev,show)
-
-}
-
-if(minutes>0){
-
-const startNext=timeToMinutes(show.start)
-const endNext=timeToMinutes(show.end)
-
-let arrival=startNext
-
-if(route.length>0){
-
-const prev=route[route.length-1]
-
-let walk = 0
-if(prev.stage !== show.stage){
-walk = walkingTime
-}
-
-// hora a la que debemos salir del show anterior
-const leavePrev = timeToMinutes(show.start) - walk
-
-const prevPriority = prev.priority || 2
-const nextPriority = show.priority || 2
-
-if(prev.stage !== show.stage){
-
-if(nextPriority >= prevPriority){
-
-if(prev.endReal > leavePrev){
-prev.endReal = leavePrev
 }
 
 }else{
 
-arrival = prev.endReal + walkingTime
+let a = chosen[0]
+let b = chosen[1]
+
+let startA = timeToMinutes(a.start)
+let endA   = timeToMinutes(a.end)
+
+let startB = timeToMinutes(b.start)
+let endB   = timeToMinutes(b.end)
+
+if(currentStage && currentStage !== a.stage){
+startA = Math.max(startA, currentTime + walkingTime)
+}else{
+startA = Math.max(startA, currentTime)
+}
+
+let leaveA
+
+const prA = Number(a.priority)
+const prB = Number(b.priority)
+
+const overlapStart = Math.max(startA,startB)
+const overlapEnd   = Math.min(endA,endB)
+
+const overlap = overlapEnd - overlapStart
+
+if(overlap <= 0){
+
+leaveA = endA
+
+}else if(prA === prB){
+
+leaveA = overlapStart + overlap/2
+
+}else if(Math.abs(prA-prB) === 1){
+
+const ratio = prA > prB ? 0.7 : 0.3
+leaveA = overlapStart + overlap*ratio
+
+}else{
+
+leaveA = Math.min(endA,startB)
 
 }
 
-}
+leaveA = Math.round(leaveA)
 
-arrival = prev.endReal + walk
+let visibleA = leaveA - startA
 
-}
-
-const startReal=Math.max(arrival,startNext)
-
-const visible=endNext-startReal
+if(visibleA >= MIN_VISIBLE_MINUTES){
 
 route.push({
-...show,
-startReal:startReal,
-endReal:startReal+visible
+...a,
+startReal:startA,
+endReal:leaveA
 })
 
-explore(
-route,
-index+1,
-score + showScore(minutes,show)
-)
+currentTime = leaveA
+currentStage = a.stage
 
-route.pop()
+}
+
+let arrivalB = Math.max(startB,currentTime)
+
+if(a.stage !== b.stage){
+arrivalB += walkingTime
+}
+
+let visibleB = endB - arrivalB
+
+if(visibleB >= MIN_VISIBLE_MINUTES){
+
+route.push({
+...b,
+startReal:arrivalB,
+endReal:endB
+})
+
+currentTime = endB
+currentStage = b.stage
 
 }
 
 }
 
-explore([],0,0)
+})
 
-displayRoute(bestRoute)
-markRouteOnGrid(bestRoute)
+displayRoute(route)
+markRouteOnGrid(route)
 
 }
 
@@ -666,6 +694,70 @@ toggleShow(show, el)
 console.error("Error loading route", e)
 
 }
+
+}
+
+function overlaps(a,b){
+
+const startA = timeToMinutes(a.start)
+const endA = timeToMinutes(a.end)
+
+const startB = timeToMinutes(b.start)
+const endB = timeToMinutes(b.end)
+
+return startA < endB && startB < endA
+
+}
+
+function buildConflictGroups(shows){
+
+const groups=[]
+const sorted=[...shows].sort(
+(a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start)
+)
+
+sorted.forEach(show=>{
+
+let added=false
+
+for(const group of groups){
+
+if(group.some(s=>overlaps(s,show))){
+group.push(show)
+added=true
+break
+}
+
+}
+
+if(!added){
+groups.push([show])
+}
+
+})
+
+return groups
+
+}
+
+function resolveGroup(group){
+
+if(group.length === 1) return group
+
+const sorted=[...group].sort(
+(a,b)=>Number(b.priority)-Number(a.priority)
+)
+
+const top=sorted[0]
+const second=sorted[1]
+
+const diff = Number(top.priority)-Number(second.priority)
+
+if(diff >= 2){
+return [top]
+}
+
+return [top,second]
 
 }
 
