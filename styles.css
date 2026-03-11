@@ -334,6 +334,13 @@ font-size:14px;
 color:#1f2937;
 }
 
+.info-box small{
+display:block;
+margin-top:8px;
+color:#555;
+font-size:12px;
+}
+
 .info-box ul{
 margin:6px 0 0 18px;
 padding:0;
@@ -355,6 +362,7 @@ display:none;
 @media (max-width: 768px){
 
 #lineupGrid{
+scroll-snap-type: x mandatory;
 overflow-x:auto;
 -webkit-overflow-scrolling: touch;
 }
