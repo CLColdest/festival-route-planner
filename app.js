@@ -421,7 +421,7 @@ if(prev.stage!==show.stage){
 
 const walk=document.createElement("div")
 walk.className="walk"
-walk.innerText=`↓ caminar ${walkingTime} min hacia ${show.stage}`
+walk.innerText = `↓ Muévete hacia ${show.stage} Stage · ${walkingTime} min`
 
 routeResult.appendChild(walk)
 
@@ -648,7 +648,10 @@ function shareRoute(){
 const routeData = {
 d: daySelector.value,
 w: walkingTime,
-s: selectedShows.map(s=>s.id)
+s: selectedShows.map(s => ({
+id: s.id,
+p: s.priority
+}))
 }
 
 const encoded = LZString.compressToEncodedURIComponent(
@@ -685,18 +688,27 @@ loadDay(data.d).then(()=>{
 
 clearSelection()
 
-data.s.forEach(id=>{
+data.s.forEach(item=>{
 
-const show = shows.find(s=>s.id === id)
+const show = shows.find(s=>s.id === item.id)
 
 if(!show) return
+
+// aplicar prioridad
+show.priority = item.p || 0
 
 const el = document.querySelector(
 `.show[data-artist="${show.artist}"][data-start="${show.start}"][data-stage="${show.stage}"]`
 )
 
 if(el){
+
+// actualizar estrellas
+el.querySelector(".priority").innerText = "⭐".repeat(show.priority)
+
+// seleccionar show
 toggleShow(show, el)
+
 }
 
 })
