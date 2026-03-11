@@ -53,7 +53,7 @@ font-size:12px;
 background:rgba(255,255,255,0.82);
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
-
+overflow:hidden;
 border-radius:14px;
 padding:20px;
 
@@ -80,7 +80,11 @@ margin-bottom:20px;
 display:flex;
 gap:10px;
 align-items:flex-start;
-overflow-x:auto;
+overflow:visible;
+
+scroll-snap-type:x mandatory;
+
+-webkit-overflow-scrolling:touch;
 padding-bottom:10px;
 }
 
@@ -88,6 +92,7 @@ padding-bottom:10px;
 
 .timeColumn{
 width:70px;
+min-width:70px;
 position:relative;
 }
 
@@ -482,13 +487,29 @@ display:none;
 
 #lineupGrid{
 scroll-snap-type:x mandatory;
-overflow-x:auto;
 -webkit-overflow-scrolling:touch;
 }
 
+/* columnas del lineup */
 .stageColumn{
 flex:0 0 180px;
+min-width:180px;
 scroll-snap-align:start;
+}
+
+/* headers de escenario */
+#stageHeaders .stage-header{
+flex:0 0 180px;
+width:180px;
+min-width:180px;
+max-width:180px;
+}
+
+/* spacer para columna de horas */
+#stageHeaders .timeColumn{
+flex:0 0 70px;
+min-width:70px;
+width:70px;
 }
 
 .controls{
@@ -524,6 +545,44 @@ font-size:18px;
 }
 
 /* =========================
+   STAGE HEADERS
+   ========================= */
+
+#stageHeaders{
+display:flex;
+gap:10px;
+
+overflow:visible;
+
+scrollbar-width:none;
+}
+
+
+#stageHeaders::-webkit-scrollbar{
+display:none;
+}
+
+#stageHeaders .stage-header{
+
+flex:1;
+min-width:180px;
+text-align:center;
+font-weight:600;
+
+background:rgba(255,255,255,0.9);
+color:#111827;
+
+padding:6px;
+
+border-radius:10px;
+
+backdrop-filter:blur(6px);
+
+border-bottom:1px solid rgba(0,0,0,0.08);
+
+}
+
+/* =========================
    FLOATING ROUTE BUTTON
    ========================= */
 
@@ -554,7 +613,6 @@ transition:transform 0.15s ease;
 
 z-index:1000;
 
-/* JS controla visibilidad */
 display:none;
 
 }
@@ -562,6 +620,10 @@ display:none;
 .fab-route:hover{
 transform:scale(1.05);
 }
+
+/* =========================
+   INPUTS
+   ========================= */
 
 select,
 input{
@@ -630,9 +692,18 @@ margin-bottom:0;
 
 }
 
+/* =========================
+   SEARCH HIGHLIGHT
+   ========================= */
+
 .search-stage{
 outline:3px solid #ff9800;
 outline-offset:2px;
 position:relative;
 z-index:3;
+}
+
+#lineupScroll{
+overflow-x:auto;
+overflow-y:hidden;
 }

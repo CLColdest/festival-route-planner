@@ -40,14 +40,39 @@ renderLineup()
 }
 
 function renderLineup(){
+
+const headerContainer = document.getElementById("stageHeaders")
+headerContainer.innerHTML=""
+
 const container = document.getElementById("lineupGrid")
 container.innerHTML=""
+
+/* primero calcular stages */
 
 const stages = stageOrder.filter(stage =>
 shows.some(show => show.stage === stage)
 )
 
+/* luego crear headers */
+
+const headerSpacer = document.createElement("div")
+headerSpacer.className = "timeColumn"
+headerContainer.appendChild(headerSpacer)
+
+stages.forEach(stage=>{
+
+const header = document.createElement("div")
+header.className = "stage-header"
+header.innerText = stage
+
+headerContainer.appendChild(header)
+
+})
+
+/* resto de tu lógica igual */
+
 const timelineStart=13*60
+
 const latestShow = Math.max(
 ...shows.map(s=>timeToMinutes(s.end))
 )
@@ -94,12 +119,6 @@ stages.forEach(stage=>{
 
 const stageCol=document.createElement("div")
 stageCol.className="stageColumn"
-
-const header=document.createElement("div")
-header.className="stage-header"
-header.innerText=stage
-
-stageCol.appendChild(header)
 
 // líneas horizontales por hora
 for(let t=timelineStart;t<=timelineEnd;t+=60){
