@@ -46,7 +46,11 @@ shows.some(show => show.stage === stage)
 )
 
 const timelineStart=13*60
-const timelineEnd=24*60
+const latestShow = Math.max(
+...shows.map(s=>timeToMinutes(s.end))
+)
+
+const timelineEnd = latestShow + 30
 const pxPerMinute=2
 
 // columna de horas
@@ -62,8 +66,12 @@ const top=(t-timelineStart)*pxPerMinute
 const label=document.createElement("div")
 label.className="time-label"
 
-const hours=Math.floor(t/60)
-const mins=t%60
+let hours = Math.floor(t/60)
+const mins = t % 60
+
+if(hours >= 24){
+hours = hours - 24
+}
 
 label.innerText=`${hours}:${mins.toString().padStart(2,"0")}`
 label.style.top=`${top}px`
@@ -188,8 +196,13 @@ checkConflicts()
 
 function timeToMinutes(time){
 
-const [h,m] = time.split(":").map(Number)
-return h*60+m
+let [h,m] = time.split(":").map(Number)
+
+if(h < 6){ // después de medianoche
+h += 24
+}
+
+return h*60 + m
 
 }
 
