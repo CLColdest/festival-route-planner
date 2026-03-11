@@ -37,7 +37,6 @@ renderLineup()
 }
 
 function renderLineup(){
-
 const container = document.getElementById("lineupGrid")
 container.innerHTML=""
 
@@ -142,7 +141,50 @@ div.innerHTML=`
 <div class="priority">${"⭐".repeat(show.priority)}</div>
 `
 
-div.onclick=()=>toggleShow(show,div)
+div.onclick = ()=>{
+
+if(longPressTriggered) return
+
+toggleShow(show,div)
+
+}
+let pressTimer
+let longPressTriggered = false
+
+div.addEventListener("touchstart", ()=>{
+
+longPressTriggered = false
+
+pressTimer = setTimeout(()=>{
+
+longPressTriggered = true
+
+navigator.vibrate?.(40)
+
+show.priority++
+
+if(show.priority > 3){
+show.priority = 0
+}
+
+div.querySelector(".priority").innerText = "⭐".repeat(show.priority)
+div.dataset.priority = show.priority
+
+},450)
+
+})
+
+div.addEventListener("touchend", ()=>{
+
+clearTimeout(pressTimer)
+
+})
+
+div.addEventListener("touchmove", ()=>{
+
+clearTimeout(pressTimer)
+
+})
 
 div.oncontextmenu = (e)=>{
 
