@@ -3,6 +3,8 @@ let shows = []
 let selectedShows = []
 let stageOrder = []
 let routeGenerated = false
+let previousSearchLength = 0
+let lastScrolledShowId = null
 
 const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
@@ -611,25 +613,71 @@ async function handleArtistSearch(){
 
 const query = artistSearch.value.toLowerCase().trim()
 
-if(query.length < 2){
+const isTyping = query.length > previousSearchLength
+previousSearchLength = query.length
 
 const allShows = document.querySelectorAll(".show")
+const allStages = document.querySelectorAll(".stageColumn")
 
-allShows.forEach(el=>{
-el.classList.remove("search-hit")
-})
+/* limpiar highlights */
+allShows.forEach(el=>el.classList.remove("search-hit"))
+allStages.forEach(el=>el.classList.remove("search-stage"))
 
+if(query.length < 2){
+lastScrolledShowId = null
 return
 }
 
-// buscar en shows cargados
+/* buscar en shows cargados */
 const matches = shows.filter(show =>
 show.artist.toLowerCase().includes(query)
 )
 
 highlightSearchResults(matches)
 
-// si no está en este día buscar en otros
+/* highlight columna del escenario */
+if(matches.length > 0){
+
+const stage = matches[0].stage
+
+const stageCol = [...document.querySelectorAll(".stageColumn")]
+.find(col => col.querySelector(`.show[data-stage="${stage}"]`))
+
+if(stageCol){
+stageCol.classList.add("search-stage")
+}
+
+}
+
+/* scroll solo si está escribiendo */
+if(matches.length > 0 && isTyping){
+
+const firstMatch = matches[0]
+
+const showId = `${firstMatch.artist}-${firstMatch.start}-${firstMatch.stage}`
+
+/* evitar scroll repetido */
+if(showId !== lastScrolledShowId){
+
+const el = document.querySelector(
+`.show[data-artist="${firstMatch.artist}"][data-start="${firstMatch.start}"][data-stage="${firstMatch.stage}"]`
+)
+
+if(el){
+el.scrollIntoView({
+behavior:"smooth",
+block:"center",
+inline:"center"
+})
+
+lastScrolledShowId = showId
+}
+
+}
+
+}
+
+/* buscar en otros días si no aparece */
 if(matches.length === 0){
 
 const days = ["friday","saturday","sunday"]
