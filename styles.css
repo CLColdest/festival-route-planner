@@ -395,28 +395,37 @@ box-shadow:none;
 /* ROUTE (máxima prioridad visual) */
 
 .show.route{
+
 outline:3px solid #00c853;
 background:#e8f9f0;
 color:#111;
 border:2px solid #00c853;
+
+/* limpiar cualquier estilo previo */
+
+box-shadow:none;
+
 }
 
 .show.route.selected{
 outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
+box-shadow:none;
 }
 
 .show.route.search-hit{
 outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
+box-shadow:none;
 }
 
 .show.route.selected.search-hit{
 outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
+box-shadow:none;
 }
 
 /* si un show de la ruta también estaba en conflicto, la ruta gana */
@@ -426,6 +435,7 @@ outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
 color:#111;
+box-shadow:none;
 }
 
 .show.route.selected.conflict{
@@ -433,6 +443,7 @@ outline:3px solid #00c853;
 background:#e8f9f0;
 border:2px solid #00c853;
 color:#111;
+box-shadow:none;
 }
 
 /* INFOBOX */
@@ -707,3 +718,4 @@ z-index:3;
 overflow-x:auto;
 overflow-y:hidden;
 }
+
