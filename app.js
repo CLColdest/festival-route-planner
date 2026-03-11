@@ -2,6 +2,7 @@ let walkingTime = 3
 let shows = []
 let selectedShows = []
 let stageOrder = []
+let routeGenerated = false
 
 const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
@@ -234,6 +235,7 @@ element.classList.add("selected")
 
 console.log("Seleccionados:", selectedShows)
 checkConflicts()
+updateMobileRouteButton()
 }
 
 function timeToMinutes(time){
@@ -446,7 +448,8 @@ currentStage = b.stage
 
 displayRoute(route)
 markRouteOnGrid(route)
-
+routeGenerated = true
+updateRouteButtonText()
 }
 
 function displayRoute(route){
@@ -505,6 +508,19 @@ routeResult.appendChild(div)
 
 }
 
+function updateRouteButtonText(){
+
+const btn = document.getElementById("generateRouteMobile")
+if(!btn) return
+
+if(routeGenerated){
+btn.innerText = "🔄 Recalcular ruta"
+}else{
+btn.innerText = "⚡ Generar ruta"
+}
+
+}
+
 function clearSelection(){
 
 selectedShows = []
@@ -520,7 +536,9 @@ el.classList.remove("route")
 })
 
 routeResult.innerHTML = ""
-
+updateMobileRouteButton()
+routeGenerated = false
+updateRouteButtonText()
 }
 
 function checkConflicts(){
@@ -829,11 +847,34 @@ return [top,second]
 
 }
 
+function updateMobileRouteButton(){
+
+const btn = document.getElementById("generateRouteMobile")
+if(!btn) return
+
+if(selectedShows.length > 0){
+btn.style.display = "block"
+}else{
+btn.style.display = "none"
+}
+
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+
+const mobileBtn = document.getElementById("generateRouteMobile")
+
+if(mobileBtn){
+mobileBtn.onclick = generateRoute
+}
+
 document.getElementById("clearSelection").onclick = clearSelection
-document.getElementById("generateRoute").onclick=generateRoute
 document.getElementById("shareRoute").onclick = shareRoute
-daySelector.onchange=()=>loadDay(daySelector.value)
+
+daySelector.onchange = ()=>loadDay(daySelector.value)
+
 artistSearch.addEventListener("input", handleArtistSearch)
+
 artistSearch.addEventListener("keydown", (e)=>{
 if(e.key === "Escape"){
 artistSearch.value=""
@@ -843,4 +884,7 @@ renderLineup()
 
 loadDay(daySelector.value).then(()=>{
 loadRouteFromURL()
+updateMobileRouteButton()
+})
+
 })

@@ -402,3 +402,32 @@ font-size:18px;
 }
 
 }
+
+/* FAB mobile route button */
+
+.fab-route{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#1a73e8;
+color:white;
+border:none;
+padding:14px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+cursor:pointer;
+display:none;
+z-index:1000;
+}
+
+/* solo visible en móvil */
+
+@media (max-width:768px){
+
+.fab-route{
+display:block;
+}
+
+}
