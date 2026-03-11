@@ -28,7 +28,7 @@ stageOrder = data.stageOrder
 shows = data.shows.map((s,i) => ({
   ...s,
   id: i,
-  priority: 2
+  priority: 0
 }))
 selectedShows = []
 
@@ -131,7 +131,7 @@ div.style.height=`${height}px`
 div.innerHTML=`
 <div class="artist">${show.artist}</div>
 <div class="time">${show.start}–${show.end}</div>
-<div class="priority">${"⭐".repeat(show.priority || 2)}</div>
+<div class="priority">${"⭐".repeat(show.priority)}</div>
 `
 
 div.onclick=()=>toggleShow(show,div)
@@ -142,13 +142,14 @@ e.preventDefault()
 
 show.priority++
 
-if(show.priority>3){
-show.priority=1
+if(show.priority > 3){
+show.priority = 0
 }
 
-div.querySelector(".priority").innerText="⭐".repeat(show.priority)
+div.querySelector(".priority").innerText = "⭐".repeat(show.priority)
 
 div.dataset.priority = show.priority
+
 }
 
 stageCol.appendChild(div)

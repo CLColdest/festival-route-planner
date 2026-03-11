@@ -321,3 +321,29 @@ background:#e8f9f0;
 border:2px solid #00c853;
 color:#111;
 }
+
+/* INFOBOX */
+
+.info-box{
+background:#eef6ff;
+border:1px solid #cfe3ff;
+padding:12px 16px;
+border-radius:8px;
+margin-bottom:15px;
+font-size:14px;
+color:#1f2937;
+}
+
+.info-box ul{
+margin:6px 0 0 18px;
+padding:0;
+}
+
+.info-box li{
+margin-bottom:3px;
+}
+
+.priority:empty{
+display:none;
+}
+
