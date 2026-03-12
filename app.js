@@ -5,7 +5,7 @@ let stageOrder = []
 let routeGenerated = false
 let previousSearchLength = 0
 let lastScrolledShowId = null
-
+let routeMode = "flexible" 
 const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
 const daySelector = document.getElementById("daySelector")
@@ -15,11 +15,8 @@ const MIN_SPLIT = 15
 
 
 walkingTimeSelector.onchange = (e)=>{
-
 walkingTime = Number(e.target.value)
-
-generateRouteV2()
-
+calculateRoute()
 }
 
 async function loadDay(day){
@@ -37,6 +34,16 @@ shows = data.shows.map((s,i) => ({
 selectedShows = []
 
 renderLineup()
+
+}
+
+function calculateRoute(){
+
+if(routeMode === "strict"){
+generateRoute()
+}else{
+generateRouteV2()
+}
 
 }
 
@@ -375,7 +382,8 @@ return endA + walkingTime > startB
 
 function generateRoute(){
 
-console.log("=== GENERATE ROUTE ===")
+console.log("=== GENERATE ROUTE STRICT ===")
+
 console.log("Selected shows:")
 selectedShows.forEach(s=>{
 console.log(
@@ -392,59 +400,35 @@ allShows.forEach(el=>{
 el.classList.remove("route")
 })
 
-const groups = buildConflictGroups(selectedShows)
+/* ordenar shows por inicio */
 
-console.log("Conflict groups:")
-groups.forEach((g,i)=>{
-console.log("Group",i,g.map(s=>s.artist))
-})
+const sorted = [...selectedShows].sort(
+(a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start)
+)
 
 let route = []
 let currentTime = 0
 let currentStage = null
 
-groups.forEach(group => {
+for(const show of sorted){
 
-const chosen = resolveGroup(group)
-
-chosen.sort((a,b)=>{
-
-const startDiff = timeToMinutes(a.start) - timeToMinutes(b.start)
-
-if(startDiff !== 0){
-return startDiff
-}
-
-return Number(a.priority) - Number(b.priority)
-
-})
-
-for(let i=0;i<chosen.length;i++){
-
-const show = chosen[i]
-
-console.log("Evaluating show:", show.artist)
+console.log("Evaluating:", show.artist)
 
 let start = timeToMinutes(show.start)
 let end   = timeToMinutes(show.end)
 
-/* calcular llegada real */
+/* aplicar caminata */
 
 if(route.length > 0){
 
-const prev = route[route.length-1]
+if(currentStage !== show.stage){
 
-const prevStart = timeToMinutes(prev.start)
-const currStart = timeToMinutes(show.start)
-
-if(prevStart === currStart){
-start = timeToMinutes(show.start)
-}
-else if(currentStage && currentStage !== show.stage){
 start = Math.max(start, currentTime + walkingTime)
-}
-else{
+
+}else{
+
 start = Math.max(start, currentTime)
+
 }
 
 }else{
@@ -452,6 +436,8 @@ start = Math.max(start, currentTime)
 start = Math.max(start, currentTime)
 
 }
+
+/* calcular minutos visibles */
 
 let visible = end - start
 
@@ -464,34 +450,16 @@ show.artist,
 
 if(visible < MIN_VISIBLE_MINUTES){
 
-if(route.length > 0){
-
-const prev = route[route.length-1]
-
-if(!hasConflict(prev, show)){
-console.log("SKIPPING:", show.artist)
-continue
-}
-
-}else{
-
-console.log("SKIPPING:", show.artist)
+console.log("SKIPPING small visible:",show.artist)
 continue
 
 }
 
-}
-
-/* conflicto con el show anterior */
-
-let inConflict = false
+/* revisar conflicto con show anterior */
 
 if(route.length > 0){
 
 const prev = route[route.length-1]
-
-const prPrev = Number(prev.priority)
-const prCurr = Number(show.priority)
 
 const overlapStart = Math.max(start, prev.startReal)
 const overlapEnd   = Math.min(end, prev.endReal)
@@ -500,176 +468,65 @@ const overlap = overlapEnd - overlapStart
 
 if(overlap > 0){
 
-inConflict = true
+const prPrev = Number(prev.priority)
+const prCurr = Number(show.priority)
 
-if(prPrev === prCurr){
+console.log(
+"[CONFLICT]",
+prev.artist,"⭐"+prPrev,
+"vs",
+show.artist,"⭐"+prCurr
+)
 
-const mid = Math.round(overlapStart + overlap/2)
+/* gana el de mayor prioridad */
 
-prev.endReal = mid
-start = mid
+if(prPrev >= prCurr){
 
-}
-else if(Math.abs(prPrev-prCurr) === 1){
-
-let nextImportant = null
-
-for(const other of selectedShows){
-
-if(other === show) continue
-
-const otherStart = timeToMinutes(other.start)
-
-if(otherStart > start){
-
-if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
-nextImportant = other
-}
-
-}
-
-}
-
-let split
-
-if(nextImportant && Number(nextImportant.priority) > Math.max(prPrev,prCurr)){
-
-const nextStart = timeToMinutes(nextImportant.start)
-split = nextStart - walkingTime
-
-}else{
-
-const ratio = prPrev > prCurr ? 0.7 : 0.3
-split = overlapStart + overlap * ratio
-
-}
-
-prev.endReal = Math.round(split)
-start = Math.round(split)
-
-/* aplicar caminata si cambiamos de stage */
-
-if(prev.stage !== show.stage){
-start += walkingTime
-}
-
-}
-else{
-
-if(prPrev > prCurr){
+console.log("KEEP:",prev.artist)
 continue
+
 }else{
+
+console.log("REPLACE:",prev.artist,"→",show.artist)
+
 route.pop()
-}
 
-}
+currentTime = prev.startReal
+currentStage = prev.stage
 
-}
-
-}
-
-/* recalcular visible */
+start = Math.max(start, currentTime)
 
 visible = end - start
 
-/* bloqueo de show importante SOLO si no estamos en conflicto */
-
-if(!inConflict){
-
-let nextImportant = null
-
-for(const other of selectedShows){
-
-if(other === show) continue
-
-const otherStart = timeToMinutes(other.start)
-
-/* usar horario original del show */
-
-if(otherStart > timeToMinutes(show.start)){
-
-if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
-nextImportant = other
-}
-
-}
-
-}
-
-if(nextImportant){
-
-const nextStart = timeToMinutes(nextImportant.start)
-
-/* último momento seguro para terminar */
-
-const latestSafeEnd = nextStart - walkingTime
-
-if(end > latestSafeEnd &&
-Number(nextImportant.priority) > Number(show.priority)){
-
-console.log("SKIPPING (blocks important):", show.artist)
+if(visible < MIN_VISIBLE_MINUTES){
 continue
-
 }
 
 }
 
 }
 
-if(visible >= MIN_VISIBLE_MINUTES){
-
-console.log("ADDING TO ROUTE:", show.artist)
-
-let realEnd = end
-
-/* mirar si viene un show más importante después */
-
-let nextImportant = null
-
-for(const other of selectedShows){
-
-if(other === show) continue
-
-const otherStart = timeToMinutes(other.start)
-
-if(otherStart > start){
-
-if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
-nextImportant = other
 }
 
-}
+/* agregar show completo */
 
-}
-
-if(nextImportant && Number(nextImportant.priority) > Number(show.priority)){
-
-const safeExit = timeToMinutes(nextImportant.start) - walkingTime
-
-if(safeExit < realEnd){
-realEnd = safeExit
-}
-
-}
+console.log("ADDING:",show.artist)
 
 route.push({
 ...show,
 startReal:start,
-endReal:realEnd
+endReal:end
 })
 
-currentTime = realEnd
+currentTime = end
 currentStage = show.stage
-}
 
 }
-
-})
 
 console.log("FINAL ROUTE:")
 
 route.forEach(r=>{
-console.log(r.artist, r.startReal, r.endReal)
+console.log(r.artist,r.startReal,r.endReal)
 })
 
 displayRoute(route)
@@ -785,9 +642,18 @@ else if(Math.abs(prA-prB) === 1){
 const smaller = prA < prB ? a : b
 const bigger  = prA < prB ? b : a
 
-const mid = Math.floor((start + end) / 2)
+const availableStart = Math.max(start, currentTime)
+const totalDuration = end - availableStart
 
-const firstDuration = mid - start
+const ratioSmaller = prA < prB
+  ? prA / (prA + prB)
+  : prB / (prA + prB)
+
+const smallerDuration = Math.floor(totalDuration * ratioSmaller)
+
+const mid = availableStart + smallerDuration
+
+const firstDuration = smallerDuration
 const secondDuration = end - mid
 
 /* evitar splits muy pequeños */
@@ -877,6 +743,66 @@ console.log("[CUT for important]",chosen.artist,"→",safeExit)
 end = safeExit
 
 }
+
+}
+
+}
+
+
+/* detectar patrón ABAB */
+
+if(route.length >= 2){
+
+const prev = route[route.length-1]
+const prevPrev = route[route.length-2]
+
+if(prevPrev.artist === chosen.artist && prev.artist !== chosen.artist){
+
+console.log("[ABAB DETECTED]", prevPrev.artist, prev.artist)
+
+/* artistas */
+
+const artistA = prevPrev
+const artistB = prev
+
+/* calcular rango total */
+
+const blockStart = artistA.startReal
+const blockEnd   = end
+
+const total = blockEnd - blockStart
+
+/* pesos por estrellas */
+
+const prA = Number(artistA.priority)
+const prB = Number(artistB.priority)
+
+const weightA = prA + 1
+const weightB = prB + 1
+
+const totalWeight = weightA + weightB
+
+/* calcular split */
+
+const timeA = Math.floor(total * (weightA / totalWeight))
+const timeB = total - timeA
+
+const newASplit = blockStart + timeA
+
+console.log("[REBALANCE BLOCK]")
+console.log("A:", artistA.artist, timeA, "min")
+console.log("B:", artistB.artist, timeB, "min")
+
+/* reescribir ruta */
+
+artistA.endReal = newASplit
+
+prev.startReal = newASplit + walkingTime
+prev.endReal = blockEnd
+
+/* evitar que agregue nuevo segmento */
+
+continue
 
 }
 
@@ -1385,10 +1311,28 @@ btn.style.display = "none"
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
+/* switch strict / flexible */
+
+document.querySelectorAll('input[name="routeMode"]').forEach(el=>{
+el.addEventListener("change", e=>{
+
+routeMode = e.target.value
+
+console.log("Route mode:", routeMode)
+
+/* recalcular ruta si ya hay shows */
+
+if(selectedShows.length > 0){
+calculateRoute()
+}
+
+})
+})
+
 const mobileBtn = document.getElementById("generateRouteMobile")
 
 if(mobileBtn){
-mobileBtn.onclick = generateRouteV2
+mobileBtn.onclick = calculateRoute
 }
 
 document.getElementById("clearSelection").onclick = clearSelection
