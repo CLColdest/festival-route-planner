@@ -10,7 +10,7 @@ const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
 const daySelector = document.getElementById("daySelector")
 const artistSearch = document.getElementById("artistSearch")
-const MIN_VISIBLE_MINUTES = 15
+const MIN_VISIBLE_MINUTES = 10
 
 
 walkingTimeSelector.onchange = (e)=>{
@@ -324,6 +324,41 @@ return startA < endB && startB < endA
 
 }
 
+function blocksImportantFutureShow(show){
+
+const start = timeToMinutes(show.start)
+const end   = timeToMinutes(show.end)
+const pr    = Number(show.priority)
+
+for(const other of selectedShows){
+
+if(other === show) continue
+
+const otherStart = timeToMinutes(other.start) - walkingTime
+const otherPr    = Number(other.priority)
+
+/* solo mirar shows futuros */
+
+if(otherStart <= start) continue
+
+/* si el show actual invade el siguiente */
+
+if(end > otherStart){
+
+/* y el siguiente es mucho más importante */
+
+if(otherPr >= pr + 2){
+return true
+}
+
+}
+
+}
+
+return false
+
+}
+
 function cannotReachNext(showA, showB){
 
 if(showA.stage === showB.stage){
@@ -339,7 +374,29 @@ return endA + walkingTime > startB
 
 function generateRoute(){
 
+console.log("=== GENERATE ROUTE ===")
+console.log("Selected shows:")
+selectedShows.forEach(s=>{
+console.log(
+s.artist,
+s.start,
+s.end,
+"⭐".repeat(s.priority)
+)
+})
+
+const allShows=document.querySelectorAll(".show")
+
+allShows.forEach(el=>{
+el.classList.remove("route")
+})
+
 const groups = buildConflictGroups(selectedShows)
+
+console.log("Conflict groups:")
+groups.forEach((g,i)=>{
+console.log("Group",i,g.map(s=>s.artist))
+})
 
 let route = []
 let currentTime = 0
@@ -349,128 +406,277 @@ groups.forEach(group => {
 
 const chosen = resolveGroup(group)
 
-chosen.sort(
-(a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start)
-)
+chosen.sort((a,b)=>{
 
-if(chosen.length === 1){
+const startDiff = timeToMinutes(a.start) - timeToMinutes(b.start)
 
-const show = chosen[0]
+if(startDiff !== 0){
+return startDiff
+}
+
+return Number(a.priority) - Number(b.priority)
+
+})
+
+for(let i=0;i<chosen.length;i++){
+
+const show = chosen[i]
+
+console.log("Evaluating show:", show.artist)
 
 let start = timeToMinutes(show.start)
 let end   = timeToMinutes(show.end)
 
-if(currentStage && currentStage !== show.stage){
+/* calcular llegada real */
+
+if(route.length > 0){
+
+const prev = route[route.length-1]
+
+const prevStart = timeToMinutes(prev.start)
+const currStart = timeToMinutes(show.start)
+
+if(prevStart === currStart){
+start = timeToMinutes(show.start)
+}
+else if(currentStage && currentStage !== show.stage){
 start = Math.max(start, currentTime + walkingTime)
-}else{
+}
+else{
 start = Math.max(start, currentTime)
 }
 
-if(end - start >= MIN_VISIBLE_MINUTES){
+}else{
+
+start = Math.max(start, currentTime)
+
+}
+
+let visible = end - start
+
+console.log(
+show.artist,
+"startReal:",start,
+"end:",end,
+"visible:",visible
+)
+
+if(visible < MIN_VISIBLE_MINUTES){
+
+if(route.length > 0){
+
+const prev = route[route.length-1]
+
+if(!hasConflict(prev, show)){
+console.log("SKIPPING:", show.artist)
+continue
+}
+
+}else{
+
+console.log("SKIPPING:", show.artist)
+continue
+
+}
+
+}
+
+/* conflicto con el show anterior */
+
+let inConflict = false
+
+if(route.length > 0){
+
+const prev = route[route.length-1]
+
+const prPrev = Number(prev.priority)
+const prCurr = Number(show.priority)
+
+const overlapStart = Math.max(start, prev.startReal)
+const overlapEnd   = Math.min(end, prev.endReal)
+
+const overlap = overlapEnd - overlapStart
+
+if(overlap > 0){
+
+inConflict = true
+
+if(prPrev === prCurr){
+
+const mid = Math.round(overlapStart + overlap/2)
+
+prev.endReal = mid
+start = mid
+
+}
+else if(Math.abs(prPrev-prCurr) === 1){
+
+let nextImportant = null
+
+for(const other of selectedShows){
+
+if(other === show) continue
+
+const otherStart = timeToMinutes(other.start)
+
+if(otherStart > start){
+
+if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
+nextImportant = other
+}
+
+}
+
+}
+
+let split
+
+if(nextImportant && Number(nextImportant.priority) > Math.max(prPrev,prCurr)){
+
+const nextStart = timeToMinutes(nextImportant.start)
+split = nextStart - walkingTime
+
+}else{
+
+const ratio = prPrev > prCurr ? 0.7 : 0.3
+split = overlapStart + overlap * ratio
+
+}
+
+prev.endReal = Math.round(split)
+start = Math.round(split)
+
+/* aplicar caminata si cambiamos de stage */
+
+if(prev.stage !== show.stage){
+start += walkingTime
+}
+
+}
+else{
+
+if(prPrev > prCurr){
+continue
+}else{
+route.pop()
+}
+
+}
+
+}
+
+}
+
+/* recalcular visible */
+
+visible = end - start
+
+/* bloqueo de show importante SOLO si no estamos en conflicto */
+
+if(!inConflict){
+
+let nextImportant = null
+
+for(const other of selectedShows){
+
+if(other === show) continue
+
+const otherStart = timeToMinutes(other.start)
+
+/* usar horario original del show */
+
+if(otherStart > timeToMinutes(show.start)){
+
+if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
+nextImportant = other
+}
+
+}
+
+}
+
+if(nextImportant){
+
+const nextStart = timeToMinutes(nextImportant.start)
+
+/* último momento seguro para terminar */
+
+const latestSafeEnd = nextStart - walkingTime
+
+if(end > latestSafeEnd &&
+Number(nextImportant.priority) > Number(show.priority)){
+
+console.log("SKIPPING (blocks important):", show.artist)
+continue
+
+}
+
+}
+
+}
+
+if(visible >= MIN_VISIBLE_MINUTES){
+
+console.log("ADDING TO ROUTE:", show.artist)
+
+let realEnd = end
+
+/* mirar si viene un show más importante después */
+
+let nextImportant = null
+
+for(const other of selectedShows){
+
+if(other === show) continue
+
+const otherStart = timeToMinutes(other.start)
+
+if(otherStart > start){
+
+if(!nextImportant || otherStart < timeToMinutes(nextImportant.start)){
+nextImportant = other
+}
+
+}
+
+}
+
+if(nextImportant && Number(nextImportant.priority) > Number(show.priority)){
+
+const safeExit = timeToMinutes(nextImportant.start) - walkingTime
+
+if(safeExit < realEnd){
+realEnd = safeExit
+}
+
+}
 
 route.push({
 ...show,
 startReal:start,
-endReal:end
+endReal:realEnd
 })
 
-currentTime = end
+currentTime = realEnd
 currentStage = show.stage
+}
 
 }
 
-}else{
-
-let a = chosen[0]
-let b = chosen[1]
-
-let startA = timeToMinutes(a.start)
-let endA   = timeToMinutes(a.end)
-
-let startB = timeToMinutes(b.start)
-let endB   = timeToMinutes(b.end)
-
-if(currentStage && currentStage !== a.stage){
-startA = Math.max(startA, currentTime + walkingTime)
-}else{
-startA = Math.max(startA, currentTime)
-}
-
-let leaveA
-
-const prA = Number(a.priority)
-const prB = Number(b.priority)
-
-const overlapStart = Math.max(startA,startB)
-const overlapEnd   = Math.min(endA,endB)
-
-const overlap = overlapEnd - overlapStart
-
-if(overlap <= 0){
-
-leaveA = endA
-
-}else if(prA === prB){
-
-leaveA = overlapStart + overlap/2
-
-}else if(Math.abs(prA-prB) === 1){
-
-const ratio = prA > prB ? 0.7 : 0.3
-leaveA = overlapStart + overlap*ratio
-
-}else{
-
-leaveA = Math.min(endA,startB)
-
-}
-
-leaveA = Math.round(leaveA)
-
-let visibleA = leaveA - startA
-
-if(visibleA >= MIN_VISIBLE_MINUTES){
-
-route.push({
-...a,
-startReal:startA,
-endReal:leaveA
 })
 
-currentTime = leaveA
-currentStage = a.stage
+console.log("FINAL ROUTE:")
 
-}
-
-let arrivalB = Math.max(startB,currentTime)
-
-if(a.stage !== b.stage){
-arrivalB += walkingTime
-}
-
-let visibleB = endB - arrivalB
-
-if(visibleB >= MIN_VISIBLE_MINUTES){
-
-route.push({
-...b,
-startReal:arrivalB,
-endReal:endB
-})
-
-currentTime = endB
-currentStage = b.stage
-
-}
-
-}
-
+route.forEach(r=>{
+console.log(r.artist, r.startReal, r.endReal)
 })
 
 displayRoute(route)
 markRouteOnGrid(route)
+
 routeGenerated = true
 updateRouteButtonText()
+
 }
 
 function displayRoute(route){
@@ -507,10 +713,10 @@ end=start+show.visibleMinutes
 
 }
 
-const startH=Math.floor(start/60)
+const startH=(Math.floor(start/60)) % 24
 const startM=(start%60).toString().padStart(2,"0")
 
-const endH=Math.floor(end/60)
+const endH=(Math.floor(end/60)) % 24
 const endM=(end%60).toString().padStart(2,"0")
 
 const timeText=`${startH}:${startM} - ${endH}:${endM}`
@@ -566,12 +772,14 @@ function checkConflicts(){
 
 const allShows = document.querySelectorAll(".show")
 
-// limpiar estados
+/* limpiar conflictos */
+
 allShows.forEach(el=>{
 el.classList.remove("conflict")
 })
 
-// comparar todos los shows seleccionados
+/* comparar shows seleccionados */
+
 selectedShows.forEach(showA=>{
 selectedShows.forEach(showB=>{
 
@@ -583,6 +791,7 @@ markConflict(showB)
 }
 
 })
+
 })
 
 }
@@ -871,20 +1080,36 @@ const sorted=[...shows].sort(
 
 sorted.forEach(show=>{
 
-let added=false
+let overlappingGroups=[]
 
-for(const group of groups){
-
+groups.forEach(group=>{
 if(group.some(s=>overlaps(s,show))){
-group.push(show)
-added=true
-break
+overlappingGroups.push(group)
 }
+})
 
-}
+if(overlappingGroups.length === 0){
 
-if(!added){
 groups.push([show])
+
+}else{
+
+const merged=[show]
+
+overlappingGroups.forEach(g=>{
+merged.push(...g)
+})
+
+/* eliminar grupos viejos */
+overlappingGroups.forEach(g=>{
+const index=groups.indexOf(g)
+if(index>-1){
+groups.splice(index,1)
+}
+})
+
+groups.push(merged)
+
 }
 
 })
@@ -895,22 +1120,9 @@ return groups
 
 function resolveGroup(group){
 
-if(group.length === 1) return group
-
-const sorted=[...group].sort(
-(a,b)=>Number(b.priority)-Number(a.priority)
+return [...group].sort(
+(a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start)
 )
-
-const top=sorted[0]
-const second=sorted[1]
-
-const diff = Number(top.priority)-Number(second.priority)
-
-if(diff >= 2){
-return [top]
-}
-
-return [top,second]
 
 }
 
