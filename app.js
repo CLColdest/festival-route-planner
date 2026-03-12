@@ -11,13 +11,14 @@ const routeResult = document.getElementById("routeResult")
 const daySelector = document.getElementById("daySelector")
 const artistSearch = document.getElementById("artistSearch")
 const MIN_VISIBLE_MINUTES = 10
+const MIN_SPLIT = 15
 
 
 walkingTimeSelector.onchange = (e)=>{
 
 walkingTime = Number(e.target.value)
 
-generateRoute()
+generateRouteV2()
 
 }
 
@@ -679,6 +680,249 @@ updateRouteButtonText()
 
 }
 
+function generateRouteV2(){
+
+console.log("=== GENERATE ROUTE V2 DEBUG ===")
+
+/* limpiar rutas visuales */
+
+const allShows = document.querySelectorAll(".show")
+allShows.forEach(el=>el.classList.remove("route"))
+
+const candidateShows = [...selectedShows]
+
+if(candidateShows.length === 0){
+displayRoute([])
+markRouteOnGrid([])
+return
+}
+
+/* construir timeline */
+
+let timestamps = new Set()
+
+candidateShows.forEach(s=>{
+timestamps.add(timeToMinutes(s.start))
+timestamps.add(timeToMinutes(s.end))
+})
+
+timestamps = [...timestamps].sort((a,b)=>a-b)
+
+console.log("[TIMELINE]",timestamps)
+
+/* crear segmentos */
+
+let segments = []
+
+for(let i=0;i<timestamps.length-1;i++){
+
+const segmentStart = timestamps[i]
+const segmentEnd = timestamps[i+1]
+
+let active = candidateShows.filter(s=>{
+const start = timeToMinutes(s.start)
+const end = timeToMinutes(s.end)
+return start < segmentEnd && end > segmentStart
+})
+
+if(active.length === 0) continue
+
+active.sort((a,b)=>Number(b.priority)-Number(a.priority))
+
+segments.push({
+shows: active,
+start: segmentStart,
+end: segmentEnd
+})
+
+}
+
+/* construir ruta */
+
+let route = []
+let currentStage = null
+let currentTime = 0
+
+for(let i = 0; i < segments.length; i++){
+
+const seg = segments[i]
+
+let start = seg.start
+let end = seg.end
+
+let shows = seg.shows
+
+console.log("\n[SEGMENT]",start,"-",end,shows.map(s=>`${s.artist} ⭐${s.priority}`))
+
+let chosen = shows[0]
+
+/* reglas de elección */
+
+if(shows.length > 1){
+
+const a = shows[0]
+const b = shows[1]
+
+const prA = Number(a.priority)
+const prB = Number(b.priority)
+
+console.log("[CANDIDATES]",a.artist,"⭐"+prA,"vs",b.artist,"⭐"+prB)
+
+/* prioridades iguales */
+
+if(prA === prB){
+
+chosen = route.length % 2 === 0 ? a : b
+
+console.log("[DECISION equal priority]",chosen.artist)
+
+}
+
+/* prioridad cercana */
+
+else if(Math.abs(prA-prB) === 1){
+
+const smaller = prA < prB ? a : b
+const bigger  = prA < prB ? b : a
+
+const mid = Math.floor((start + end) / 2)
+
+const firstDuration = mid - start
+const secondDuration = end - mid
+
+/* evitar splits muy pequeños */
+
+if(firstDuration < MIN_SPLIT || secondDuration < MIN_SPLIT){
+
+console.log("[NO SPLIT small block] choosing",bigger.artist)
+
+chosen = bigger
+
+}else{
+
+console.log("[SPLIT close priority]")
+console.log("first:",smaller.artist,"second:",bigger.artist)
+
+segments.splice(i + 1, 0, {
+shows:[bigger],
+start:mid,
+end:end
+})
+
+chosen = smaller
+end = mid
+
+}
+
+}
+
+}
+
+/* aplicar walking */
+
+if(currentStage && currentStage !== chosen.stage){
+
+const walkStart = currentTime + walkingTime
+
+console.log("[WALK]",currentStage,"→",chosen.stage,"arrive",walkStart)
+
+start = Math.max(start, walkStart)
+
+}else{
+
+start = Math.max(start, currentTime)
+
+}
+
+if(end - start < MIN_VISIBLE_MINUTES){
+
+console.log("[SKIP small segment]",chosen.artist)
+
+continue
+
+}
+
+/* revisar show importante después */
+
+let nextImportant = null
+
+candidateShows.forEach(s=>{
+
+if(s === chosen) return
+
+const sStart = timeToMinutes(s.start)
+
+if(sStart > start){
+
+if(!nextImportant || sStart < timeToMinutes(nextImportant.start)){
+nextImportant = s
+}
+
+}
+
+})
+
+if(nextImportant){
+
+const nextStart = timeToMinutes(nextImportant.start)
+
+if(Number(nextImportant.priority) > Number(chosen.priority)){
+
+const safeExit = nextStart - walkingTime
+
+if(safeExit < end){
+
+console.log("[CUT for important]",chosen.artist,"→",safeExit)
+
+end = safeExit
+
+}
+
+}
+
+}
+
+/* merge con segmento anterior */
+
+let last = route[route.length-1]
+
+if(last && last.artist === chosen.artist){
+
+console.log("[MERGE]",chosen.artist)
+
+last.endReal = end
+
+}else{
+
+console.log("[ADD]",chosen.artist,start,"-",end)
+
+route.push({
+...chosen,
+startReal:start,
+endReal:end
+})
+
+}
+
+currentStage = chosen.stage
+currentTime = end
+
+}
+
+console.log("\n=== FINAL ROUTE V2 ===")
+
+route.forEach(r=>{
+console.log(r.artist,r.startReal,"-",r.endReal)
+})
+
+displayRoute(route)
+markRouteOnGrid(route)
+
+routeGenerated = true
+updateRouteButtonText()
+
+}
+
 function displayRoute(route){
 
 routeResult.innerHTML=""
@@ -1144,7 +1388,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 const mobileBtn = document.getElementById("generateRouteMobile")
 
 if(mobileBtn){
-mobileBtn.onclick = generateRoute
+mobileBtn.onclick = generateRouteV2
 }
 
 document.getElementById("clearSelection").onclick = clearSelection
