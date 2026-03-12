@@ -385,21 +385,43 @@ box-shadow:
 /* CONFLICT */
 
 .show.conflict{
-background:#ffb3b3;
-border:2px solid #ff4d4d;
-color:#700;
-box-shadow:0 0 8px rgba(255,77,77,0.35);
+background:#ffe0b3;
+border:2px solid #ff9800;
+color:#663c00;
+box-shadow:0 0 8px rgba(255,152,0,0.35);
 }
 
 .show.selected.conflict{
 
-background:#ffb3b3;
+background:#ffe0b3;
 
-border:2px solid #ff4d4d;
+border:2px solid #ff9800;
 
-color:#700;
+color:#663c00;
 
 box-shadow:none;
+
+}
+
+/* SHOW DESCARTADO POR EL ALGORITMO */
+
+.show.rejected{
+
+background:#ffb3b3;
+border:2px solid #ff4d4d;
+color:#700;
+
+box-shadow:0 0 8px rgba(255,77,77,0.35);
+
+opacity:0.8;
+
+}
+
+.show.selected.rejected{
+
+background:#ffb3b3;
+border:2px solid #ff4d4d;
+color:#700;
 
 }
 

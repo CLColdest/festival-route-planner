@@ -398,6 +398,7 @@ const allShows=document.querySelectorAll(".show")
 
 allShows.forEach(el=>{
 el.classList.remove("route")
+el.classList.remove("rejected")
 })
 
 /* ordenar shows por inicio */
@@ -544,7 +545,10 @@ console.log("=== GENERATE ROUTE V2 DEBUG ===")
 /* limpiar rutas visuales */
 
 const allShows = document.querySelectorAll(".show")
-allShows.forEach(el=>el.classList.remove("route"))
+allShows.forEach(el=>{
+el.classList.remove("route")
+el.classList.remove("rejected")
+})
 
 const candidateShows = [...selectedShows]
 
@@ -929,6 +933,7 @@ allShows.forEach(el => {
 el.classList.remove("selected")
 el.classList.remove("conflict")
 el.classList.remove("route")
+el.classList.remove("rejected")
 
 })
 
@@ -985,23 +990,44 @@ const allShows=document.querySelectorAll(".show")
 
 allShows.forEach(el=>{
 el.classList.remove("route")
+el.classList.remove("rejected")
 })
+
+/* marcar ruta */
 
 route.forEach(show=>{
 
-const elements=document.querySelectorAll(".show")
+const el=document.querySelector(
+`.show[data-artist="${show.artist}"][data-start="${show.start}"][data-stage="${show.stage}"]`
+)
 
-elements.forEach(el=>{
-
-if(
-el.dataset.artist===show.artist &&
-el.dataset.start===show.start &&
-el.dataset.stage===show.stage
-){
+if(el){
 el.classList.add("route")
 }
 
 })
+
+/* marcar rechazados */
+
+selectedShows.forEach(show=>{
+
+const inRoute = route.some(r =>
+r.artist===show.artist &&
+r.start===show.start &&
+r.stage===show.stage
+)
+
+if(!inRoute){
+
+const el=document.querySelector(
+`.show[data-artist="${show.artist}"][data-start="${show.start}"][data-stage="${show.stage}"]`
+)
+
+if(el){
+el.classList.add("rejected")
+}
+
+}
 
 })
 
