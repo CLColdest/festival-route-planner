@@ -542,8 +542,6 @@ function generateRouteV2(){
 
 console.log("=== GENERATE ROUTE V2 DEBUG ===")
 
-/* limpiar rutas visuales */
-
 const allShows = document.querySelectorAll(".show")
 allShows.forEach(el=>{
 el.classList.remove("route")
@@ -558,7 +556,7 @@ markRouteOnGrid([])
 return
 }
 
-/* construir timeline */
+/* TIMELINE */
 
 let timestamps = new Set()
 
@@ -571,7 +569,7 @@ timestamps = [...timestamps].sort((a,b)=>a-b)
 
 console.log("[TIMELINE]",timestamps)
 
-/* crear segmentos */
+/* SEGMENTS */
 
 let segments = []
 
@@ -603,7 +601,7 @@ end: segmentEnd
 
 }
 
-/* construir ruta */
+/* ROUTE */
 
 let route = []
 let currentStage = null
@@ -622,7 +620,40 @@ console.log("\n[SEGMENT]",start,"-",end,shows.map(s=>`${s.artist} ⭐${s.priorit
 
 let chosen = shows[0]
 
-/* reglas de elección */
+/* detectar próximo show importante */
+
+let nextImportant = null
+
+candidateShows.forEach(s=>{
+
+if(shows.includes(s)) return
+
+const sStart = timeToMinutes(s.start)
+
+if(sStart > start){
+
+if(!nextImportant || sStart < timeToMinutes(nextImportant.start)){
+nextImportant = s
+}
+
+}
+
+})
+
+/* limitar ventana por show importante */
+
+if(nextImportant){
+
+const nextStart = timeToMinutes(nextImportant.start)
+const safeExit = nextStart - walkingTime
+
+if(safeExit < end){
+end = safeExit
+}
+
+}
+
+/* elegir show */
 
 if(shows.length > 1){
 
@@ -634,18 +665,16 @@ const prB = Number(b.priority)
 
 console.log("[CANDIDATES]",a.artist,"⭐"+prA,"vs",b.artist,"⭐"+prB)
 
-/* prioridades iguales */
+/* PRIORIDADES IGUALES */
 
 if(prA === prB){
 
 const sameStart = timeToMinutes(a.start) === timeToMinutes(b.start)
 const sameEnd   = timeToMinutes(a.end) === timeToMinutes(b.end)
 
-/* shows exactamente iguales */
-
 if(sameStart && sameEnd){
 
-const availableStart = Math.max(start, currentTime)
+const availableStart = Math.max(start,currentTime)
 const totalDuration = end - availableStart
 const mid = availableStart + Math.floor(totalDuration / 2)
 
@@ -655,7 +684,6 @@ const secondDuration = end - mid
 if(firstDuration >= MIN_SPLIT && secondDuration >= MIN_SPLIT){
 
 console.log("[SPLIT identical shows]")
-console.log("first:",a.artist,"second:",b.artist)
 
 segments.splice(i + 1, 0, {
 shows:[b],
@@ -669,36 +697,30 @@ end = mid
 }else{
 
 chosen = a
-console.log("[NO SPLIT identical small block]",a.artist)
 
 }
 
-}
-
-/* caso normal → anti pingpong */
-
-else{
+}else{
 
 chosen = route.length % 2 === 0 ? a : b
-console.log("[DECISION equal priority]",chosen.artist)
 
 }
 
 }
 
-/* prioridad cercana */
+/* PRIORIDAD CERCANA */
 
 else if(Math.abs(prA-prB) === 1){
 
 const smaller = prA < prB ? a : b
 const bigger  = prA < prB ? b : a
 
-const availableStart = Math.max(start, currentTime)
+const availableStart = Math.max(start,currentTime)
 const totalDuration = end - availableStart
 
 const ratioSmaller = prA < prB
-  ? prA / (prA + prB)
-  : prB / (prA + prB)
+? prA / (prA + prB)
+: prB / (prA + prB)
 
 const smallerDuration = Math.floor(totalDuration * ratioSmaller)
 
@@ -707,32 +729,37 @@ const mid = availableStart + smallerDuration
 const firstDuration = smallerDuration
 const secondDuration = end - mid
 
-/* evitar splits muy pequeños */
-
 if(firstDuration < MIN_SPLIT || secondDuration < MIN_SPLIT){
+
+/* en modo flexible intentar repartir igual */
+
+if(routeMode === "flexible" && totalDuration >= MIN_SPLIT * 2){
+
+const mid = availableStart + Math.floor(totalDuration / 2)
+
+console.log("[FLEX SPLIT fallback]")
+
+segments.splice(i + 1, 0, {
+shows:[bigger],
+start:mid,
+end:end
+})
+
+chosen = smaller
+end = mid
+
+}else{
 
 console.log("[NO SPLIT small block] choosing",bigger.artist)
 
 chosen = bigger
 
+}
+
 }else{
 
 console.log("[SPLIT close priority]")
-console.log(
-"[SPLIT WINDOW]",
-"segment:", start, "-", end,
-"available:", end - Math.max(start,currentTime)
-)
-console.log("first:",smaller.artist,"second:",bigger.artist)
 
-
-console.log(
-"[CREATE SUBSEGMENT]",
-"first:", chosen.artist,
-"second:", bigger.artist,
-"mid:", mid,
-"segmentEnd:", end
-)
 segments.splice(i + 1, 0, {
 shows:[bigger],
 start:mid,
@@ -748,7 +775,7 @@ end = mid
 
 }
 
-/* aplicar walking */
+/* WALKING */
 
 if(currentStage && currentStage !== chosen.stage){
 
@@ -764,71 +791,15 @@ start = Math.max(start, currentTime)
 
 }
 
-console.log(
-"[REAL WINDOW]",
-chosen.artist,
-"start:", start,
-"end:", end,
-"usable:", end - start
-)
+console.log("[REAL WINDOW]",chosen.artist,start,"-",end)
+
+/* SEGMENT TOO SMALL */
 
 if(end - start < MIN_VISIBLE_MINUTES){
-
-console.log("[SKIP small segment]",chosen.artist)
-
 continue
-
 }
 
-/* revisar show importante después */
-
-let nextImportant = null
-
-candidateShows.forEach(s=>{
-
-if(s === chosen) return
-
-const sStart = timeToMinutes(s.start)
-
-if(sStart > start){
-
-if(!nextImportant || sStart < timeToMinutes(nextImportant.start)){
-nextImportant = s
-}
-
-}
-
-})
-
-if(nextImportant){
-
-const nextStart = timeToMinutes(nextImportant.start)
-
-if(Number(nextImportant.priority) > Number(chosen.priority)){
-
-const safeExit = nextStart - walkingTime
-
-console.log(
-"[IMPORTANT WINDOW]",
-"segment:", start, "-", end,
-"arrival:", currentTime,
-"safeExit:", safeExit,
-"realWindow:", safeExit - Math.max(start, currentTime)
-)
-
-if(safeExit < end){
-
-console.log("[CUT for important]",chosen.artist,"→",safeExit)
-
-end = safeExit
-
-}
-
-}
-}
-
-
-/* detectar patrón ABAB */
+/* ABAB REBALANCE */
 
 if(route.length >= 2){
 
@@ -839,26 +810,13 @@ if(prevPrev.artist === chosen.artist && prev.artist !== chosen.artist){
 
 console.log("[ABAB DETECTED]", prevPrev.artist, prev.artist)
 
-/* artistas */
-
 const artistA = prevPrev
 const artistB = prev
-
-console.log(
-"[ABAB WINDOW]",
-"blockStart:", artistA.startReal,
-"blockEnd:", prev.endReal,
-"total:", prev.endReal - artistA.startReal
-)
-
-/* calcular rango total */
 
 const blockStart = artistA.startReal
 const blockEnd = prev.endReal
 
 const total = blockEnd - blockStart
-
-/* pesos por estrellas */
 
 const prA = Number(artistA.priority)
 const prB = Number(artistB.priority)
@@ -868,25 +826,14 @@ const weightB = prB + 1
 
 const totalWeight = weightA + weightB
 
-/* calcular split */
-
 const timeA = Math.floor(total * (weightA / totalWeight))
-const timeB = total - timeA
 
 const newASplit = blockStart + timeA
-
-console.log("[REBALANCE BLOCK]")
-console.log("A:", artistA.artist, timeA, "min")
-console.log("B:", artistB.artist, timeB, "min")
-
-/* reescribir ruta */
 
 artistA.endReal = newASplit
 
 prev.startReal = newASplit + walkingTime
 prev.endReal = blockEnd
-
-/* evitar que agregue nuevo segmento */
 
 continue
 
@@ -894,13 +841,11 @@ continue
 
 }
 
-/* merge con segmento anterior */
+/* MERGE */
 
 let last = route[route.length-1]
 
 if(last && last.artist === chosen.artist){
-
-console.log("[MERGE]",chosen.artist)
 
 last.endReal = end
 
