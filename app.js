@@ -1175,14 +1175,14 @@ inline:"center"
 
 }
 
-function shareRoute(){
+function generateShareURL(){
 
 const routeData = {
 d: daySelector.value,
 w: walkingTime,
-s: selectedShows.map(s => ({
-id: s.id,
-p: s.priority
+s: selectedShows.map(({id,priority}) => ({
+id,
+p: priority
 }))
 }
 
@@ -1190,11 +1190,7 @@ const encoded = LZString.compressToEncodedURIComponent(
 JSON.stringify(routeData)
 )
 
-const url = `${window.location.origin}${window.location.pathname}?route=${encoded}`
-
-navigator.clipboard.writeText(url)
-
-alert("Link copiado al portapapeles")
+return `${location.origin}${location.pathname}?route=${encoded}`
 
 }
 
@@ -1343,26 +1339,32 @@ if(clearBtn) clearBtn.style.display = "none"
 
 let toastTimeout
 
-function showModeToast(mode){
+function showToast(message){
 
 const toast = document.getElementById("modeToast")
 if(!toast) return
 
-if(mode==="strict"){
-toast.innerText="🎯 Modo estricto: prioriza los shows con más estrellas."
-}
-
-if(mode==="flexible"){
-toast.innerText="⚡ Modo flexible: divide shows cercanos para ver más artistas."
-}
+toast.innerText = message
 
 toast.classList.add("show")
 
 clearTimeout(toastTimeout)
 
-toastTimeout=setTimeout(()=>{
+toastTimeout = setTimeout(()=>{
 toast.classList.remove("show")
 },2200)
+
+}
+
+function showModeToast(mode){
+
+if(mode==="strict"){
+showToast("🎯 Modo estricto: prioriza los shows con más estrellas.")
+}
+
+if(mode==="flexible"){
+showToast("⚡ Modo flexible: divide shows cercanos para ver más artistas.")
+}
 
 }
 
@@ -1400,7 +1402,46 @@ if(mobileBtn){
 mobileBtn.onclick = calculateRoute
 }
 
-document.getElementById("shareRoute").onclick = shareRoute
+const copyBtn = document.getElementById("copyLink")
+const twitterBtn = document.getElementById("twitterShare")
+const facebookBtn = document.getElementById("facebookShare")
+const instagramBtn = document.getElementById("instagramShare")
+
+copyBtn.onclick = () => {
+
+const url = generateShareURL()
+
+navigator.clipboard.writeText(url)
+
+showToast("🔗 Link copiado al portapapeles")
+
+}
+
+twitterBtn.onclick = () => {
+
+const url = encodeURIComponent(generateShareURL())
+
+window.open(`https://twitter.com/intent/tweet?url=${url}`)
+
+}
+
+facebookBtn.onclick = () => {
+
+const url = encodeURIComponent(generateShareURL())
+
+window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`)
+
+}
+
+instagramBtn.onclick = () => {
+
+const url = generateShareURL()
+
+navigator.clipboard.writeText(url)
+
+showToast("Instagram no permite compartir links directos. Se copió el link.")
+
+}
 
 daySelector.onchange = ()=>loadDay(daySelector.value)
 
