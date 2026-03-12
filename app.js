@@ -588,7 +588,12 @@ return start < segmentEnd && end > segmentStart
 
 if(active.length === 0) continue
 
-active.sort((a,b)=>Number(b.priority)-Number(a.priority))
+active.sort((a,b)=>{
+if(b.priority !== a.priority){
+return b.priority - a.priority
+}
+return timeToMinutes(a.start) - timeToMinutes(b.start)
+})
 
 segments.push({
 shows: active,
@@ -633,9 +638,51 @@ console.log("[CANDIDATES]",a.artist,"⭐"+prA,"vs",b.artist,"⭐"+prB)
 
 if(prA === prB){
 
-chosen = route.length % 2 === 0 ? a : b
+const sameStart = timeToMinutes(a.start) === timeToMinutes(b.start)
+const sameEnd   = timeToMinutes(a.end) === timeToMinutes(b.end)
 
+/* shows exactamente iguales */
+
+if(sameStart && sameEnd){
+
+const availableStart = Math.max(start, currentTime)
+const totalDuration = end - availableStart
+const mid = availableStart + Math.floor(totalDuration / 2)
+
+const firstDuration = mid - availableStart
+const secondDuration = end - mid
+
+if(firstDuration >= MIN_SPLIT && secondDuration >= MIN_SPLIT){
+
+console.log("[SPLIT identical shows]")
+console.log("first:",a.artist,"second:",b.artist)
+
+segments.splice(i + 1, 0, {
+shows:[b],
+start:mid,
+end:end
+})
+
+chosen = a
+end = mid
+
+}else{
+
+chosen = a
+console.log("[NO SPLIT identical small block]",a.artist)
+
+}
+
+}
+
+/* caso normal → anti pingpong */
+
+else{
+
+chosen = route.length % 2 === 0 ? a : b
 console.log("[DECISION equal priority]",chosen.artist)
+
+}
 
 }
 
@@ -671,8 +718,21 @@ chosen = bigger
 }else{
 
 console.log("[SPLIT close priority]")
+console.log(
+"[SPLIT WINDOW]",
+"segment:", start, "-", end,
+"available:", end - Math.max(start,currentTime)
+)
 console.log("first:",smaller.artist,"second:",bigger.artist)
 
+
+console.log(
+"[CREATE SUBSEGMENT]",
+"first:", chosen.artist,
+"second:", bigger.artist,
+"mid:", mid,
+"segmentEnd:", end
+)
 segments.splice(i + 1, 0, {
 shows:[bigger],
 start:mid,
@@ -703,6 +763,14 @@ start = Math.max(start, walkStart)
 start = Math.max(start, currentTime)
 
 }
+
+console.log(
+"[REAL WINDOW]",
+chosen.artist,
+"start:", start,
+"end:", end,
+"usable:", end - start
+)
 
 if(end - start < MIN_VISIBLE_MINUTES){
 
@@ -740,6 +808,14 @@ if(Number(nextImportant.priority) > Number(chosen.priority)){
 
 const safeExit = nextStart - walkingTime
 
+console.log(
+"[IMPORTANT WINDOW]",
+"segment:", start, "-", end,
+"arrival:", currentTime,
+"safeExit:", safeExit,
+"realWindow:", safeExit - Math.max(start, currentTime)
+)
+
 if(safeExit < end){
 
 console.log("[CUT for important]",chosen.artist,"→",safeExit)
@@ -749,7 +825,6 @@ end = safeExit
 }
 
 }
-
 }
 
 
@@ -769,10 +844,17 @@ console.log("[ABAB DETECTED]", prevPrev.artist, prev.artist)
 const artistA = prevPrev
 const artistB = prev
 
+console.log(
+"[ABAB WINDOW]",
+"blockStart:", artistA.startReal,
+"blockEnd:", prev.endReal,
+"total:", prev.endReal - artistA.startReal
+)
+
 /* calcular rango total */
 
 const blockStart = artistA.startReal
-const blockEnd   = end
+const blockEnd = prev.endReal
 
 const total = blockEnd - blockStart
 
