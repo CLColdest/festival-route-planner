@@ -22,16 +22,16 @@
 <p>Planifica tu ruta ideal entre escenarios</p>
 </header>
 
-<div class="mode-switch">
-<label>
-<input type="radio" name="routeMode" value="flexible" checked>
-Flexible
-</label>
+<div class="routeModeControl floatingMode">
 
-<label>
-<input type="radio" name="routeMode" value="strict">
-Estricto
-</label>
+<span>🎯</span>
+
+<button id="routeModeSwitch" class="toggleSwitch">
+<span class="knob"></span>
+</button>
+
+<span>⚡</span>
+
 </div>
 
 <!-- CONTROLES -->
@@ -74,7 +74,6 @@ placeholder="Ej: Skrillex, Interpol..."
 
 <div class="button-row">
 
-<button id="clearSelection" class="secondary">Limpiar selección</button>
 <button id="shareRoute">Compartir ruta</button>
 
 </div>
@@ -120,8 +119,12 @@ Desktop: clic derecho · Móvil: mantener presionado
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
 <script src="app.js"></script>
+<button id="clearSelectionBtn" class="fab-clear">
+🗑️
+</button>
 <button id="generateRouteMobile" class="fab-route" style="display:none;">
 📍 Generar ruta
 </button>
+<div id="modeToast" class="modeToast"></div>
 </body>
 </html>

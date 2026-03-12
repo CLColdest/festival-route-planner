@@ -5,7 +5,7 @@ let stageOrder = []
 let routeGenerated = false
 let previousSearchLength = 0
 let lastScrolledShowId = null
-let routeMode = "flexible" 
+let routeMode = "strict" 
 const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
 const daySelector = document.getElementById("daySelector")
@@ -1298,36 +1298,75 @@ return [...group].sort(
 
 function updateMobileRouteButton(){
 
-const btn = document.getElementById("generateRouteMobile")
-if(!btn) return
+const routeBtn = document.getElementById("generateRouteMobile")
+const clearBtn = document.getElementById("clearSelectionBtn")
 
 if(selectedShows.length > 0){
-btn.style.display = "block"
+
+if(routeBtn) routeBtn.style.display = "block"
+if(clearBtn) clearBtn.style.display = "flex"
+
 }else{
-btn.style.display = "none"
+
+if(routeBtn) routeBtn.style.display = "none"
+if(clearBtn) clearBtn.style.display = "none"
+
 }
+
+}
+
+let toastTimeout
+
+function showModeToast(mode){
+
+const toast = document.getElementById("modeToast")
+if(!toast) return
+
+if(mode==="strict"){
+toast.innerText="🎯 Modo estricto: prioriza los shows con más estrellas."
+}
+
+if(mode==="flexible"){
+toast.innerText="⚡ Modo flexible: divide shows cercanos para ver más artistas."
+}
+
+toast.classList.add("show")
+
+clearTimeout(toastTimeout)
+
+toastTimeout=setTimeout(()=>{
+toast.classList.remove("show")
+},2200)
 
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
+const clearBtn = document.getElementById("clearSelectionBtn")
+
+if(clearBtn){
+clearBtn.onclick = clearSelection
+}
+
 /* switch strict / flexible */
 
-document.querySelectorAll('input[name="routeMode"]').forEach(el=>{
-el.addEventListener("change", e=>{
+const modeSwitch = document.getElementById("routeModeSwitch")
 
-routeMode = e.target.value
+modeSwitch.onclick = ()=>{
 
-console.log("Route mode:", routeMode)
+modeSwitch.classList.toggle("active")
 
-/* recalcular ruta si ya hay shows */
+routeMode = modeSwitch.classList.contains("active")
+? "flexible"
+: "strict"
 
-if(selectedShows.length > 0){
+showModeToast(routeMode)
+
+if(selectedShows.length>0){
 calculateRoute()
 }
 
-})
-})
+}
 
 const mobileBtn = document.getElementById("generateRouteMobile")
 
@@ -1335,7 +1374,6 @@ if(mobileBtn){
 mobileBtn.onclick = calculateRoute
 }
 
-document.getElementById("clearSelection").onclick = clearSelection
 document.getElementById("shareRoute").onclick = shareRoute
 
 daySelector.onchange = ()=>loadDay(daySelector.value)
