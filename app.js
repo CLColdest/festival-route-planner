@@ -4,9 +4,11 @@ let selectedShows = []
 let stageOrder = []
 let routeGenerated = false
 let lastCalculatedRoute = []
+let routeHasCalculatedOnce = false
 let previousSearchLength = 0
 let lastScrolledShowId = null
 let routeMode = "strict" 
+let themeMode = "light"
 let armedRemoveShowKey = null
 const walkingTimeSelector = document.getElementById("walkingTimeSelector")
 const routeResult = document.getElementById("routeResult")
@@ -25,6 +27,7 @@ const artistPreviewClose = document.getElementById("artistPreviewClose")
 const MIN_VISIBLE_MINUTES = 10
 const MIN_SPLIT = 15
 const MAX_ARCHIVED_PREVIEW_FRAMES = 8
+const THEME_STORAGE_KEY = "festival-route-theme"
 const ROUTE_DEBUG = true
 const TESTING_CONFIG = {
 enabled: false,
@@ -544,9 +547,13 @@ syncAllShowCardControls()
 
 }
 
-function invalidateCalculatedRoute(reason){
+function invalidateCalculatedRoute(reason,{ preserveRecalculateLabel = routeHasCalculatedOnce } = {}){
 
 if(!routeGenerated && lastCalculatedRoute.length === 0){
+if(!preserveRecalculateLabel){
+routeHasCalculatedOnce = false
+updateRouteButtonText()
+}
 setArmedRemoveShow(null)
 return
 }
@@ -558,6 +565,11 @@ selectedShows: selectedShows.map(describeShow)
 
 routeGenerated = false
 lastCalculatedRoute = []
+
+if(!preserveRecalculateLabel){
+routeHasCalculatedOnce = false
+}
+
 armedRemoveShowKey = null
 routeResult.innerHTML = ""
 
@@ -697,6 +709,7 @@ function applyTestingSelection(selection){
 selectedShows = []
 lastCalculatedRoute = []
 routeGenerated = false
+routeHasCalculatedOnce = false
 armedRemoveShowKey = null
 routeResult.innerHTML = ""
 
@@ -723,11 +736,12 @@ debugLog("[TEST] applied selection", selectedShows.map(describeShow))
 
 }
 
-function setRouteMode(mode,{ announce = true, recalculate = true } = {}){
+function setRouteMode(mode,{ announce = true } = {}){
 
 const modeSwitch = document.getElementById("routeModeSwitch")
 const strictModeLabel = document.getElementById("strictModeLabel")
 const flexibleModeLabel = document.getElementById("flexibleModeLabel")
+const previousMode = routeMode
 
 routeMode = mode === "flexible"
 ? "flexible"
@@ -751,8 +765,70 @@ if(announce){
 showModeToast(routeMode)
 }
 
-if(recalculate && selectedShows.length > 0){
-calculateRoute()
+if(previousMode !== routeMode && routeGenerated){
+invalidateCalculatedRoute("mode change", {
+preserveRecalculateLabel: true
+})
+}
+
+}
+
+function getInitialThemeMode(){
+
+if(window.__initialThemeMode === "light" || window.__initialThemeMode === "dark"){
+return window.__initialThemeMode
+}
+
+try{
+const storedTheme = localStorage.getItem(THEME_STORAGE_KEY)
+
+if(storedTheme === "light" || storedTheme === "dark"){
+return storedTheme
+}
+}catch(error){
+console.warn("Theme storage unavailable", error)
+}
+
+return "dark"
+
+}
+
+function setThemeMode(mode,{ announce = true, persist = true } = {}){
+
+const themeSwitch = document.getElementById("themeSwitch")
+const lightThemeLabel = document.getElementById("lightThemeLabel")
+const darkThemeLabel = document.getElementById("darkThemeLabel")
+
+themeMode = mode === "dark"
+? "dark"
+: "light"
+
+document.body.classList.toggle("theme-dark", themeMode === "dark")
+
+if(themeSwitch){
+themeSwitch.classList.toggle("active", themeMode === "dark")
+themeSwitch.setAttribute("aria-checked", themeMode === "dark" ? "true" : "false")
+themeSwitch.setAttribute("aria-label", themeMode === "dark" ? "Tema oscuro" : "Tema claro")
+}
+
+if(lightThemeLabel){
+lightThemeLabel.classList.toggle("active", themeMode === "light")
+}
+
+if(darkThemeLabel){
+darkThemeLabel.classList.toggle("active", themeMode === "dark")
+}
+
+if(persist){
+try{
+localStorage.setItem(THEME_STORAGE_KEY, themeMode)
+}catch(error){
+console.warn("Theme storage unavailable", error)
+}
+}
+
+if(announce){
+showToast(themeMode === "dark" ? "Tema oscuro activado." : "Tema claro activado.")
 }
 
 }
@@ -971,6 +1047,7 @@ shows = data.shows.map((s,i) => ({
 selectedShows = []
 routeGenerated = false
 lastCalculatedRoute = []
+routeHasCalculatedOnce = false
 armedRemoveShowKey = null
 routeResult.innerHTML = ""
 
@@ -1130,7 +1207,9 @@ removeButton.onclick = (e)=>{
 e.stopPropagation()
 
 if(routeGenerated){
-invalidateCalculatedRoute("explicit remove button")
+invalidateCalculatedRoute("explicit remove button", {
+preserveRecalculateLabel: false
+})
 }
 
 toggleShow(show,div,{ invalidateRoute: false })
@@ -1192,7 +1271,9 @@ longPressTriggered = true
 navigator.vibrate?.(40)
 
 if(routeGenerated && isShowSelected(show)){
-invalidateCalculatedRoute("long-press priority change")
+invalidateCalculatedRoute("long-press priority change", {
+preserveRecalculateLabel: true
+})
 }
 
 const previousPriority = show.priority
@@ -1238,7 +1319,9 @@ e.preventDefault()
 suppressFocusPreview = false
 
 if(routeGenerated && isShowSelected(show)){
-invalidateCalculatedRoute("contextmenu priority change")
+invalidateCalculatedRoute("contextmenu priority change", {
+preserveRecalculateLabel: true
+})
 }
 
 const previousPriority = show.priority
@@ -1283,15 +1366,25 @@ const {
 invalidateRoute = true
 } = options
 
+const index = findSelectedShowIndex(show)
+const isRemoving = index !== -1
+
 if(invalidateRoute && routeGenerated){
-invalidateCalculatedRoute("selection change")
+invalidateCalculatedRoute(
+isRemoving ? "selection remove" : "selection add",
+{
+preserveRecalculateLabel: !isRemoving
+}
+)
+}
+
+if(!routeGenerated && isRemoving){
+routeHasCalculatedOnce = false
 }
 
 setArmedRemoveShow(null)
 
-const index = findSelectedShowIndex(show)
-
-if(index !== -1){
+if(isRemoving){
 
 selectedShows.splice(index,1)
 updateShowCardControls(show,element)
@@ -1308,6 +1401,7 @@ debugSelectionState("toggle add", show)
 console.log("Seleccionados:", selectedShows)
 checkConflicts()
 updateMobileRouteButton()
+updateRouteButtonText()
 }
 
 function timeToMinutes(time){
@@ -1999,6 +2093,7 @@ lastCalculatedRoute = route.map(show => ({
 ...show
 }))
 routeGenerated = true
+routeHasCalculatedOnce = true
 setArmedRemoveShow(null)
 updateRouteButtonText()
 debugGroupEnd()
@@ -2163,6 +2258,7 @@ lastCalculatedRoute = route.map(show => ({
 ...show
 }))
 routeGenerated = true
+routeHasCalculatedOnce = true
 setArmedRemoveShow(null)
 updateRouteButtonText()
 debugGroupEnd()
@@ -2230,7 +2326,7 @@ function updateRouteButtonText(){
 const btn = document.getElementById("generateRouteMobile")
 if(!btn) return
 
-if(routeGenerated){
+if(routeGenerated || routeHasCalculatedOnce){
 btn.innerText = "🔄 Recalcular ruta"
 }else{
 btn.innerText = "⚡ Generar ruta"
@@ -2242,6 +2338,7 @@ function clearSelection(){
 
 selectedShows = []
 lastCalculatedRoute = []
+routeHasCalculatedOnce = false
 armedRemoveShowKey = null
 hideArtistPreview()
 
@@ -2680,6 +2777,7 @@ hideArtistPreview()
 const modeSwitch = document.getElementById("routeModeSwitch")
 const strictModeLabel = document.getElementById("strictModeLabel")
 const flexibleModeLabel = document.getElementById("flexibleModeLabel")
+const themeSwitch = document.getElementById("themeSwitch")
 
 modeSwitch.onclick = ()=>{
 
@@ -2689,6 +2787,16 @@ modeSwitch.classList.contains("active")
 : "flexible"
 )
 
+}
+
+if(themeSwitch){
+themeSwitch.onclick = ()=>{
+setThemeMode(
+themeSwitch.classList.contains("active")
+? "light"
+: "dark"
+)
+}
 }
 
 const mobileBtn = document.getElementById("generateRouteMobile")
@@ -2764,6 +2872,10 @@ window.runRandomTestingScenario = runRandomTestingScenario
 window.TESTING_CONFIG = TESTING_CONFIG
 
 initializeTestingToolbar()
+setThemeMode(getInitialThemeMode(), {
+announce: false,
+persist: false
+})
 
 const initialDay = TESTING_CONFIG.enabled
 ? TESTING_CONFIG.day
