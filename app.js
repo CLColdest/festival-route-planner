@@ -2332,6 +2332,26 @@ btn.innerText = "🔄 Recalcular ruta"
 btn.innerText = "⚡ Generar ruta"
 }
 
+updateShareButtonsState()
+
+}
+
+function updateShareButtonsState(){
+
+const shareButtons = [
+document.getElementById("copyRouteImage"),
+document.getElementById("copyLink"),
+document.getElementById("instagramShare"),
+document.getElementById("facebookShare")
+]
+const enabled = hasGeneratedShareRoute()
+
+shareButtons.forEach(button=>{
+if(!button) return
+button.disabled = !enabled
+button.setAttribute("aria-disabled", enabled ? "false" : "true")
+})
+
 }
 
 function clearSelection(){
@@ -2620,6 +2640,23 @@ return `${location.origin}${location.pathname}?route=${encoded}`
 
 }
 
+function hasGeneratedShareRoute(){
+
+return routeGenerated && lastCalculatedRoute.length > 0
+
+}
+
+function ensureShareableRoute(){
+
+if(hasGeneratedShareRoute()){
+return true
+}
+
+showToast("Genera la ruta antes de compartir.")
+return false
+
+}
+
 function getCurrentDayLabel(){
 
 return daySelector.selectedOptions?.[0]?.textContent?.trim() || daySelector.value
@@ -2808,8 +2845,7 @@ surface: exportSurface
 
 async function exportRouteImage(){
 
-if(!routeGenerated || lastCalculatedRoute.length === 0){
-showToast("Genera la ruta antes de exportar una imagen.")
+if(!ensureShareableRoute()){
 return
 }
 
@@ -2832,7 +2868,7 @@ const height = Math.ceil(surface.scrollHeight)
 const scale = Math.min(3, Math.max(window.devicePixelRatio || 1, 2))
 
 const canvas = await window.html2canvas(surface, {
-backgroundColor: null,
+backgroundColor: themeMode === "dark" ? "#020617" : "#f1f5f9",
 scale,
 useCORS: true,
 logging: false,
@@ -3067,6 +3103,10 @@ return url
 
 copyImageBtn.onclick = async () => {
 
+if(!ensureShareableRoute()){
+return
+}
+
 try{
 await exportRouteImage()
 }catch{
@@ -3077,6 +3117,10 @@ showToast("No se pudo preparar la imagen de la ruta.")
 
 if(copyLinkBtn){
 copyLinkBtn.onclick = async () => {
+
+if(!ensureShareableRoute()){
+return
+}
 
 try{
 await copyShareUrlToClipboard()
@@ -3090,6 +3134,10 @@ showToast("No se pudo copiar el link automaticamente.")
 
 facebookBtn.onclick = () => {
 
+if(!ensureShareableRoute()){
+return
+}
+
 const url = encodeURIComponent(generateShareURL())
 
 window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`)
@@ -3097,6 +3145,10 @@ window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`)
 }
 
 instagramBtn.onclick = () => {
+
+if(!ensureShareableRoute()){
+return
+}
 
 copyShareUrlToClipboard()
 .then(()=>{
