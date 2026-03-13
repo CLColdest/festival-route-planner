@@ -104,7 +104,15 @@ placeholder="Ej: Skrillex, Interpol..."
 
 <span class="share-label">Comparte tu ruta</span>
 
-<button class="share-icon share-copy" id="copyLink" type="button" aria-label="Copiar link" title="Copiar link">
+<button class="share-icon share-image" id="copyRouteImage" type="button" aria-label="Copiar imagen de la ruta" title="Copiar imagen de la ruta">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+<circle cx="9" cy="10" r="1.4"></circle>
+<path d="M21 16l-4.6-4.6a1.2 1.2 0 0 0-1.7 0L8 18"></path>
+</svg>
+</button>
+
+<button class="share-icon share-copy" id="copyLink" type="button" aria-label="Copiar link de la ruta" title="Copiar link de la ruta">
 <svg viewBox="0 0 24 24" aria-hidden="true">
 <path d="M10.59 13.41a1.996 1.996 0 0 0 2.82 0l3.59-3.59a2 2 0 1 0-2.83-2.82l-1.29 1.29"></path>
 <path d="M13.41 10.59a1.996 1.996 0 0 0-2.82 0L7 14.18A2 2 0 1 0 9.83 17l1.29-1.29"></path>
@@ -192,6 +200,7 @@ Desktop: clic derecho · Móvil: mantener presionado
 </aside>
 <div id="artistPreviewPlaybackArchive" class="artistPreviewPlaybackArchive" aria-hidden="true"></div>
 <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script src="app.js"></script>
 <button id="clearSelectionBtn" class="fab-clear">
 🗑️

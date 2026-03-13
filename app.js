@@ -2620,6 +2620,251 @@ return `${location.origin}${location.pathname}?route=${encoded}`
 
 }
 
+function getCurrentDayLabel(){
+
+return daySelector.selectedOptions?.[0]?.textContent?.trim() || daySelector.value
+
+}
+
+function getCurrentModeLabel(){
+
+return routeMode === "flexible"
+? "Flexible"
+: "Estricto"
+
+}
+
+function sanitizeFileSegment(value){
+
+return String(value)
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g,"")
+.toLowerCase()
+.replace(/[^a-z0-9]+/g,"-")
+.replace(/^-+|-+$/g,"")
+
+}
+
+function waitForNextFrame(){
+
+return new Promise(resolve => requestAnimationFrame(()=>resolve()))
+
+}
+
+function canvasToBlob(canvas,type = "image/png", quality = 1){
+
+return new Promise((resolve,reject)=>{
+canvas.toBlob(blob=>{
+if(blob){
+resolve(blob)
+return
+}
+
+reject(new Error("canvas-to-blob-failed"))
+}, type, quality)
+})
+
+}
+
+async function copyImageBlobToClipboard(blob){
+
+if(!navigator.clipboard?.write || typeof ClipboardItem === "undefined"){
+return false
+}
+
+await navigator.clipboard.write([
+new ClipboardItem({
+[blob.type]: blob
+})
+])
+
+return true
+
+}
+
+function downloadBlob(blob,fileName){
+
+const objectUrl = URL.createObjectURL(blob)
+const anchor = document.createElement("a")
+anchor.href = objectUrl
+anchor.download = fileName
+document.body.appendChild(anchor)
+anchor.click()
+anchor.remove()
+setTimeout(()=>URL.revokeObjectURL(objectUrl), 1000)
+
+}
+
+function applyExportColumnWidths(sourceChildren,cloneChildren){
+
+cloneChildren.forEach((cloneChild,index)=>{
+const sourceChild = sourceChildren[index]
+
+if(!sourceChild) return
+
+const width = Math.ceil(
+sourceChild.getBoundingClientRect().width
+|| sourceChild.scrollWidth
+|| sourceChild.offsetWidth
+|| 0
+)
+
+if(width <= 0) return
+
+cloneChild.style.flex = `0 0 ${width}px`
+cloneChild.style.width = `${width}px`
+cloneChild.style.minWidth = `${width}px`
+cloneChild.style.maxWidth = `${width}px`
+})
+
+}
+
+function buildRouteImageExportNode(){
+
+const stageHeaders = document.getElementById("stageHeaders")
+const lineupGrid = document.getElementById("lineupGrid")
+
+if(!stageHeaders || !lineupGrid){
+throw new Error("lineup-export-missing")
+}
+
+const exportHost = document.createElement("div")
+exportHost.className = "routeImageExportHost"
+
+const exportSurface = document.createElement("section")
+exportSurface.className = "routeImageExportSurface"
+
+const exportHeader = document.createElement("div")
+exportHeader.className = "routeImageExportHeader"
+
+const exportEyebrow = document.createElement("div")
+exportEyebrow.className = "routeImageExportEyebrow"
+exportEyebrow.innerText = `${getCurrentDayLabel()} · ${getCurrentModeLabel()}`
+
+const exportTitle = document.createElement("h2")
+exportTitle.className = "routeImageExportTitle"
+exportTitle.innerText = "Mi ruta del festival"
+
+const exportMeta = document.createElement("div")
+exportMeta.className = "routeImageExportMeta"
+exportMeta.innerText = `${lastCalculatedRoute.length} bloques · ${walkingTime} min entre escenarios`
+
+exportHeader.append(exportEyebrow, exportTitle, exportMeta)
+
+const headerClone = stageHeaders.cloneNode(true)
+headerClone.id = ""
+headerClone.className = "routeImageExportHeaders"
+
+const gridClone = lineupGrid.cloneNode(true)
+gridClone.id = ""
+gridClone.className = "routeImageExportGrid"
+
+gridClone.querySelectorAll(".show-remove-btn").forEach(button=>button.remove())
+gridClone.querySelectorAll(".show-remove-armed").forEach(show=>{
+show.classList.remove("show-remove-armed")
+})
+
+const headerSourceChildren = Array.from(stageHeaders.children)
+const headerCloneChildren = Array.from(headerClone.children)
+applyExportColumnWidths(headerSourceChildren, headerCloneChildren)
+
+const gridSourceChildren = Array.from(lineupGrid.children)
+const gridCloneChildren = Array.from(gridClone.children)
+applyExportColumnWidths(gridSourceChildren, gridCloneChildren)
+
+const exportGridHeight = Math.ceil(lineupGrid.scrollHeight || lineupGrid.getBoundingClientRect().height || 0)
+
+gridCloneChildren.forEach(child=>{
+if(child.classList.contains("timeColumn")){
+child.style.height = `${exportGridHeight}px`
+}
+
+if(child.classList.contains("stageColumn")){
+child.style.minHeight = `${exportGridHeight}px`
+child.style.height = `${exportGridHeight}px`
+}
+})
+
+headerClone.querySelectorAll(".stage-header").forEach(header=>{
+header.style.position = "relative"
+header.style.top = "auto"
+})
+
+const exportBoard = document.createElement("div")
+exportBoard.className = "routeImageExportBoard"
+exportBoard.style.width = `${Math.ceil(Math.max(stageHeaders.scrollWidth, lineupGrid.scrollWidth))}px`
+
+exportBoard.append(headerClone, gridClone)
+exportSurface.append(exportHeader, exportBoard)
+exportHost.appendChild(exportSurface)
+document.body.appendChild(exportHost)
+
+return {
+host: exportHost,
+surface: exportSurface
+}
+
+}
+
+async function exportRouteImage(){
+
+if(!routeGenerated || lastCalculatedRoute.length === 0){
+showToast("Genera la ruta antes de exportar una imagen.")
+return
+}
+
+if(typeof window.html2canvas !== "function"){
+showToast("No se pudo cargar el exportador de imagen.")
+return
+}
+
+showToast("Preparando imagen de la ruta...")
+
+const { host, surface } = buildRouteImageExportNode()
+
+try{
+await document.fonts?.ready
+await waitForNextFrame()
+await waitForNextFrame()
+
+const width = Math.ceil(surface.scrollWidth)
+const height = Math.ceil(surface.scrollHeight)
+const scale = Math.min(3, Math.max(window.devicePixelRatio || 1, 2))
+
+const canvas = await window.html2canvas(surface, {
+backgroundColor: null,
+scale,
+useCORS: true,
+logging: false,
+width,
+height,
+windowWidth: width,
+windowHeight: height
+})
+
+const blob = await canvasToBlob(canvas)
+const fileName = `festival-route-${sanitizeFileSegment(getCurrentDayLabel())}-${sanitizeFileSegment(getCurrentModeLabel())}.png`
+
+try{
+const copied = await copyImageBlobToClipboard(blob)
+
+if(copied){
+showToast("Imagen copiada al portapapeles.")
+}else{
+downloadBlob(blob, fileName)
+showToast("Tu navegador no pudo copiar la imagen. Se descargo un PNG.")
+}
+}catch(error){
+downloadBlob(blob, fileName)
+showToast("Tu navegador no pudo copiar la imagen. Se descargo un PNG.")
+}
+
+}finally{
+host.remove()
+}
+
+}
+
 function loadRouteFromURL(){
 
 const params = new URLSearchParams(window.location.search)
@@ -2805,7 +3050,8 @@ if(mobileBtn){
 mobileBtn.onclick = calculateRoute
 }
 
-const copyBtn = document.getElementById("copyLink")
+const copyImageBtn = document.getElementById("copyRouteImage")
+const copyLinkBtn = document.getElementById("copyLink")
 const facebookBtn = document.getElementById("facebookShare")
 const instagramBtn = document.getElementById("instagramShare")
 
@@ -2819,7 +3065,18 @@ return url
 
 }
 
-copyBtn.onclick = async () => {
+copyImageBtn.onclick = async () => {
+
+try{
+await exportRouteImage()
+}catch{
+showToast("No se pudo preparar la imagen de la ruta.")
+}
+
+}
+
+if(copyLinkBtn){
+copyLinkBtn.onclick = async () => {
 
 try{
 await copyShareUrlToClipboard()
@@ -2828,6 +3085,7 @@ showToast("🔗 Link copiado al portapapeles")
 showToast("No se pudo copiar el link automaticamente.")
 }
 
+}
 }
 
 facebookBtn.onclick = () => {

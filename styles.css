@@ -1007,6 +1007,12 @@ border-color:rgba(148,163,184,0.14);
 color:#e2e8f0;
 }
 
+body.theme-dark .share-image:hover{
+background:rgba(101,163,13,0.18);
+border-color:rgba(163,230,53,0.42);
+color:#d9f99d;
+}
+
 body.theme-dark .share-copy:hover{
 background:#334155;
 border-color:#475569;
@@ -1560,6 +1566,12 @@ width:17px;
 height:17px;
 }
 
+.share-image:hover{
+background:#ecfccb;
+border-color:#bef264;
+color:#3f6212;
+}
+
 .share-copy:hover{
 background:#e2e8f0;
 border-color:#cbd5e1;
@@ -1579,4 +1591,98 @@ color:#1877f2;
 
 .share-icon:hover{
 transform:translateY(-1px);
+}
+
+.routeImageExportHost{
+position:fixed;
+left:-20000px;
+top:0;
+pointer-events:none;
+z-index:-1;
+}
+
+.routeImageExportSurface{
+width:max-content;
+padding:28px;
+border-radius:28px;
+background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(241,245,249,0.98));
+box-shadow:0 18px 40px rgba(15,23,42,0.14);
+color:#0f172a;
+}
+
+.routeImageExportHeader{
+display:grid;
+gap:8px;
+margin-bottom:20px;
+}
+
+.routeImageExportEyebrow{
+display:inline-flex;
+width:max-content;
+padding:6px 10px;
+border-radius:999px;
+background:rgba(15,23,42,0.06);
+color:#334155;
+font-size:11px;
+font-weight:800;
+letter-spacing:0.12em;
+text-transform:uppercase;
+}
+
+.routeImageExportTitle{
+margin:0;
+font-family:var(--font-display);
+font-size:34px;
+line-height:0.95;
+letter-spacing:-0.05em;
+color:#0f172a;
+}
+
+.routeImageExportMeta{
+font-size:14px;
+font-weight:600;
+color:#475569;
+}
+
+.routeImageExportBoard{
+display:grid;
+gap:10px;
+}
+
+.routeImageExportHeaders{
+display:flex;
+gap:10px;
+overflow:visible;
+}
+
+.routeImageExportGrid{
+display:flex;
+gap:10px;
+align-items:flex-start;
+overflow:visible;
+padding-bottom:0;
+}
+
+.routeImageExportHeaders .stage-header{
+position:relative;
+top:auto;
+}
+
+body.theme-dark .routeImageExportSurface{
+background:linear-gradient(180deg, rgba(2,6,23,0.98), rgba(15,23,42,0.98));
+box-shadow:0 18px 40px rgba(0,0,0,0.42);
+color:#e2e8f0;
+}
+
+body.theme-dark .routeImageExportEyebrow{
+background:rgba(148,163,184,0.12);
+color:#cbd5e1;
+}
+
+body.theme-dark .routeImageExportTitle{
+color:#f8fafc;
+}
+
+body.theme-dark .routeImageExportMeta{
+color:#94a3b8;
 }
