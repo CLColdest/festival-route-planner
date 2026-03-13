@@ -1,0 +1,53 @@
+{
+  "KATSEYE": {
+    "spotifyArtistId": "3c0gDdb9lhnHGFtP4prQpn",
+    "aliases": ["Katseye"],
+    "note": "Override manual para distinguir KATSEYE del proyecto chileno Katteyes."
+  },
+  "Katteyes": {
+    "spotifyArtistId": "4kKazhy9tDfOgKSWm5g3F9",
+    "note": "Override manual para la artista chilena."
+  },
+  "School of Rock": {
+    "skip": true,
+    "note": "No usar preview de Spotify; corresponde a proyecto/escuela y no a un artista unico del lineup."
+  },
+  "RØZ": {
+    "spotifyArtistId": "0aULg7LximLNhI6lLzxcXI",
+    "aliases": ["ROZ", "RÓZ"],
+    "note": "Usar el perfil oficial de RØZ."
+  },
+  "Akriila": {
+    "spotifyArtistId": "39hfuTf4PHfnHgIl0QBDGL",
+    "aliases": ["AKRIILA"],
+    "note": "Usar el perfil oficial de AKRIILA."
+  },
+  "Cristobal Briceño y Grupo Crisis": {
+    "spotifyArtistId": "0TE3FlkFJ5OgdyulXv99iX",
+    "displayName": "Cristobal Briceño y Grupo Crisis",
+    "note": "Usar el perfil de Cristobal Briceño."
+  },
+  "Claudio Valenzuela Trio": {
+    "spotifyArtistId": "20XFyUIDpgHen9Lxmx6VhE",
+    "displayName": "Claudio Valenzuela Trio",
+    "note": "Usar el perfil de Claudio Valenzuela."
+  },
+  "2Hollis & Rommulas": {
+    "searchQueries": ["2hollis", "rommulas"],
+    "displayName": "2Hollis & Rommulas",
+    "note": "Combinar top tracks de 2hollis y rommulas."
+  },
+  "Ricky & Mau": {
+    "searchQuery": "Mau y Ricky",
+    "displayName": "Ricky & Mau",
+    "note": "Buscar como Mau y Ricky."
+  },
+  "Wassa Wassa": {
+    "skip": true,
+    "note": "No se encontro un perfil confiable de Spotify para este proyecto."
+  },
+  "¥ØU$UK€ ¥UK1MAT$U": {
+    "skip": true,
+    "note": "No se encontro un perfil oficial confiable en Spotify para este DJ; mejor dejarlo sin preview por ahora."
+  }
+}

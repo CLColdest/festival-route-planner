@@ -1,0 +1,5544 @@
+{
+  "generatedAt": "2026-03-13T02:59:34.764Z",
+  "source": "spotify-search-build-script",
+  "market": "CL",
+  "artists": {
+    "Dracma": {
+      "artistId": "78tD42FJydw9radWozuIta",
+      "artistIds": [
+        "78tD42FJydw9radWozuIta"
+      ],
+      "artistName": "Dracma",
+      "resolvedArtistNames": [
+        "Dracma"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/78tD42FJydw9radWozuIta",
+      "embedUrl": "https://open.spotify.com/embed/track/2LPwCxN5T5rTCU3PTOdMvS",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2LPwCxN5T5rTCU3PTOdMvS",
+          "name": "Chilenada",
+          "url": "https://open.spotify.com/track/2LPwCxN5T5rTCU3PTOdMvS",
+          "embedUrl": "https://open.spotify.com/embed/track/2LPwCxN5T5rTCU3PTOdMvS",
+          "popularity": 23
+        },
+        {
+          "id": "5XFrRCdLSLfbt4dzguCukz",
+          "name": "Hijo de Puta",
+          "url": "https://open.spotify.com/track/5XFrRCdLSLfbt4dzguCukz",
+          "embedUrl": "https://open.spotify.com/embed/track/5XFrRCdLSLfbt4dzguCukz",
+          "popularity": 19
+        },
+        {
+          "id": "2LnJ2jsCrgaZaWofSQGyjl",
+          "name": "Verte Morir",
+          "url": "https://open.spotify.com/track/2LnJ2jsCrgaZaWofSQGyjl",
+          "embedUrl": "https://open.spotify.com/embed/track/2LnJ2jsCrgaZaWofSQGyjl",
+          "popularity": 16
+        },
+        {
+          "id": "2JTTMJG7Ccl4yXykOlRddx",
+          "name": "Pobre Decepcion",
+          "url": "https://open.spotify.com/track/2JTTMJG7Ccl4yXykOlRddx",
+          "embedUrl": "https://open.spotify.com/embed/track/2JTTMJG7Ccl4yXykOlRddx",
+          "popularity": 11
+        },
+        {
+          "id": "6XpWyq5v617GI4TMWjJgfE",
+          "name": "Como un Animal",
+          "url": "https://open.spotify.com/track/6XpWyq5v617GI4TMWjJgfE",
+          "embedUrl": "https://open.spotify.com/embed/track/6XpWyq5v617GI4TMWjJgfE",
+          "popularity": 9
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Dracma"
+        ]
+      }
+    },
+    "The Warning": {
+      "artistId": "2SmW1lFlBJn4IfBzBZDlSh",
+      "artistIds": [
+        "2SmW1lFlBJn4IfBzBZDlSh"
+      ],
+      "artistName": "The Warning",
+      "resolvedArtistNames": [
+        "The Warning"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2SmW1lFlBJn4IfBzBZDlSh",
+      "embedUrl": "https://open.spotify.com/embed/track/7L9Fgs88bbwSOIYGJHOIBs",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7L9Fgs88bbwSOIYGJHOIBs",
+          "name": "Love To Be Loved",
+          "url": "https://open.spotify.com/track/7L9Fgs88bbwSOIYGJHOIBs",
+          "embedUrl": "https://open.spotify.com/embed/track/7L9Fgs88bbwSOIYGJHOIBs",
+          "popularity": 66
+        },
+        {
+          "id": "2xixXiLYi3FsNF0m9vEV2G",
+          "name": "Kerosene",
+          "url": "https://open.spotify.com/track/2xixXiLYi3FsNF0m9vEV2G",
+          "embedUrl": "https://open.spotify.com/embed/track/2xixXiLYi3FsNF0m9vEV2G",
+          "popularity": 62
+        },
+        {
+          "id": "03A89GAR9MPybXei4sZiYh",
+          "name": "Hell You Call A Dream",
+          "url": "https://open.spotify.com/track/03A89GAR9MPybXei4sZiYh",
+          "embedUrl": "https://open.spotify.com/embed/track/03A89GAR9MPybXei4sZiYh",
+          "popularity": 61
+        },
+        {
+          "id": "0JKhtLEsm4Rij2HK6LyLYc",
+          "name": "HURT (feat. The Warning)",
+          "url": "https://open.spotify.com/track/0JKhtLEsm4Rij2HK6LyLYc",
+          "embedUrl": "https://open.spotify.com/embed/track/0JKhtLEsm4Rij2HK6LyLYc",
+          "popularity": 59
+        },
+        {
+          "id": "4GxdRrDz8nV2B51wdaQh5k",
+          "name": "Automatic Sun",
+          "url": "https://open.spotify.com/track/4GxdRrDz8nV2B51wdaQh5k",
+          "embedUrl": "https://open.spotify.com/embed/track/4GxdRrDz8nV2B51wdaQh5k",
+          "popularity": 57
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "The Warning"
+        ]
+      }
+    },
+    "Cleaver": {
+      "artistId": "4cLgRx5l8L5ZwGjUdmGuwG",
+      "artistIds": [
+        "4cLgRx5l8L5ZwGjUdmGuwG"
+      ],
+      "artistName": "Cleaver",
+      "resolvedArtistNames": [
+        "Cleaver"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4cLgRx5l8L5ZwGjUdmGuwG",
+      "embedUrl": "https://open.spotify.com/embed/track/7DauzwLERCEgr8h6mUCEh8",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7DauzwLERCEgr8h6mUCEh8",
+          "name": "Do It Again",
+          "url": "https://open.spotify.com/track/7DauzwLERCEgr8h6mUCEh8",
+          "embedUrl": "https://open.spotify.com/embed/track/7DauzwLERCEgr8h6mUCEh8",
+          "popularity": 13
+        },
+        {
+          "id": "5RMvRbxAP5WYrBB2rhxDLf",
+          "name": "Mirrors",
+          "url": "https://open.spotify.com/track/5RMvRbxAP5WYrBB2rhxDLf",
+          "embedUrl": "https://open.spotify.com/embed/track/5RMvRbxAP5WYrBB2rhxDLf",
+          "popularity": 10
+        },
+        {
+          "id": "1BtxO12s24Tgs95f4FotWD",
+          "name": "Respirar",
+          "url": "https://open.spotify.com/track/1BtxO12s24Tgs95f4FotWD",
+          "embedUrl": "https://open.spotify.com/embed/track/1BtxO12s24Tgs95f4FotWD",
+          "popularity": 6
+        },
+        {
+          "id": "1NnEEIg5lgG9XaOKpEuxxg",
+          "name": "La Señal",
+          "url": "https://open.spotify.com/track/1NnEEIg5lgG9XaOKpEuxxg",
+          "embedUrl": "https://open.spotify.com/embed/track/1NnEEIg5lgG9XaOKpEuxxg",
+          "popularity": 5
+        },
+        {
+          "id": "1vAyleSjNDuASeWjX22qRW",
+          "name": "Hear the Silence",
+          "url": "https://open.spotify.com/track/1vAyleSjNDuASeWjX22qRW",
+          "embedUrl": "https://open.spotify.com/embed/track/1vAyleSjNDuASeWjX22qRW",
+          "popularity": 2
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Cleaver"
+        ]
+      }
+    },
+    "Benja Valencia": {
+      "artistId": "2N4rDzKt2aZK1ksES0YKBP",
+      "artistIds": [
+        "2N4rDzKt2aZK1ksES0YKBP"
+      ],
+      "artistName": "Benja Valencia",
+      "resolvedArtistNames": [
+        "Benja Valencia"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2N4rDzKt2aZK1ksES0YKBP",
+      "embedUrl": "https://open.spotify.com/embed/track/2mh6vP7zo6mDXXKLnpHLPt",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2mh6vP7zo6mDXXKLnpHLPt",
+          "name": "FLAITEERA",
+          "url": "https://open.spotify.com/track/2mh6vP7zo6mDXXKLnpHLPt",
+          "embedUrl": "https://open.spotify.com/embed/track/2mh6vP7zo6mDXXKLnpHLPt",
+          "popularity": 66
+        },
+        {
+          "id": "1k0ryEzj8cit9V5K9nMRpB",
+          "name": "Sentimiento Mágico",
+          "url": "https://open.spotify.com/track/1k0ryEzj8cit9V5K9nMRpB",
+          "embedUrl": "https://open.spotify.com/embed/track/1k0ryEzj8cit9V5K9nMRpB",
+          "popularity": 60
+        },
+        {
+          "id": "00bnHZ6vxzJTMyeqQQUCOV",
+          "name": "VAMOS AL PARTY",
+          "url": "https://open.spotify.com/track/00bnHZ6vxzJTMyeqQQUCOV",
+          "embedUrl": "https://open.spotify.com/embed/track/00bnHZ6vxzJTMyeqQQUCOV",
+          "popularity": 59
+        },
+        {
+          "id": "5cbyN5kR4O6TJqHos33VP5",
+          "name": "TU CON ELLA",
+          "url": "https://open.spotify.com/track/5cbyN5kR4O6TJqHos33VP5",
+          "embedUrl": "https://open.spotify.com/embed/track/5cbyN5kR4O6TJqHos33VP5",
+          "popularity": 56
+        },
+        {
+          "id": "2PYHALhcNIHSfteoCeDm9f",
+          "name": "PARA ESCAPARNOS",
+          "url": "https://open.spotify.com/track/2PYHALhcNIHSfteoCeDm9f",
+          "embedUrl": "https://open.spotify.com/embed/track/2PYHALhcNIHSfteoCeDm9f",
+          "popularity": 51
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Benja Valencia"
+        ]
+      }
+    },
+    "Bad Nerves": {
+      "artistId": "7IPyXY4ZHkuvQY1ny8TnMQ",
+      "artistIds": [
+        "7IPyXY4ZHkuvQY1ny8TnMQ"
+      ],
+      "artistName": "Bad Nerves",
+      "resolvedArtistNames": [
+        "Bad Nerves"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7IPyXY4ZHkuvQY1ny8TnMQ",
+      "embedUrl": "https://open.spotify.com/embed/track/7gjav8NiUUdBrxKTTDHJFk",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7gjav8NiUUdBrxKTTDHJFk",
+          "name": "Can't Be Mine",
+          "url": "https://open.spotify.com/track/7gjav8NiUUdBrxKTTDHJFk",
+          "embedUrl": "https://open.spotify.com/embed/track/7gjav8NiUUdBrxKTTDHJFk",
+          "popularity": 47
+        },
+        {
+          "id": "3AL0jiB2Ix2u6x1MKMNcQv",
+          "name": "Baby Drummer",
+          "url": "https://open.spotify.com/track/3AL0jiB2Ix2u6x1MKMNcQv",
+          "embedUrl": "https://open.spotify.com/embed/track/3AL0jiB2Ix2u6x1MKMNcQv",
+          "popularity": 44
+        },
+        {
+          "id": "4wAthLtaqrQveWGHmMca7i",
+          "name": "Don't Stop",
+          "url": "https://open.spotify.com/track/4wAthLtaqrQveWGHmMca7i",
+          "embedUrl": "https://open.spotify.com/embed/track/4wAthLtaqrQveWGHmMca7i",
+          "popularity": 40
+        },
+        {
+          "id": "2SPSxDbgSbi7reegoHzWgl",
+          "name": "You've Got The Nerve",
+          "url": "https://open.spotify.com/track/2SPSxDbgSbi7reegoHzWgl",
+          "embedUrl": "https://open.spotify.com/embed/track/2SPSxDbgSbi7reegoHzWgl",
+          "popularity": 40
+        },
+        {
+          "id": "54KBry5xQW97V5aTrbLxz2",
+          "name": "Radio Punk",
+          "url": "https://open.spotify.com/track/54KBry5xQW97V5aTrbLxz2",
+          "embedUrl": "https://open.spotify.com/embed/track/54KBry5xQW97V5aTrbLxz2",
+          "popularity": 37
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Bad Nerves"
+        ]
+      }
+    },
+    "Bryartz": {
+      "artistId": "7kvnG7JhX0ycVMVb8SP8EL",
+      "artistIds": [
+        "7kvnG7JhX0ycVMVb8SP8EL"
+      ],
+      "artistName": "Bryartz",
+      "resolvedArtistNames": [
+        "Bryartz"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7kvnG7JhX0ycVMVb8SP8EL",
+      "embedUrl": "https://open.spotify.com/embed/track/4mnpgUTLYMs3XFpqTWxVyA",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4mnpgUTLYMs3XFpqTWxVyA",
+          "name": "Gitana (feat. Bryartz)",
+          "url": "https://open.spotify.com/track/4mnpgUTLYMs3XFpqTWxVyA",
+          "embedUrl": "https://open.spotify.com/embed/track/4mnpgUTLYMs3XFpqTWxVyA",
+          "popularity": 67
+        },
+        {
+          "id": "1bectpQhg99WBgecDJIntY",
+          "name": "Heridas",
+          "url": "https://open.spotify.com/track/1bectpQhg99WBgecDJIntY",
+          "embedUrl": "https://open.spotify.com/embed/track/1bectpQhg99WBgecDJIntY",
+          "popularity": 55
+        },
+        {
+          "id": "3qxjEfFr536FDMcB4Iajmh",
+          "name": "CIEGO SORDO MUDO",
+          "url": "https://open.spotify.com/track/3qxjEfFr536FDMcB4Iajmh",
+          "embedUrl": "https://open.spotify.com/embed/track/3qxjEfFr536FDMcB4Iajmh",
+          "popularity": 55
+        },
+        {
+          "id": "5ENfsrOTWE178OTwgffQT0",
+          "name": "Shang Tsung",
+          "url": "https://open.spotify.com/track/5ENfsrOTWE178OTwgffQT0",
+          "embedUrl": "https://open.spotify.com/embed/track/5ENfsrOTWE178OTwgffQT0",
+          "popularity": 54
+        },
+        {
+          "id": "3JNqf9WtW4ddcOStFNz3rd",
+          "name": "Amor de Favela",
+          "url": "https://open.spotify.com/track/3JNqf9WtW4ddcOStFNz3rd",
+          "embedUrl": "https://open.spotify.com/embed/track/3JNqf9WtW4ddcOStFNz3rd",
+          "popularity": 54
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Bryartz"
+        ]
+      }
+    },
+    "Los Machinga": {
+      "artistId": "7AUkf7x6rk36zjv89WpXnn",
+      "artistIds": [
+        "7AUkf7x6rk36zjv89WpXnn"
+      ],
+      "artistName": "Los Machinga",
+      "resolvedArtistNames": [
+        "Los Machinga"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7AUkf7x6rk36zjv89WpXnn",
+      "embedUrl": "https://open.spotify.com/embed/track/4XWsVwP4sAjTtxApHJZqu0",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4XWsVwP4sAjTtxApHJZqu0",
+          "name": "Deja Tu Celular",
+          "url": "https://open.spotify.com/track/4XWsVwP4sAjTtxApHJZqu0",
+          "embedUrl": "https://open.spotify.com/embed/track/4XWsVwP4sAjTtxApHJZqu0",
+          "popularity": 6
+        },
+        {
+          "id": "57FXl1Nl2VEPZrLk1u9ZiG",
+          "name": "Perros y Gatitos",
+          "url": "https://open.spotify.com/track/57FXl1Nl2VEPZrLk1u9ZiG",
+          "embedUrl": "https://open.spotify.com/embed/track/57FXl1Nl2VEPZrLk1u9ZiG",
+          "popularity": 4
+        },
+        {
+          "id": "45NSFEaylHlfYp7tTBvtZu",
+          "name": "No más bullying",
+          "url": "https://open.spotify.com/track/45NSFEaylHlfYp7tTBvtZu",
+          "embedUrl": "https://open.spotify.com/embed/track/45NSFEaylHlfYp7tTBvtZu",
+          "popularity": 4
+        },
+        {
+          "id": "0IM1C7H2MMe7LAfslQnHRL",
+          "name": "Carboncito",
+          "url": "https://open.spotify.com/track/0IM1C7H2MMe7LAfslQnHRL",
+          "embedUrl": "https://open.spotify.com/embed/track/0IM1C7H2MMe7LAfslQnHRL",
+          "popularity": 2
+        },
+        {
+          "id": "4yNiP5pe95rjlWUP1wOuYe",
+          "name": "Los rockeros de la casa",
+          "url": "https://open.spotify.com/track/4yNiP5pe95rjlWUP1wOuYe",
+          "embedUrl": "https://open.spotify.com/embed/track/4yNiP5pe95rjlWUP1wOuYe",
+          "popularity": 1
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Los Machinga"
+        ]
+      }
+    },
+    "Gepe": {
+      "artistId": "698B8xov1XsOuRHfmh4nlC",
+      "artistIds": [
+        "698B8xov1XsOuRHfmh4nlC"
+      ],
+      "artistName": "Gepe",
+      "resolvedArtistNames": [
+        "REVELATION ARTIST DEVELOPMENT"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/698B8xov1XsOuRHfmh4nlC",
+      "embedUrl": "https://open.spotify.com/embed/track/0hPfQ7ajweRx85RzMgLUjs",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0hPfQ7ajweRx85RzMgLUjs",
+          "name": "REYA HO LEBOHA",
+          "url": "https://open.spotify.com/track/0hPfQ7ajweRx85RzMgLUjs",
+          "embedUrl": "https://open.spotify.com/embed/track/0hPfQ7ajweRx85RzMgLUjs",
+          "popularity": 24
+        },
+        {
+          "id": "4GPsVwNp20KnV5Pb6wZD59",
+          "name": "THOKOZA",
+          "url": "https://open.spotify.com/track/4GPsVwNp20KnV5Pb6wZD59",
+          "embedUrl": "https://open.spotify.com/embed/track/4GPsVwNp20KnV5Pb6wZD59",
+          "popularity": 16
+        },
+        {
+          "id": "3Kym5D5LN28YukPFU2ZAVs",
+          "name": "ITUMELENG",
+          "url": "https://open.spotify.com/track/3Kym5D5LN28YukPFU2ZAVs",
+          "embedUrl": "https://open.spotify.com/embed/track/3Kym5D5LN28YukPFU2ZAVs",
+          "popularity": 15
+        },
+        {
+          "id": "7ilUyRoCxhDsxWt5mR1ejw",
+          "name": "SOZE",
+          "url": "https://open.spotify.com/track/7ilUyRoCxhDsxWt5mR1ejw",
+          "embedUrl": "https://open.spotify.com/embed/track/7ilUyRoCxhDsxWt5mR1ejw",
+          "popularity": 15
+        },
+        {
+          "id": "3o46Bs8F6SIUNfDncpm3rW",
+          "name": "NTATE LERATO LA HAO",
+          "url": "https://open.spotify.com/track/3o46Bs8F6SIUNfDncpm3rW",
+          "embedUrl": "https://open.spotify.com/embed/track/3o46Bs8F6SIUNfDncpm3rW",
+          "popularity": 14
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "fallback"
+        ],
+        "matchedQueries": [
+          "Gepe"
+        ]
+      }
+    },
+    "LANY": {
+      "artistId": "49tQo2QULno7gxHutgccqF",
+      "artistIds": [
+        "49tQo2QULno7gxHutgccqF"
+      ],
+      "artistName": "LANY",
+      "resolvedArtistNames": [
+        "LANY"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/49tQo2QULno7gxHutgccqF",
+      "embedUrl": "https://open.spotify.com/embed/track/6mXdCcFnPKQznj4CmMRmHC",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6mXdCcFnPKQznj4CmMRmHC",
+          "name": "Mean It",
+          "url": "https://open.spotify.com/track/6mXdCcFnPKQznj4CmMRmHC",
+          "embedUrl": "https://open.spotify.com/embed/track/6mXdCcFnPKQznj4CmMRmHC",
+          "popularity": 78
+        },
+        {
+          "id": "1GZnoLPpR9p2CwclsZnOXD",
+          "name": "'Cause You Have To",
+          "url": "https://open.spotify.com/track/1GZnoLPpR9p2CwclsZnOXD",
+          "embedUrl": "https://open.spotify.com/embed/track/1GZnoLPpR9p2CwclsZnOXD",
+          "popularity": 76
+        },
+        {
+          "id": "15ahYSiHAIMxAnujlXVtta",
+          "name": "Super Far",
+          "url": "https://open.spotify.com/track/15ahYSiHAIMxAnujlXVtta",
+          "embedUrl": "https://open.spotify.com/embed/track/15ahYSiHAIMxAnujlXVtta",
+          "popularity": 75
+        },
+        {
+          "id": "0Eqg0CQ7bK3RQIMPw1A7pl",
+          "name": "Malibu Nights",
+          "url": "https://open.spotify.com/track/0Eqg0CQ7bK3RQIMPw1A7pl",
+          "embedUrl": "https://open.spotify.com/embed/track/0Eqg0CQ7bK3RQIMPw1A7pl",
+          "popularity": 74
+        },
+        {
+          "id": "2btKtacOXuMtC9WjcNRvAA",
+          "name": "ILYSB",
+          "url": "https://open.spotify.com/track/2btKtacOXuMtC9WjcNRvAA",
+          "embedUrl": "https://open.spotify.com/embed/track/2btKtacOXuMtC9WjcNRvAA",
+          "popularity": 73
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "LANY"
+        ]
+      }
+    },
+    "Saske": {
+      "artistId": "3i9eOUfw6q0d4MTxIXASZW",
+      "artistIds": [
+        "3i9eOUfw6q0d4MTxIXASZW"
+      ],
+      "artistName": "Saske",
+      "resolvedArtistNames": [
+        "Saske"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3i9eOUfw6q0d4MTxIXASZW",
+      "embedUrl": "https://open.spotify.com/embed/track/2PZuFDO3jh5RHLX6CGEpsW",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2PZuFDO3jh5RHLX6CGEpsW",
+          "name": "True Love",
+          "url": "https://open.spotify.com/track/2PZuFDO3jh5RHLX6CGEpsW",
+          "embedUrl": "https://open.spotify.com/embed/track/2PZuFDO3jh5RHLX6CGEpsW",
+          "popularity": 70
+        },
+        {
+          "id": "6ZqmIiY5QBBs4mkn09yYWx",
+          "name": "Los Odiosos Ocho",
+          "url": "https://open.spotify.com/track/6ZqmIiY5QBBs4mkn09yYWx",
+          "embedUrl": "https://open.spotify.com/embed/track/6ZqmIiY5QBBs4mkn09yYWx",
+          "popularity": 46
+        },
+        {
+          "id": "4AIozhPxvUp7Fm2nBTxzPA",
+          "name": "Bonita Lana",
+          "url": "https://open.spotify.com/track/4AIozhPxvUp7Fm2nBTxzPA",
+          "embedUrl": "https://open.spotify.com/embed/track/4AIozhPxvUp7Fm2nBTxzPA",
+          "popularity": 43
+        },
+        {
+          "id": "2zgND79MRvxnyOEmFiBqVx",
+          "name": "BMW (Be My Woman)",
+          "url": "https://open.spotify.com/track/2zgND79MRvxnyOEmFiBqVx",
+          "embedUrl": "https://open.spotify.com/embed/track/2zgND79MRvxnyOEmFiBqVx",
+          "popularity": 41
+        },
+        {
+          "id": "74K5hg39CWgZrIDmyp3M86",
+          "name": "Sugar Hill",
+          "url": "https://open.spotify.com/track/74K5hg39CWgZrIDmyp3M86",
+          "embedUrl": "https://open.spotify.com/embed/track/74K5hg39CWgZrIDmyp3M86",
+          "popularity": 40
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Saske"
+        ]
+      }
+    },
+    "Consequence of Energy": {
+      "artistId": "4OYTjTP9rTqlopGVokxmzu",
+      "artistIds": [
+        "4OYTjTP9rTqlopGVokxmzu"
+      ],
+      "artistName": "Consequence of Energy",
+      "resolvedArtistNames": [
+        "Consequence of Energy"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4OYTjTP9rTqlopGVokxmzu",
+      "embedUrl": "https://open.spotify.com/embed/track/0TLxPm8GWBlyIJnaD8GEuc",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0TLxPm8GWBlyIJnaD8GEuc",
+          "name": "Into The Void",
+          "url": "https://open.spotify.com/track/0TLxPm8GWBlyIJnaD8GEuc",
+          "embedUrl": "https://open.spotify.com/embed/track/0TLxPm8GWBlyIJnaD8GEuc",
+          "popularity": 45
+        },
+        {
+          "id": "0LPmXCJ3IpIl8KWkFeeSc0",
+          "name": "You Can't Change Me",
+          "url": "https://open.spotify.com/track/0LPmXCJ3IpIl8KWkFeeSc0",
+          "embedUrl": "https://open.spotify.com/embed/track/0LPmXCJ3IpIl8KWkFeeSc0",
+          "popularity": 41
+        },
+        {
+          "id": "6jAIuVMm6cCSunWfGs8qWr",
+          "name": "Naturally Yours",
+          "url": "https://open.spotify.com/track/6jAIuVMm6cCSunWfGs8qWr",
+          "embedUrl": "https://open.spotify.com/embed/track/6jAIuVMm6cCSunWfGs8qWr",
+          "popularity": 35
+        },
+        {
+          "id": "36A5aVqDxuBdeM1uAfP2w0",
+          "name": "Searching for Light",
+          "url": "https://open.spotify.com/track/36A5aVqDxuBdeM1uAfP2w0",
+          "embedUrl": "https://open.spotify.com/embed/track/36A5aVqDxuBdeM1uAfP2w0",
+          "popularity": 33
+        },
+        {
+          "id": "1ZEdB2BGWsbzwU9gcc2JOp",
+          "name": "Cosmic Canoe",
+          "url": "https://open.spotify.com/track/1ZEdB2BGWsbzwU9gcc2JOp",
+          "embedUrl": "https://open.spotify.com/embed/track/1ZEdB2BGWsbzwU9gcc2JOp",
+          "popularity": 30
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Consequence of Energy"
+        ]
+      }
+    },
+    "Despertando las Neuronas": {
+      "artistId": "5LXPkK51v109c50ZaWd90u",
+      "artistIds": [
+        "5LXPkK51v109c50ZaWd90u"
+      ],
+      "artistName": "Despertando las Neuronas",
+      "resolvedArtistNames": [
+        "Despertando Las Neuronas"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5LXPkK51v109c50ZaWd90u",
+      "embedUrl": "https://open.spotify.com/embed/track/2EExAJoEvtok9uObwMlq2m",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2EExAJoEvtok9uObwMlq2m",
+          "name": "Yupi Yai",
+          "url": "https://open.spotify.com/track/2EExAJoEvtok9uObwMlq2m",
+          "embedUrl": "https://open.spotify.com/embed/track/2EExAJoEvtok9uObwMlq2m",
+          "popularity": 41
+        },
+        {
+          "id": "3xTVDDjLSn5KXo7qoVCisn",
+          "name": "Mis deditos",
+          "url": "https://open.spotify.com/track/3xTVDDjLSn5KXo7qoVCisn",
+          "embedUrl": "https://open.spotify.com/embed/track/3xTVDDjLSn5KXo7qoVCisn",
+          "popularity": 35
+        },
+        {
+          "id": "49rmCpVbuIlmHv1E32Ss5r",
+          "name": "Las manitos",
+          "url": "https://open.spotify.com/track/49rmCpVbuIlmHv1E32Ss5r",
+          "embedUrl": "https://open.spotify.com/embed/track/49rmCpVbuIlmHv1E32Ss5r",
+          "popularity": 34
+        },
+        {
+          "id": "1rIaAd9Nl1hQduDFDVpPE7",
+          "name": "Gira La Ronda",
+          "url": "https://open.spotify.com/track/1rIaAd9Nl1hQduDFDVpPE7",
+          "embedUrl": "https://open.spotify.com/embed/track/1rIaAd9Nl1hQduDFDVpPE7",
+          "popularity": 34
+        },
+        {
+          "id": "3h4QcSNoZjIii357vwNYwR",
+          "name": "Perrito Guau Guau",
+          "url": "https://open.spotify.com/track/3h4QcSNoZjIii357vwNYwR",
+          "embedUrl": "https://open.spotify.com/embed/track/3h4QcSNoZjIii357vwNYwR",
+          "popularity": 33
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Despertando las Neuronas"
+        ]
+      }
+    },
+    "Airbag": {
+      "artistId": "1wKDGglKV4FsFS85r2Dmpr",
+      "artistIds": [
+        "1wKDGglKV4FsFS85r2Dmpr"
+      ],
+      "artistName": "Airbag",
+      "resolvedArtistNames": [
+        "Airbag"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/1wKDGglKV4FsFS85r2Dmpr",
+      "embedUrl": "https://open.spotify.com/embed/track/1H7ktqkQx1PIuPfNtqvaBs",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1H7ktqkQx1PIuPfNtqvaBs",
+          "name": "Pensamientos",
+          "url": "https://open.spotify.com/track/1H7ktqkQx1PIuPfNtqvaBs",
+          "embedUrl": "https://open.spotify.com/embed/track/1H7ktqkQx1PIuPfNtqvaBs",
+          "popularity": 73
+        },
+        {
+          "id": "5vHWh24GAsXJ7tnIu8v7UN",
+          "name": "Por Mil Noches",
+          "url": "https://open.spotify.com/track/5vHWh24GAsXJ7tnIu8v7UN",
+          "embedUrl": "https://open.spotify.com/embed/track/5vHWh24GAsXJ7tnIu8v7UN",
+          "popularity": 73
+        },
+        {
+          "id": "1Mqfdem6pgGVoULjSkkcc9",
+          "name": "Cae el Sol",
+          "url": "https://open.spotify.com/track/1Mqfdem6pgGVoULjSkkcc9",
+          "embedUrl": "https://open.spotify.com/embed/track/1Mqfdem6pgGVoULjSkkcc9",
+          "popularity": 69
+        },
+        {
+          "id": "23FJGRug9hlYUIBnrmkIBX",
+          "name": "Cicatrices",
+          "url": "https://open.spotify.com/track/23FJGRug9hlYUIBnrmkIBX",
+          "embedUrl": "https://open.spotify.com/embed/track/23FJGRug9hlYUIBnrmkIBX",
+          "popularity": 69
+        },
+        {
+          "id": "0OcYoSGA1CFGZcCuPLyfhj",
+          "name": "Solo aquí",
+          "url": "https://open.spotify.com/track/0OcYoSGA1CFGZcCuPLyfhj",
+          "embedUrl": "https://open.spotify.com/embed/track/0OcYoSGA1CFGZcCuPLyfhj",
+          "popularity": 67
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Airbag"
+        ]
+      }
+    },
+    "3BallMTY": {
+      "artistId": "1MLs9allBZrajb5Dc4146L",
+      "artistIds": [
+        "1MLs9allBZrajb5Dc4146L"
+      ],
+      "artistName": "3BallMTY",
+      "resolvedArtistNames": [
+        "3BallMTY"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/1MLs9allBZrajb5Dc4146L",
+      "embedUrl": "https://open.spotify.com/embed/track/1G1oltHy7huusOr9eoUUQM",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1G1oltHy7huusOr9eoUUQM",
+          "name": "Inténtalo",
+          "url": "https://open.spotify.com/track/1G1oltHy7huusOr9eoUUQM",
+          "embedUrl": "https://open.spotify.com/embed/track/1G1oltHy7huusOr9eoUUQM",
+          "popularity": 72
+        },
+        {
+          "id": "24nAlqLMtTL6JABTXjVvQs",
+          "name": "Beso Al Aire",
+          "url": "https://open.spotify.com/track/24nAlqLMtTL6JABTXjVvQs",
+          "embedUrl": "https://open.spotify.com/embed/track/24nAlqLMtTL6JABTXjVvQs",
+          "popularity": 71
+        },
+        {
+          "id": "4F68U04RGZXVsv1ys0PWUh",
+          "name": "Miénteme - Erick Rincón Version",
+          "url": "https://open.spotify.com/track/4F68U04RGZXVsv1ys0PWUh",
+          "embedUrl": "https://open.spotify.com/embed/track/4F68U04RGZXVsv1ys0PWUh",
+          "popularity": 54
+        },
+        {
+          "id": "0FVVco67xjAExg5OqlQ1gU",
+          "name": "La Noche Es Tuya",
+          "url": "https://open.spotify.com/track/0FVVco67xjAExg5OqlQ1gU",
+          "embedUrl": "https://open.spotify.com/embed/track/0FVVco67xjAExg5OqlQ1gU",
+          "popularity": 54
+        },
+        {
+          "id": "6iMmqc31zWzTo2CKUVD6Tb",
+          "name": "Baile De Amor",
+          "url": "https://open.spotify.com/track/6iMmqc31zWzTo2CKUVD6Tb",
+          "embedUrl": "https://open.spotify.com/embed/track/6iMmqc31zWzTo2CKUVD6Tb",
+          "popularity": 52
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "3BallMTY"
+        ]
+      }
+    },
+    "Ruel": {
+      "artistId": "5tIkXJTex4JY7cv9mmgAZx",
+      "artistIds": [
+        "5tIkXJTex4JY7cv9mmgAZx"
+      ],
+      "artistName": "Ruel",
+      "resolvedArtistNames": [
+        "Ruelle"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5tIkXJTex4JY7cv9mmgAZx",
+      "embedUrl": "https://open.spotify.com/embed/track/4R8BdwRidxAWaYyFNU00P1",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4R8BdwRidxAWaYyFNU00P1",
+          "name": "War Of Hearts",
+          "url": "https://open.spotify.com/track/4R8BdwRidxAWaYyFNU00P1",
+          "embedUrl": "https://open.spotify.com/embed/track/4R8BdwRidxAWaYyFNU00P1",
+          "popularity": 70
+        },
+        {
+          "id": "1fTzOcw64Xm0AxUsLcRHAZ",
+          "name": "The Other Side",
+          "url": "https://open.spotify.com/track/1fTzOcw64Xm0AxUsLcRHAZ",
+          "embedUrl": "https://open.spotify.com/embed/track/1fTzOcw64Xm0AxUsLcRHAZ",
+          "popularity": 63
+        },
+        {
+          "id": "3CV4lFELdziNM1OnHU8nwz",
+          "name": "I Get to Love You",
+          "url": "https://open.spotify.com/track/3CV4lFELdziNM1OnHU8nwz",
+          "embedUrl": "https://open.spotify.com/embed/track/3CV4lFELdziNM1OnHU8nwz",
+          "popularity": 61
+        },
+        {
+          "id": "0csw1Os1wQgPH0b3jT8wrY",
+          "name": "Game Of Survival",
+          "url": "https://open.spotify.com/track/0csw1Os1wQgPH0b3jT8wrY",
+          "embedUrl": "https://open.spotify.com/embed/track/0csw1Os1wQgPH0b3jT8wrY",
+          "popularity": 59
+        },
+        {
+          "id": "3qeTDINIdJjblabgluS5rK",
+          "name": "Carry You",
+          "url": "https://open.spotify.com/track/3qeTDINIdJjblabgluS5rK",
+          "embedUrl": "https://open.spotify.com/embed/track/3qeTDINIdJjblabgluS5rK",
+          "popularity": 58
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "partial"
+        ],
+        "matchedQueries": [
+          "Ruel"
+        ]
+      }
+    },
+    "Viagra Boys": {
+      "artistId": "2nAKP6etu8wXNnezKXgqgg",
+      "artistIds": [
+        "2nAKP6etu8wXNnezKXgqgg"
+      ],
+      "artistName": "Viagra Boys",
+      "resolvedArtistNames": [
+        "Viagra Boys"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2nAKP6etu8wXNnezKXgqgg",
+      "embedUrl": "https://open.spotify.com/embed/track/5gR6gTGOGsg9zcR7JhvwQz",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5gR6gTGOGsg9zcR7JhvwQz",
+          "name": "Man Made of Meat",
+          "url": "https://open.spotify.com/track/5gR6gTGOGsg9zcR7JhvwQz",
+          "embedUrl": "https://open.spotify.com/embed/track/5gR6gTGOGsg9zcR7JhvwQz",
+          "popularity": 59
+        },
+        {
+          "id": "4GCXxLQnqf6pP6SI7ljbZV",
+          "name": "Uno II",
+          "url": "https://open.spotify.com/track/4GCXxLQnqf6pP6SI7ljbZV",
+          "embedUrl": "https://open.spotify.com/embed/track/4GCXxLQnqf6pP6SI7ljbZV",
+          "popularity": 58
+        },
+        {
+          "id": "2pqoh1jUQoppztoQRRGyKK",
+          "name": "Punk Rock Loser",
+          "url": "https://open.spotify.com/track/2pqoh1jUQoppztoQRRGyKK",
+          "embedUrl": "https://open.spotify.com/embed/track/2pqoh1jUQoppztoQRRGyKK",
+          "popularity": 57
+        },
+        {
+          "id": "7lExkbenXgL24heVOcOXa2",
+          "name": "Pyramid of Health",
+          "url": "https://open.spotify.com/track/7lExkbenXgL24heVOcOXa2",
+          "embedUrl": "https://open.spotify.com/embed/track/7lExkbenXgL24heVOcOXa2",
+          "popularity": 57
+        },
+        {
+          "id": "5aLD8CPaEu3Cj9ZcAqWWA6",
+          "name": "Sports",
+          "url": "https://open.spotify.com/track/5aLD8CPaEu3Cj9ZcAqWWA6",
+          "embedUrl": "https://open.spotify.com/embed/track/5aLD8CPaEu3Cj9ZcAqWWA6",
+          "popularity": 56
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Viagra Boys"
+        ]
+      }
+    },
+    "Six Sex": {
+      "artistId": "29rvPhemBdOLYdLr2xI8dr",
+      "artistIds": [
+        "29rvPhemBdOLYdLr2xI8dr"
+      ],
+      "artistName": "Six Sex",
+      "resolvedArtistNames": [
+        "Six Sex"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/29rvPhemBdOLYdLr2xI8dr",
+      "embedUrl": "https://open.spotify.com/embed/track/67vjKw6LVD5wewFuoC1215",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "67vjKw6LVD5wewFuoC1215",
+          "name": "pasarella 👠",
+          "url": "https://open.spotify.com/track/67vjKw6LVD5wewFuoC1215",
+          "embedUrl": "https://open.spotify.com/embed/track/67vjKw6LVD5wewFuoC1215",
+          "popularity": 57
+        },
+        {
+          "id": "0hrrIKyJYc5BNLOn6zsCE6",
+          "name": "Tócame (feat. Dillom)",
+          "url": "https://open.spotify.com/track/0hrrIKyJYc5BNLOn6zsCE6",
+          "embedUrl": "https://open.spotify.com/embed/track/0hrrIKyJYc5BNLOn6zsCE6",
+          "popularity": 56
+        },
+        {
+          "id": "5jTL6HHZnDvCkjrChTVIGz",
+          "name": "4 noviosS",
+          "url": "https://open.spotify.com/track/5jTL6HHZnDvCkjrChTVIGz",
+          "embedUrl": "https://open.spotify.com/embed/track/5jTL6HHZnDvCkjrChTVIGz",
+          "popularity": 53
+        },
+        {
+          "id": "34SvOGLgayPHz4qtktNqdR",
+          "name": "Bitches like me",
+          "url": "https://open.spotify.com/track/34SvOGLgayPHz4qtktNqdR",
+          "embedUrl": "https://open.spotify.com/embed/track/34SvOGLgayPHz4qtktNqdR",
+          "popularity": 52
+        },
+        {
+          "id": "47AVZ6U30HmixCjSfFQFda",
+          "name": "GIIRLSWORLD",
+          "url": "https://open.spotify.com/track/47AVZ6U30HmixCjSfFQFda",
+          "embedUrl": "https://open.spotify.com/embed/track/47AVZ6U30HmixCjSfFQFda",
+          "popularity": 51
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Six Sex"
+        ]
+      }
+    },
+    "Drink the Sea": {
+      "artistId": "5721sQBf0P65BhnDtHtUSW",
+      "artistIds": [
+        "5721sQBf0P65BhnDtHtUSW"
+      ],
+      "artistName": "Drink the Sea",
+      "resolvedArtistNames": [
+        "Drink The Sea"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5721sQBf0P65BhnDtHtUSW",
+      "embedUrl": "https://open.spotify.com/embed/track/66zJJHQFVcFRzujfhPmse2",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "66zJJHQFVcFRzujfhPmse2",
+          "name": "Outside Again",
+          "url": "https://open.spotify.com/track/66zJJHQFVcFRzujfhPmse2",
+          "embedUrl": "https://open.spotify.com/embed/track/66zJJHQFVcFRzujfhPmse2",
+          "popularity": 35
+        },
+        {
+          "id": "0eGLff83JHDoe3vVF5IuFa",
+          "name": "Shaking For The Snakes",
+          "url": "https://open.spotify.com/track/0eGLff83JHDoe3vVF5IuFa",
+          "embedUrl": "https://open.spotify.com/embed/track/0eGLff83JHDoe3vVF5IuFa",
+          "popularity": 28
+        },
+        {
+          "id": "5vMKhKpRy8az66WZ4mcvOi",
+          "name": "Saturn Calling",
+          "url": "https://open.spotify.com/track/5vMKhKpRy8az66WZ4mcvOi",
+          "embedUrl": "https://open.spotify.com/embed/track/5vMKhKpRy8az66WZ4mcvOi",
+          "popularity": 27
+        },
+        {
+          "id": "0EwUY0erYqTd9YSiuGcUVi",
+          "name": "House Of Flowers",
+          "url": "https://open.spotify.com/track/0EwUY0erYqTd9YSiuGcUVi",
+          "embedUrl": "https://open.spotify.com/embed/track/0EwUY0erYqTd9YSiuGcUVi",
+          "popularity": 25
+        },
+        {
+          "id": "00YtjgvIibFNkSV869cKYX",
+          "name": "The Strangest Season",
+          "url": "https://open.spotify.com/track/00YtjgvIibFNkSV869cKYX",
+          "embedUrl": "https://open.spotify.com/embed/track/00YtjgvIibFNkSV869cKYX",
+          "popularity": 24
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Drink the Sea"
+        ]
+      }
+    },
+    "31 Minutos": {
+      "artistId": "1EgVsKobLzbNgILxx9wrVG",
+      "artistIds": [
+        "1EgVsKobLzbNgILxx9wrVG"
+      ],
+      "artistName": "31 Minutos",
+      "resolvedArtistNames": [
+        "31 Minutos"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/1EgVsKobLzbNgILxx9wrVG",
+      "embedUrl": "https://open.spotify.com/embed/track/7B0MloRXdLY3xoZzpiq4c6",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7B0MloRXdLY3xoZzpiq4c6",
+          "name": "Objeción Denegada",
+          "url": "https://open.spotify.com/track/7B0MloRXdLY3xoZzpiq4c6",
+          "embedUrl": "https://open.spotify.com/embed/track/7B0MloRXdLY3xoZzpiq4c6",
+          "popularity": 59
+        },
+        {
+          "id": "4Qs3OEgzBPGPmRR5QJ0UIs",
+          "name": "Mi Equilibrio Espiritual",
+          "url": "https://open.spotify.com/track/4Qs3OEgzBPGPmRR5QJ0UIs",
+          "embedUrl": "https://open.spotify.com/embed/track/4Qs3OEgzBPGPmRR5QJ0UIs",
+          "popularity": 57
+        },
+        {
+          "id": "3nhnk5hWPvxdCcv69IgMRO",
+          "name": "Bailan Sin Cesar",
+          "url": "https://open.spotify.com/track/3nhnk5hWPvxdCcv69IgMRO",
+          "embedUrl": "https://open.spotify.com/embed/track/3nhnk5hWPvxdCcv69IgMRO",
+          "popularity": 56
+        },
+        {
+          "id": "2aNVklYPur5d2nB7r0BrRo",
+          "name": "Arwrarwrirwrarwro",
+          "url": "https://open.spotify.com/track/2aNVklYPur5d2nB7r0BrRo",
+          "embedUrl": "https://open.spotify.com/embed/track/2aNVklYPur5d2nB7r0BrRo",
+          "popularity": 54
+        },
+        {
+          "id": "4p4VtzwsbnoDDajCWsTC8F",
+          "name": "Doggy Style",
+          "url": "https://open.spotify.com/track/4p4VtzwsbnoDDajCWsTC8F",
+          "embedUrl": "https://open.spotify.com/embed/track/4p4VtzwsbnoDDajCWsTC8F",
+          "popularity": 54
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "31 Minutos"
+        ]
+      }
+    },
+    "Interpol": {
+      "artistId": "3WaJSfKnzc65VDgmj2zU8B",
+      "artistIds": [
+        "3WaJSfKnzc65VDgmj2zU8B"
+      ],
+      "artistName": "Interpol",
+      "resolvedArtistNames": [
+        "Interpol"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B",
+      "embedUrl": "https://open.spotify.com/embed/track/4absiGHMelB8eH976ytjBj",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4absiGHMelB8eH976ytjBj",
+          "name": "Evil",
+          "url": "https://open.spotify.com/track/4absiGHMelB8eH976ytjBj",
+          "embedUrl": "https://open.spotify.com/embed/track/4absiGHMelB8eH976ytjBj",
+          "popularity": 65
+        },
+        {
+          "id": "1ZBqJilDGBVYktvlCEo9jC",
+          "name": "Obstacle 1",
+          "url": "https://open.spotify.com/track/1ZBqJilDGBVYktvlCEo9jC",
+          "embedUrl": "https://open.spotify.com/embed/track/1ZBqJilDGBVYktvlCEo9jC",
+          "popularity": 65
+        },
+        {
+          "id": "2O5UcpKolgLT8l8yAvEmID",
+          "name": "Rest My Chemistry",
+          "url": "https://open.spotify.com/track/2O5UcpKolgLT8l8yAvEmID",
+          "embedUrl": "https://open.spotify.com/embed/track/2O5UcpKolgLT8l8yAvEmID",
+          "popularity": 61
+        },
+        {
+          "id": "2ZgyzFYYOz21b2AhPPkWKF",
+          "name": "Untitled",
+          "url": "https://open.spotify.com/track/2ZgyzFYYOz21b2AhPPkWKF",
+          "embedUrl": "https://open.spotify.com/embed/track/2ZgyzFYYOz21b2AhPPkWKF",
+          "popularity": 60
+        },
+        {
+          "id": "1fBnzFTxI1wqtU0ZR1pxrf",
+          "name": "C'mere",
+          "url": "https://open.spotify.com/track/1fBnzFTxI1wqtU0ZR1pxrf",
+          "embedUrl": "https://open.spotify.com/embed/track/1fBnzFTxI1wqtU0ZR1pxrf",
+          "popularity": 59
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Interpol"
+        ]
+      }
+    },
+    "Horsegiirl": {
+      "artistId": "0auP293abZeTWwMUi3fZw2",
+      "artistIds": [
+        "0auP293abZeTWwMUi3fZw2"
+      ],
+      "artistName": "Horsegiirl",
+      "resolvedArtistNames": [
+        "horsegiirL"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0auP293abZeTWwMUi3fZw2",
+      "embedUrl": "https://open.spotify.com/embed/track/6eWWXpjkeF62wUEkW41cLC",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6eWWXpjkeF62wUEkW41cLC",
+          "name": "Farmcore",
+          "url": "https://open.spotify.com/track/6eWWXpjkeF62wUEkW41cLC",
+          "embedUrl": "https://open.spotify.com/embed/track/6eWWXpjkeF62wUEkW41cLC",
+          "popularity": 62
+        },
+        {
+          "id": "46PRAC9BDGinxWR2Jw6chN",
+          "name": "My Little White Pony",
+          "url": "https://open.spotify.com/track/46PRAC9BDGinxWR2Jw6chN",
+          "embedUrl": "https://open.spotify.com/embed/track/46PRAC9BDGinxWR2Jw6chN",
+          "popularity": 61
+        },
+        {
+          "id": "1bXW9UIZWmXtoSGXJvyyAm",
+          "name": "My Barn My Rules",
+          "url": "https://open.spotify.com/track/1bXW9UIZWmXtoSGXJvyyAm",
+          "embedUrl": "https://open.spotify.com/embed/track/1bXW9UIZWmXtoSGXJvyyAm",
+          "popularity": 58
+        },
+        {
+          "id": "6tf107l5fbVJK19RFKG1zW",
+          "name": "only the best",
+          "url": "https://open.spotify.com/track/6tf107l5fbVJK19RFKG1zW",
+          "embedUrl": "https://open.spotify.com/embed/track/6tf107l5fbVJK19RFKG1zW",
+          "popularity": 57
+        },
+        {
+          "id": "0Rv7Ql0ImNHE4LqZFrMldi",
+          "name": "eat, sleep, slay, 🔁",
+          "url": "https://open.spotify.com/track/0Rv7Ql0ImNHE4LqZFrMldi",
+          "embedUrl": "https://open.spotify.com/embed/track/0Rv7Ql0ImNHE4LqZFrMldi",
+          "popularity": 53
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Horsegiirl"
+        ]
+      }
+    },
+    "Amigo de Artistas": {
+      "artistId": "7j6lJVKmCFlcXtfMDf57gP",
+      "artistIds": [
+        "7j6lJVKmCFlcXtfMDf57gP"
+      ],
+      "artistName": "Amigo de Artistas",
+      "resolvedArtistNames": [
+        "Amigo de Artistas"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7j6lJVKmCFlcXtfMDf57gP",
+      "embedUrl": "https://open.spotify.com/embed/track/4AL4EamHEBKPpdcFRkYdXN",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4AL4EamHEBKPpdcFRkYdXN",
+          "name": "Puñaladas",
+          "url": "https://open.spotify.com/track/4AL4EamHEBKPpdcFRkYdXN",
+          "embedUrl": "https://open.spotify.com/embed/track/4AL4EamHEBKPpdcFRkYdXN",
+          "popularity": 79
+        },
+        {
+          "id": "5udFc94o8893fQQ6NZR1Aj",
+          "name": "Amor Fugaz",
+          "url": "https://open.spotify.com/track/5udFc94o8893fQQ6NZR1Aj",
+          "embedUrl": "https://open.spotify.com/embed/track/5udFc94o8893fQQ6NZR1Aj",
+          "popularity": 64
+        },
+        {
+          "id": "7MdclwUP8MRh92aWSrkjrw",
+          "name": "Boomerang",
+          "url": "https://open.spotify.com/track/7MdclwUP8MRh92aWSrkjrw",
+          "embedUrl": "https://open.spotify.com/embed/track/7MdclwUP8MRh92aWSrkjrw",
+          "popularity": 59
+        },
+        {
+          "id": "2lbrvWs23dqBJqB5srmn1e",
+          "name": "Le Hace Falta un Beso",
+          "url": "https://open.spotify.com/track/2lbrvWs23dqBJqB5srmn1e",
+          "embedUrl": "https://open.spotify.com/embed/track/2lbrvWs23dqBJqB5srmn1e",
+          "popularity": 58
+        },
+        {
+          "id": "1tOuy9q5fhV0rHriEV57mB",
+          "name": "La Mitad",
+          "url": "https://open.spotify.com/track/1tOuy9q5fhV0rHriEV57mB",
+          "embedUrl": "https://open.spotify.com/embed/track/1tOuy9q5fhV0rHriEV57mB",
+          "popularity": 56
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Amigo de Artistas"
+        ]
+      }
+    },
+    "Doechii": {
+      "artistId": "4E2rKHVDssGJm2SCDOMMJB",
+      "artistIds": [
+        "4E2rKHVDssGJm2SCDOMMJB"
+      ],
+      "artistName": "Doechii",
+      "resolvedArtistNames": [
+        "Doechii"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4E2rKHVDssGJm2SCDOMMJB",
+      "embedUrl": "https://open.spotify.com/embed/track/1musbempyJAw5gfSKZHXP9",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1musbempyJAw5gfSKZHXP9",
+          "name": "Anxiety",
+          "url": "https://open.spotify.com/track/1musbempyJAw5gfSKZHXP9",
+          "embedUrl": "https://open.spotify.com/embed/track/1musbempyJAw5gfSKZHXP9",
+          "popularity": 78
+        },
+        {
+          "id": "1eTaznNW4Xxtx9za2SMTXB",
+          "name": "DENIAL IS A RIVER",
+          "url": "https://open.spotify.com/track/1eTaznNW4Xxtx9za2SMTXB",
+          "embedUrl": "https://open.spotify.com/embed/track/1eTaznNW4Xxtx9za2SMTXB",
+          "popularity": 78
+        },
+        {
+          "id": "2igNvPf7RLTZG688Mx8GtU",
+          "name": "girl, get up. (feat. SZA)",
+          "url": "https://open.spotify.com/track/2igNvPf7RLTZG688Mx8GtU",
+          "embedUrl": "https://open.spotify.com/embed/track/2igNvPf7RLTZG688Mx8GtU",
+          "popularity": 78
+        },
+        {
+          "id": "2dKkVF2m160z0RNDN2dddc",
+          "name": "NISSAN ALTIMA",
+          "url": "https://open.spotify.com/track/2dKkVF2m160z0RNDN2dddc",
+          "embedUrl": "https://open.spotify.com/embed/track/2dKkVF2m160z0RNDN2dddc",
+          "popularity": 77
+        },
+        {
+          "id": "4EIFwndJvGpgFjsEbNuYif",
+          "name": "ExtraL (feat. Doechii)",
+          "url": "https://open.spotify.com/track/4EIFwndJvGpgFjsEbNuYif",
+          "embedUrl": "https://open.spotify.com/embed/track/4EIFwndJvGpgFjsEbNuYif",
+          "popularity": 77
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Doechii"
+        ]
+      }
+    },
+    "Men I Trust": {
+      "artistId": "3zmfs9cQwzJl575W1ZYXeT",
+      "artistIds": [
+        "3zmfs9cQwzJl575W1ZYXeT"
+      ],
+      "artistName": "Men I Trust",
+      "resolvedArtistNames": [
+        "Men I Trust"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3zmfs9cQwzJl575W1ZYXeT",
+      "embedUrl": "https://open.spotify.com/embed/track/75IQVo8hqI1iwVZyvkN2VT",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "75IQVo8hqI1iwVZyvkN2VT",
+          "name": "Show Me How",
+          "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT",
+          "embedUrl": "https://open.spotify.com/embed/track/75IQVo8hqI1iwVZyvkN2VT",
+          "popularity": 80
+        },
+        {
+          "id": "6Ijmj8Z0L31hCp5pLZnT5U",
+          "name": "Numb",
+          "url": "https://open.spotify.com/track/6Ijmj8Z0L31hCp5pLZnT5U",
+          "embedUrl": "https://open.spotify.com/embed/track/6Ijmj8Z0L31hCp5pLZnT5U",
+          "popularity": 68
+        },
+        {
+          "id": "62zFcDLa1CjCY9yp6VO4ga",
+          "name": "Lauren",
+          "url": "https://open.spotify.com/track/62zFcDLa1CjCY9yp6VO4ga",
+          "embedUrl": "https://open.spotify.com/embed/track/62zFcDLa1CjCY9yp6VO4ga",
+          "popularity": 66
+        },
+        {
+          "id": "2JKtCvtxP47fOMYi0BjMoY",
+          "name": "Tree Among Shrubs",
+          "url": "https://open.spotify.com/track/2JKtCvtxP47fOMYi0BjMoY",
+          "embedUrl": "https://open.spotify.com/embed/track/2JKtCvtxP47fOMYi0BjMoY",
+          "popularity": 64
+        },
+        {
+          "id": "5QvditjxADt1HMKPgaMjJm",
+          "name": "Seven",
+          "url": "https://open.spotify.com/track/5QvditjxADt1HMKPgaMjJm",
+          "embedUrl": "https://open.spotify.com/embed/track/5QvditjxADt1HMKPgaMjJm",
+          "popularity": 63
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Men I Trust"
+        ]
+      }
+    },
+    "BUNT.": {
+      "artistId": "2CpLIMBoE2ZzyY3ZBCRZ7j",
+      "artistIds": [
+        "2CpLIMBoE2ZzyY3ZBCRZ7j"
+      ],
+      "artistName": "BUNT.",
+      "resolvedArtistNames": [
+        "BUNT."
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j",
+      "embedUrl": "https://open.spotify.com/embed/track/3zPco1u9i9bCjkG5pngR5t",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "3zPco1u9i9bCjkG5pngR5t",
+          "name": "Clouds",
+          "url": "https://open.spotify.com/track/3zPco1u9i9bCjkG5pngR5t",
+          "embedUrl": "https://open.spotify.com/embed/track/3zPco1u9i9bCjkG5pngR5t",
+          "popularity": 76
+        },
+        {
+          "id": "4ml1Eq4wmcdfN0Q6pNEly7",
+          "name": "TRIPPIN",
+          "url": "https://open.spotify.com/track/4ml1Eq4wmcdfN0Q6pNEly7",
+          "embedUrl": "https://open.spotify.com/embed/track/4ml1Eq4wmcdfN0Q6pNEly7",
+          "popularity": 74
+        },
+        {
+          "id": "6M23kyZO0uXfD1pZzsFNQE",
+          "name": "What If You Fly (Sweet Disposition)",
+          "url": "https://open.spotify.com/track/6M23kyZO0uXfD1pZzsFNQE",
+          "embedUrl": "https://open.spotify.com/embed/track/6M23kyZO0uXfD1pZzsFNQE",
+          "popularity": 73
+        },
+        {
+          "id": "7Dh4j5JltkdH159xm77JiF",
+          "name": "Crazy",
+          "url": "https://open.spotify.com/track/7Dh4j5JltkdH159xm77JiF",
+          "embedUrl": "https://open.spotify.com/embed/track/7Dh4j5JltkdH159xm77JiF",
+          "popularity": 72
+        },
+        {
+          "id": "0E3Vtmgzk067KASoo0HwzV",
+          "name": "Opalite - BUNT. Remix",
+          "url": "https://open.spotify.com/track/0E3Vtmgzk067KASoo0HwzV",
+          "embedUrl": "https://open.spotify.com/embed/track/0E3Vtmgzk067KASoo0HwzV",
+          "popularity": 68
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "BUNT."
+        ]
+      }
+    },
+    "Deftones": {
+      "artistId": "6Ghvu1VvMGScGpOUJBAHNH",
+      "artistIds": [
+        "6Ghvu1VvMGScGpOUJBAHNH"
+      ],
+      "artistName": "Deftones",
+      "resolvedArtistNames": [
+        "Deftones"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6Ghvu1VvMGScGpOUJBAHNH",
+      "embedUrl": "https://open.spotify.com/embed/track/51c94ac31swyDQj9B3Lzs3",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "51c94ac31swyDQj9B3Lzs3",
+          "name": "Change (In the House of Flies)",
+          "url": "https://open.spotify.com/track/51c94ac31swyDQj9B3Lzs3",
+          "embedUrl": "https://open.spotify.com/embed/track/51c94ac31swyDQj9B3Lzs3",
+          "popularity": 83
+        },
+        {
+          "id": "1158ckiB5S4cpsdYHDB9IF",
+          "name": "My Own Summer (Shove It)",
+          "url": "https://open.spotify.com/track/1158ckiB5S4cpsdYHDB9IF",
+          "embedUrl": "https://open.spotify.com/embed/track/1158ckiB5S4cpsdYHDB9IF",
+          "popularity": 83
+        },
+        {
+          "id": "1EryAkZ0VHstC6haIxVBiE",
+          "name": "Sextape",
+          "url": "https://open.spotify.com/track/1EryAkZ0VHstC6haIxVBiE",
+          "embedUrl": "https://open.spotify.com/embed/track/1EryAkZ0VHstC6haIxVBiE",
+          "popularity": 81
+        },
+        {
+          "id": "4Uiw0Sl9yskBaC6P4DcdVD",
+          "name": "Be Quiet and Drive (Far Away)",
+          "url": "https://open.spotify.com/track/4Uiw0Sl9yskBaC6P4DcdVD",
+          "embedUrl": "https://open.spotify.com/embed/track/4Uiw0Sl9yskBaC6P4DcdVD",
+          "popularity": 81
+        },
+        {
+          "id": "70L6nHORQsblY813yNqUR3",
+          "name": "Cherry Waves",
+          "url": "https://open.spotify.com/track/70L6nHORQsblY813yNqUR3",
+          "embedUrl": "https://open.spotify.com/embed/track/70L6nHORQsblY813yNqUR3",
+          "popularity": 80
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Deftones"
+        ]
+      }
+    },
+    "The La Planta": {
+      "artistId": "4oZolC0sCwCAKqsNXfRlVS",
+      "artistIds": [
+        "4oZolC0sCwCAKqsNXfRlVS"
+      ],
+      "artistName": "The La Planta",
+      "resolvedArtistNames": [
+        "The La Planta"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4oZolC0sCwCAKqsNXfRlVS",
+      "embedUrl": "https://open.spotify.com/embed/track/0SoBfYjQHvL6cuWHtPUYnq",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0SoBfYjQHvL6cuWHtPUYnq",
+          "name": "Hoy",
+          "url": "https://open.spotify.com/track/0SoBfYjQHvL6cuWHtPUYnq",
+          "embedUrl": "https://open.spotify.com/embed/track/0SoBfYjQHvL6cuWHtPUYnq",
+          "popularity": 71
+        },
+        {
+          "id": "78OOLg1XsVW0QQkfHP2VEV",
+          "name": "Es Mi Culpa - Versión Cumbia",
+          "url": "https://open.spotify.com/track/78OOLg1XsVW0QQkfHP2VEV",
+          "embedUrl": "https://open.spotify.com/embed/track/78OOLg1XsVW0QQkfHP2VEV",
+          "popularity": 68
+        },
+        {
+          "id": "6JAaPxRPeElmUGPqyIkhCS",
+          "name": "FINGI DEMENCIA",
+          "url": "https://open.spotify.com/track/6JAaPxRPeElmUGPqyIkhCS",
+          "embedUrl": "https://open.spotify.com/embed/track/6JAaPxRPeElmUGPqyIkhCS",
+          "popularity": 66
+        },
+        {
+          "id": "39iGn4eAHCC65DJz0aKKJR",
+          "name": "FINGI DEMENCIA - CUARTETO",
+          "url": "https://open.spotify.com/track/39iGn4eAHCC65DJz0aKKJR",
+          "embedUrl": "https://open.spotify.com/embed/track/39iGn4eAHCC65DJz0aKKJR",
+          "popularity": 65
+        },
+        {
+          "id": "06TAmZTU0aV3JodEqAcVt6",
+          "name": "No Me Enseñaste",
+          "url": "https://open.spotify.com/track/06TAmZTU0aV3JodEqAcVt6",
+          "embedUrl": "https://open.spotify.com/embed/track/06TAmZTU0aV3JodEqAcVt6",
+          "popularity": 64
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "The La Planta"
+        ]
+      }
+    },
+    "Ben Böhmer": {
+      "artistId": "5tDjiBYUsTqzd0RkTZxK7u",
+      "artistIds": [
+        "5tDjiBYUsTqzd0RkTZxK7u"
+      ],
+      "artistName": "Ben Böhmer",
+      "resolvedArtistNames": [
+        "Ben Böhmer"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5tDjiBYUsTqzd0RkTZxK7u",
+      "embedUrl": "https://open.spotify.com/embed/track/1MvLmHeLkaNgUScgbUVnWJ",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1MvLmHeLkaNgUScgbUVnWJ",
+          "name": "Breathing",
+          "url": "https://open.spotify.com/track/1MvLmHeLkaNgUScgbUVnWJ",
+          "embedUrl": "https://open.spotify.com/embed/track/1MvLmHeLkaNgUScgbUVnWJ",
+          "popularity": 68
+        },
+        {
+          "id": "1a3u6JpaSEndtkzDyUFOqC",
+          "name": "Weightless (jamesjamesjames Remix)",
+          "url": "https://open.spotify.com/track/1a3u6JpaSEndtkzDyUFOqC",
+          "embedUrl": "https://open.spotify.com/embed/track/1a3u6JpaSEndtkzDyUFOqC",
+          "popularity": 68
+        },
+        {
+          "id": "58ney0bG2Vwecj8QzNGRkV",
+          "name": "Beyond Beliefs",
+          "url": "https://open.spotify.com/track/58ney0bG2Vwecj8QzNGRkV",
+          "embedUrl": "https://open.spotify.com/embed/track/58ney0bG2Vwecj8QzNGRkV",
+          "popularity": 65
+        },
+        {
+          "id": "4XdQO9wxIeIy7eM65A5kk8",
+          "name": "Rust",
+          "url": "https://open.spotify.com/track/4XdQO9wxIeIy7eM65A5kk8",
+          "embedUrl": "https://open.spotify.com/embed/track/4XdQO9wxIeIy7eM65A5kk8",
+          "popularity": 63
+        },
+        {
+          "id": "4F6dlpCLyi8jWWFEjdxCQ0",
+          "name": "Moments - Ben Böhmer & Nils Hoffmann Remix",
+          "url": "https://open.spotify.com/track/4F6dlpCLyi8jWWFEjdxCQ0",
+          "embedUrl": "https://open.spotify.com/embed/track/4F6dlpCLyi8jWWFEjdxCQ0",
+          "popularity": 63
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Ben Böhmer"
+        ]
+      }
+    },
+    "Sabrina Carpenter": {
+      "artistId": "74KM79TiuVKeVCqs8QtB0B",
+      "artistIds": [
+        "74KM79TiuVKeVCqs8QtB0B"
+      ],
+      "artistName": "Sabrina Carpenter",
+      "resolvedArtistNames": [
+        "Sabrina Carpenter"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B",
+      "embedUrl": "https://open.spotify.com/embed/track/2BwO5K8Q7EPAJSGze3AAh9",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2BwO5K8Q7EPAJSGze3AAh9",
+          "name": "Manchild",
+          "url": "https://open.spotify.com/track/2BwO5K8Q7EPAJSGze3AAh9",
+          "embedUrl": "https://open.spotify.com/embed/track/2BwO5K8Q7EPAJSGze3AAh9",
+          "popularity": 89
+        },
+        {
+          "id": "42VUCXerQ5qTr4Qp6PhKo4",
+          "name": "Tears",
+          "url": "https://open.spotify.com/track/42VUCXerQ5qTr4Qp6PhKo4",
+          "embedUrl": "https://open.spotify.com/embed/track/42VUCXerQ5qTr4Qp6PhKo4",
+          "popularity": 87
+        },
+        {
+          "id": "0je57Uq5eTk1wrPzn9sWbl",
+          "name": "When Did You Get Hot?",
+          "url": "https://open.spotify.com/track/0je57Uq5eTk1wrPzn9sWbl",
+          "embedUrl": "https://open.spotify.com/embed/track/0je57Uq5eTk1wrPzn9sWbl",
+          "popularity": 87
+        },
+        {
+          "id": "2HRqTpkrJO5ggZyyK6NPWz",
+          "name": "Espresso",
+          "url": "https://open.spotify.com/track/2HRqTpkrJO5ggZyyK6NPWz",
+          "embedUrl": "https://open.spotify.com/embed/track/2HRqTpkrJO5ggZyyK6NPWz",
+          "popularity": 87
+        },
+        {
+          "id": "5G2f63n7IPVPPjfNIGih7Q",
+          "name": "Taste",
+          "url": "https://open.spotify.com/track/5G2f63n7IPVPPjfNIGih7Q",
+          "embedUrl": "https://open.spotify.com/embed/track/5G2f63n7IPVPPjfNIGih7Q",
+          "popularity": 86
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Sabrina Carpenter"
+        ]
+      }
+    },
+    "Tom Morello": {
+      "artistId": "74NBPbyyftqJ4SpDZ4c1Ed",
+      "artistIds": [
+        "74NBPbyyftqJ4SpDZ4c1Ed"
+      ],
+      "artistName": "Tom Morello",
+      "resolvedArtistNames": [
+        "Tom Morello"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/74NBPbyyftqJ4SpDZ4c1Ed",
+      "embedUrl": "https://open.spotify.com/embed/track/44Xyja7xYPlVC6v2CeweSi",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "44Xyja7xYPlVC6v2CeweSi",
+          "name": "GOSSIP (feat. Tom Morello)",
+          "url": "https://open.spotify.com/track/44Xyja7xYPlVC6v2CeweSi",
+          "embedUrl": "https://open.spotify.com/embed/track/44Xyja7xYPlVC6v2CeweSi",
+          "popularity": 75
+        },
+        {
+          "id": "37ozVDmL5b6NNVWFYgAlkz",
+          "name": "Come Play (from the series Arcane League of Legends)",
+          "url": "https://open.spotify.com/track/37ozVDmL5b6NNVWFYgAlkz",
+          "embedUrl": "https://open.spotify.com/embed/track/37ozVDmL5b6NNVWFYgAlkz",
+          "popularity": 69
+        },
+        {
+          "id": "4m4MMljoJx4illTnaWRHbG",
+          "name": "Everything Burns (feat. Beartooth)",
+          "url": "https://open.spotify.com/track/4m4MMljoJx4illTnaWRHbG",
+          "embedUrl": "https://open.spotify.com/embed/track/4m4MMljoJx4illTnaWRHbG",
+          "popularity": 62
+        },
+        {
+          "id": "0lEHnMNNYusZtbon9XyA2W",
+          "name": "Pacific Rim (feat. Tom Morello)",
+          "url": "https://open.spotify.com/track/0lEHnMNNYusZtbon9XyA2W",
+          "embedUrl": "https://open.spotify.com/embed/track/0lEHnMNNYusZtbon9XyA2W",
+          "popularity": 59
+        },
+        {
+          "id": "5BHmpctr03bnKN8SeNUNXU",
+          "name": "METALI!!",
+          "url": "https://open.spotify.com/track/5BHmpctr03bnKN8SeNUNXU",
+          "embedUrl": "https://open.spotify.com/embed/track/5BHmpctr03bnKN8SeNUNXU",
+          "popularity": 58
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Tom Morello"
+        ]
+      }
+    },
+    "Gondwana": {
+      "artistId": "4nSgEvZncnC5oNPVrtwnLd",
+      "artistIds": [
+        "4nSgEvZncnC5oNPVrtwnLd"
+      ],
+      "artistName": "Gondwana",
+      "resolvedArtistNames": [
+        "Gondwana"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4nSgEvZncnC5oNPVrtwnLd",
+      "embedUrl": "https://open.spotify.com/embed/track/2dz5G8cubIlwFN6SJtj0rg",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2dz5G8cubIlwFN6SJtj0rg",
+          "name": "Sentimiento Original",
+          "url": "https://open.spotify.com/track/2dz5G8cubIlwFN6SJtj0rg",
+          "embedUrl": "https://open.spotify.com/embed/track/2dz5G8cubIlwFN6SJtj0rg",
+          "popularity": 65
+        },
+        {
+          "id": "3TilMZ5wdTBPrDYPNY9Kc8",
+          "name": "Felicidad",
+          "url": "https://open.spotify.com/track/3TilMZ5wdTBPrDYPNY9Kc8",
+          "embedUrl": "https://open.spotify.com/embed/track/3TilMZ5wdTBPrDYPNY9Kc8",
+          "popularity": 62
+        },
+        {
+          "id": "6YjkpZPWoDnY2Xbvf9lSWn",
+          "name": "Dime",
+          "url": "https://open.spotify.com/track/6YjkpZPWoDnY2Xbvf9lSWn",
+          "embedUrl": "https://open.spotify.com/embed/track/6YjkpZPWoDnY2Xbvf9lSWn",
+          "popularity": 62
+        },
+        {
+          "id": "51LZ2XHdETvNLQ6SKqTjWF",
+          "name": "Antonia",
+          "url": "https://open.spotify.com/track/51LZ2XHdETvNLQ6SKqTjWF",
+          "embedUrl": "https://open.spotify.com/embed/track/51LZ2XHdETvNLQ6SKqTjWF",
+          "popularity": 61
+        },
+        {
+          "id": "2CfWRsmVFEIJA3t5HBMvry",
+          "name": "Armonia De Amor",
+          "url": "https://open.spotify.com/track/2CfWRsmVFEIJA3t5HBMvry",
+          "embedUrl": "https://open.spotify.com/embed/track/2CfWRsmVFEIJA3t5HBMvry",
+          "popularity": 61
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Gondwana"
+        ]
+      }
+    },
+    "Kygo": {
+      "artistId": "23fqKkggKUBHNkbKtXEls4",
+      "artistIds": [
+        "23fqKkggKUBHNkbKtXEls4"
+      ],
+      "artistName": "Kygo",
+      "resolvedArtistNames": [
+        "Kygo"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4",
+      "embedUrl": "https://open.spotify.com/embed/track/1I8tHoNBFTuoJAlh4hfVVE",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1I8tHoNBFTuoJAlh4hfVVE",
+          "name": "Firestone",
+          "url": "https://open.spotify.com/track/1I8tHoNBFTuoJAlh4hfVVE",
+          "embedUrl": "https://open.spotify.com/embed/track/1I8tHoNBFTuoJAlh4hfVVE",
+          "popularity": 79
+        },
+        {
+          "id": "3eR23VReFzcdmS7TYCrhCe",
+          "name": "It Ain't Me (with Selena Gomez)",
+          "url": "https://open.spotify.com/track/3eR23VReFzcdmS7TYCrhCe",
+          "embedUrl": "https://open.spotify.com/embed/track/3eR23VReFzcdmS7TYCrhCe",
+          "popularity": 79
+        },
+        {
+          "id": "5masKPHeAOVNgxdLebIcK7",
+          "name": "Stole the Show",
+          "url": "https://open.spotify.com/track/5masKPHeAOVNgxdLebIcK7",
+          "embedUrl": "https://open.spotify.com/embed/track/5masKPHeAOVNgxdLebIcK7",
+          "popularity": 78
+        },
+        {
+          "id": "5ObyGDxNWH0Uuuk3NvC5r8",
+          "name": "Save My Love",
+          "url": "https://open.spotify.com/track/5ObyGDxNWH0Uuuk3NvC5r8",
+          "embedUrl": "https://open.spotify.com/embed/track/5ObyGDxNWH0Uuuk3NvC5r8",
+          "popularity": 78
+        },
+        {
+          "id": "0LMwmV37RCmBO2so0szAFs",
+          "name": "Whatever",
+          "url": "https://open.spotify.com/track/0LMwmV37RCmBO2so0szAFs",
+          "embedUrl": "https://open.spotify.com/embed/track/0LMwmV37RCmBO2so0szAFs",
+          "popularity": 74
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Kygo"
+        ]
+      }
+    },
+    "Young Cister": {
+      "artistId": "0Yg29FX1M4ayqjXs0ttZFq",
+      "artistIds": [
+        "0Yg29FX1M4ayqjXs0ttZFq"
+      ],
+      "artistName": "Young Cister",
+      "resolvedArtistNames": [
+        "Young Cister"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0Yg29FX1M4ayqjXs0ttZFq",
+      "embedUrl": "https://open.spotify.com/embed/track/2mdrVnxEnPR6iFijakkxQS",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2mdrVnxEnPR6iFijakkxQS",
+          "name": "QLOO*",
+          "url": "https://open.spotify.com/track/2mdrVnxEnPR6iFijakkxQS",
+          "embedUrl": "https://open.spotify.com/embed/track/2mdrVnxEnPR6iFijakkxQS",
+          "popularity": 82
+        },
+        {
+          "id": "5osSgKDiyrzhLjsEABO6c9",
+          "name": "miau",
+          "url": "https://open.spotify.com/track/5osSgKDiyrzhLjsEABO6c9",
+          "embedUrl": "https://open.spotify.com/embed/track/5osSgKDiyrzhLjsEABO6c9",
+          "popularity": 76
+        },
+        {
+          "id": "4Br7zuCL1Jetik8COatafL",
+          "name": "Enrolar - Fantastic Four Remix",
+          "url": "https://open.spotify.com/track/4Br7zuCL1Jetik8COatafL",
+          "embedUrl": "https://open.spotify.com/embed/track/4Br7zuCL1Jetik8COatafL",
+          "popularity": 61
+        },
+        {
+          "id": "4YQieyZIxrHaDiAPQosmoP",
+          "name": "Te Quiero Ver (feat. Polimá Westcoast y Young Cister)",
+          "url": "https://open.spotify.com/track/4YQieyZIxrHaDiAPQosmoP",
+          "embedUrl": "https://open.spotify.com/embed/track/4YQieyZIxrHaDiAPQosmoP",
+          "popularity": 57
+        },
+        {
+          "id": "3HSVuIkPGY4rdtifvEU3xz",
+          "name": "Casi Amor De Verano",
+          "url": "https://open.spotify.com/track/3HSVuIkPGY4rdtifvEU3xz",
+          "embedUrl": "https://open.spotify.com/embed/track/3HSVuIkPGY4rdtifvEU3xz",
+          "popularity": 56
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Young Cister"
+        ]
+      }
+    },
+    "Astronautiko": {
+      "artistId": "4jtlM7KkUGZi5N3DWFZLbw",
+      "artistIds": [
+        "4jtlM7KkUGZi5N3DWFZLbw"
+      ],
+      "artistName": "Astronautiko",
+      "resolvedArtistNames": [
+        "Astronautiko"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4jtlM7KkUGZi5N3DWFZLbw",
+      "embedUrl": "https://open.spotify.com/embed/track/1Jn46nlw3HGA75rOVU1va1",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1Jn46nlw3HGA75rOVU1va1",
+          "name": "Ay Mami! (feat. Pablo Rojas, DJ Acres)",
+          "url": "https://open.spotify.com/track/1Jn46nlw3HGA75rOVU1va1",
+          "embedUrl": "https://open.spotify.com/embed/track/1Jn46nlw3HGA75rOVU1va1",
+          "popularity": 41
+        },
+        {
+          "id": "0OSyCXWYDIegNGYLkIKWs3",
+          "name": "Resistiendo",
+          "url": "https://open.spotify.com/track/0OSyCXWYDIegNGYLkIKWs3",
+          "embedUrl": "https://open.spotify.com/embed/track/0OSyCXWYDIegNGYLkIKWs3",
+          "popularity": 38
+        },
+        {
+          "id": "2b0dMGQzhjxIztMhdUjXCC",
+          "name": "Bajo la Luna",
+          "url": "https://open.spotify.com/track/2b0dMGQzhjxIztMhdUjXCC",
+          "embedUrl": "https://open.spotify.com/embed/track/2b0dMGQzhjxIztMhdUjXCC",
+          "popularity": 35
+        },
+        {
+          "id": "2mc2ge4ySG4SqwvQP0aBJJ",
+          "name": "Cielo de Amor",
+          "url": "https://open.spotify.com/track/2mc2ge4ySG4SqwvQP0aBJJ",
+          "embedUrl": "https://open.spotify.com/embed/track/2mc2ge4ySG4SqwvQP0aBJJ",
+          "popularity": 34
+        },
+        {
+          "id": "742vplNWXNrQ9CRxcdn4Rs",
+          "name": "Sensaciones sin tu Cuerpo",
+          "url": "https://open.spotify.com/track/742vplNWXNrQ9CRxcdn4Rs",
+          "embedUrl": "https://open.spotify.com/embed/track/742vplNWXNrQ9CRxcdn4Rs",
+          "popularity": 34
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Astronautiko"
+        ]
+      }
+    },
+    "Zaturno": {
+      "artistId": "6P8YjImNhI3N6nrCEEhISo",
+      "artistIds": [
+        "6P8YjImNhI3N6nrCEEhISo"
+      ],
+      "artistName": "Zaturno",
+      "resolvedArtistNames": [
+        "Zaturno"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6P8YjImNhI3N6nrCEEhISo",
+      "embedUrl": "https://open.spotify.com/embed/track/65z7xtsWdhLQzzfZuH18vB",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "65z7xtsWdhLQzzfZuH18vB",
+          "name": "2001",
+          "url": "https://open.spotify.com/track/65z7xtsWdhLQzzfZuH18vB",
+          "embedUrl": "https://open.spotify.com/embed/track/65z7xtsWdhLQzzfZuH18vB",
+          "popularity": 40
+        },
+        {
+          "id": "2lV26RFb50WPLTUSfXQzyX",
+          "name": "Asi Soy Yo",
+          "url": "https://open.spotify.com/track/2lV26RFb50WPLTUSfXQzyX",
+          "embedUrl": "https://open.spotify.com/embed/track/2lV26RFb50WPLTUSfXQzyX",
+          "popularity": 39
+        },
+        {
+          "id": "3Xe35y3Y9b0QPlCec8xR6g",
+          "name": "Lautaro",
+          "url": "https://open.spotify.com/track/3Xe35y3Y9b0QPlCec8xR6g",
+          "embedUrl": "https://open.spotify.com/embed/track/3Xe35y3Y9b0QPlCec8xR6g",
+          "popularity": 34
+        },
+        {
+          "id": "6PHhI2piIAqhfJuo33TWRm",
+          "name": "Letales (feat. Zaturno)",
+          "url": "https://open.spotify.com/track/6PHhI2piIAqhfJuo33TWRm",
+          "embedUrl": "https://open.spotify.com/embed/track/6PHhI2piIAqhfJuo33TWRm",
+          "popularity": 29
+        },
+        {
+          "id": "4T9xJeI5xd5JoUQdpsxOK0",
+          "name": "Nadie Nos Para (feat. Sole & Ras Daniel)",
+          "url": "https://open.spotify.com/track/4T9xJeI5xd5JoUQdpsxOK0",
+          "embedUrl": "https://open.spotify.com/embed/track/4T9xJeI5xd5JoUQdpsxOK0",
+          "popularity": 24
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Zaturno"
+        ]
+      }
+    },
+    "Mano de Obra": {
+      "artistId": "2jFS33AH9rchb1ChcKbiLx",
+      "artistIds": [
+        "2jFS33AH9rchb1ChcKbiLx"
+      ],
+      "artistName": "Mano de Obra",
+      "resolvedArtistNames": [
+        "Mano de Obra"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2jFS33AH9rchb1ChcKbiLx",
+      "embedUrl": "https://open.spotify.com/embed/track/6tfNarUMWszzDYAw22Wy1u",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6tfNarUMWszzDYAw22Wy1u",
+          "name": "No sirve sin dolor",
+          "url": "https://open.spotify.com/track/6tfNarUMWszzDYAw22Wy1u",
+          "embedUrl": "https://open.spotify.com/embed/track/6tfNarUMWszzDYAw22Wy1u",
+          "popularity": 20
+        },
+        {
+          "id": "4x5zpOxOXAtZmJn1SlKRBX",
+          "name": "Fulgor",
+          "url": "https://open.spotify.com/track/4x5zpOxOXAtZmJn1SlKRBX",
+          "embedUrl": "https://open.spotify.com/embed/track/4x5zpOxOXAtZmJn1SlKRBX",
+          "popularity": 19
+        },
+        {
+          "id": "5BmmtcIgHaUbwl72xmYNAW",
+          "name": "Vienen Por Mí",
+          "url": "https://open.spotify.com/track/5BmmtcIgHaUbwl72xmYNAW",
+          "embedUrl": "https://open.spotify.com/embed/track/5BmmtcIgHaUbwl72xmYNAW",
+          "popularity": 18
+        },
+        {
+          "id": "2I5fQN8jDKrjzmoEYdFDSG",
+          "name": "Q.L.C.R",
+          "url": "https://open.spotify.com/track/2I5fQN8jDKrjzmoEYdFDSG",
+          "embedUrl": "https://open.spotify.com/embed/track/2I5fQN8jDKrjzmoEYdFDSG",
+          "popularity": 18
+        },
+        {
+          "id": "4QdASLZlTg1phTSdAxBSVi",
+          "name": "Salud Mental",
+          "url": "https://open.spotify.com/track/4QdASLZlTg1phTSdAxBSVi",
+          "embedUrl": "https://open.spotify.com/embed/track/4QdASLZlTg1phTSdAxBSVi",
+          "popularity": 16
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Mano de Obra"
+        ]
+      }
+    },
+    "Bruno Borlone": {
+      "artistId": "3tDix7cw0fgoa5idDGJ6Wo",
+      "artistIds": [
+        "3tDix7cw0fgoa5idDGJ6Wo"
+      ],
+      "artistName": "Bruno Borlone",
+      "resolvedArtistNames": [
+        "Bruno Borlone"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3tDix7cw0fgoa5idDGJ6Wo",
+      "embedUrl": "https://open.spotify.com/embed/track/6tS8RDCI7IcC8tf2BvR6np",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6tS8RDCI7IcC8tf2BvR6np",
+          "name": "Blanco Bootleg",
+          "url": "https://open.spotify.com/track/6tS8RDCI7IcC8tf2BvR6np",
+          "embedUrl": "https://open.spotify.com/embed/track/6tS8RDCI7IcC8tf2BvR6np",
+          "popularity": 53
+        },
+        {
+          "id": "2mC6lJoMRzrLLN4EpzqARh",
+          "name": "Rebota Bootleg",
+          "url": "https://open.spotify.com/track/2mC6lJoMRzrLLN4EpzqARh",
+          "embedUrl": "https://open.spotify.com/embed/track/2mC6lJoMRzrLLN4EpzqARh",
+          "popularity": 47
+        },
+        {
+          "id": "6EyXPqvVbPs3rpJjBllazU",
+          "name": "Mil Horas",
+          "url": "https://open.spotify.com/track/6EyXPqvVbPs3rpJjBllazU",
+          "embedUrl": "https://open.spotify.com/embed/track/6EyXPqvVbPs3rpJjBllazU",
+          "popularity": 46
+        },
+        {
+          "id": "03YaNIeu84mvOFX731aImv",
+          "name": "Chica Eléctrica",
+          "url": "https://open.spotify.com/track/03YaNIeu84mvOFX731aImv",
+          "embedUrl": "https://open.spotify.com/embed/track/03YaNIeu84mvOFX731aImv",
+          "popularity": 46
+        },
+        {
+          "id": "36iqfblHSthmUfGd6BUFFh",
+          "name": "Chica De Humo Get Funky",
+          "url": "https://open.spotify.com/track/36iqfblHSthmUfGd6BUFFh",
+          "embedUrl": "https://open.spotify.com/embed/track/36iqfblHSthmUfGd6BUFFh",
+          "popularity": 43
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Bruno Borlone"
+        ]
+      }
+    },
+    "Fonosida": {
+      "artistId": "6HXJR7OM92v2ncgjL8gVkX",
+      "artistIds": [
+        "6HXJR7OM92v2ncgjL8gVkX"
+      ],
+      "artistName": "Fonosida",
+      "resolvedArtistNames": [
+        "Fonosida"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6HXJR7OM92v2ncgjL8gVkX",
+      "embedUrl": "https://open.spotify.com/embed/track/5mnrgUk1MWF29fdw8EXHag",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5mnrgUk1MWF29fdw8EXHag",
+          "name": "Findesemana",
+          "url": "https://open.spotify.com/track/5mnrgUk1MWF29fdw8EXHag",
+          "embedUrl": "https://open.spotify.com/embed/track/5mnrgUk1MWF29fdw8EXHag",
+          "popularity": 22
+        },
+        {
+          "id": "6t1wAQN7LLY2qu2UMNAIzq",
+          "name": "Hagamos Como Si Nada de Esto Hubiera Pasado (Emm Ok)",
+          "url": "https://open.spotify.com/track/6t1wAQN7LLY2qu2UMNAIzq",
+          "embedUrl": "https://open.spotify.com/embed/track/6t1wAQN7LLY2qu2UMNAIzq",
+          "popularity": 21
+        },
+        {
+          "id": "3rduiwRpYP2TshDgemfLRb",
+          "name": "Islas",
+          "url": "https://open.spotify.com/track/3rduiwRpYP2TshDgemfLRb",
+          "embedUrl": "https://open.spotify.com/embed/track/3rduiwRpYP2TshDgemfLRb",
+          "popularity": 17
+        },
+        {
+          "id": "5PL1SaEHcnb50LJ7itQgNO",
+          "name": "Grana",
+          "url": "https://open.spotify.com/track/5PL1SaEHcnb50LJ7itQgNO",
+          "embedUrl": "https://open.spotify.com/embed/track/5PL1SaEHcnb50LJ7itQgNO",
+          "popularity": 17
+        },
+        {
+          "id": "7hBVJ3V5r6xgOxVCYyIwfN",
+          "name": "Laberinto",
+          "url": "https://open.spotify.com/track/7hBVJ3V5r6xgOxVCYyIwfN",
+          "embedUrl": "https://open.spotify.com/embed/track/7hBVJ3V5r6xgOxVCYyIwfN",
+          "popularity": 15
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Fonosida"
+        ]
+      }
+    },
+    "Yami Safdie": {
+      "artistId": "4RWJOoYwgF978LOn8Fainp",
+      "artistIds": [
+        "4RWJOoYwgF978LOn8Fainp"
+      ],
+      "artistName": "Yami Safdie",
+      "resolvedArtistNames": [
+        "Yami Safdie"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4RWJOoYwgF978LOn8Fainp",
+      "embedUrl": "https://open.spotify.com/embed/track/7FwSZyO5ynlN0OJGVOjE6k",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7FwSZyO5ynlN0OJGVOjE6k",
+          "name": "El Bolero",
+          "url": "https://open.spotify.com/track/7FwSZyO5ynlN0OJGVOjE6k",
+          "embedUrl": "https://open.spotify.com/embed/track/7FwSZyO5ynlN0OJGVOjE6k",
+          "popularity": 74
+        },
+        {
+          "id": "6QCTo3BaEdkEp0BbbNCVIt",
+          "name": "CARENCIAS DE CORDURA",
+          "url": "https://open.spotify.com/track/6QCTo3BaEdkEp0BbbNCVIt",
+          "embedUrl": "https://open.spotify.com/embed/track/6QCTo3BaEdkEp0BbbNCVIt",
+          "popularity": 72
+        },
+        {
+          "id": "0EhmTBq33eARyOz3SIi4P2",
+          "name": "En Otra Vida",
+          "url": "https://open.spotify.com/track/0EhmTBq33eARyOz3SIi4P2",
+          "embedUrl": "https://open.spotify.com/embed/track/0EhmTBq33eARyOz3SIi4P2",
+          "popularity": 69
+        },
+        {
+          "id": "7GDeMqjePrVZ9O6d3HqKZU",
+          "name": "En Otra Vida - Con Carin Leon",
+          "url": "https://open.spotify.com/track/7GDeMqjePrVZ9O6d3HqKZU",
+          "embedUrl": "https://open.spotify.com/embed/track/7GDeMqjePrVZ9O6d3HqKZU",
+          "popularity": 67
+        },
+        {
+          "id": "1dXfyBNV1Dv6Qj73bCtdrk",
+          "name": "Querida Yo",
+          "url": "https://open.spotify.com/track/1dXfyBNV1Dv6Qj73bCtdrk",
+          "embedUrl": "https://open.spotify.com/embed/track/1dXfyBNV1Dv6Qj73bCtdrk",
+          "popularity": 65
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Yami Safdie"
+        ]
+      }
+    },
+    "Marlon Breeze": {
+      "artistId": "6WI2aStGYkbt0vslpKmDkV",
+      "artistIds": [
+        "6WI2aStGYkbt0vslpKmDkV"
+      ],
+      "artistName": "Marlon Breeze",
+      "resolvedArtistNames": [
+        "Marlon Breeze"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6WI2aStGYkbt0vslpKmDkV",
+      "embedUrl": "https://open.spotify.com/embed/track/6CsjaVd1dCHb0wNIyTi1A9",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6CsjaVd1dCHb0wNIyTi1A9",
+          "name": "Pal Casino",
+          "url": "https://open.spotify.com/track/6CsjaVd1dCHb0wNIyTi1A9",
+          "embedUrl": "https://open.spotify.com/embed/track/6CsjaVd1dCHb0wNIyTi1A9",
+          "popularity": 38
+        },
+        {
+          "id": "5APME1cOjUU6MBho8btm5N",
+          "name": "Shisholina",
+          "url": "https://open.spotify.com/track/5APME1cOjUU6MBho8btm5N",
+          "embedUrl": "https://open.spotify.com/embed/track/5APME1cOjUU6MBho8btm5N",
+          "popularity": 37
+        },
+        {
+          "id": "5raZp0HTbACN3NOibjU90L",
+          "name": "Fetty",
+          "url": "https://open.spotify.com/track/5raZp0HTbACN3NOibjU90L",
+          "embedUrl": "https://open.spotify.com/embed/track/5raZp0HTbACN3NOibjU90L",
+          "popularity": 34
+        },
+        {
+          "id": "1AfxEynQJ3dBvKc1HIeWu1",
+          "name": "Co Shina",
+          "url": "https://open.spotify.com/track/1AfxEynQJ3dBvKc1HIeWu1",
+          "embedUrl": "https://open.spotify.com/embed/track/1AfxEynQJ3dBvKc1HIeWu1",
+          "popularity": 34
+        },
+        {
+          "id": "1gQOjkOFEo5e2hSbnxQTAh",
+          "name": "De mecha en el meche",
+          "url": "https://open.spotify.com/track/1gQOjkOFEo5e2hSbnxQTAh",
+          "embedUrl": "https://open.spotify.com/embed/track/1gQOjkOFEo5e2hSbnxQTAh",
+          "popularity": 34
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Marlon Breeze"
+        ]
+      }
+    },
+    "Como Asesinar a Felipes": {
+      "artistId": "17WostYl0Ep0nyJmA0m2ds",
+      "artistIds": [
+        "17WostYl0Ep0nyJmA0m2ds"
+      ],
+      "artistName": "Como Asesinar a Felipes",
+      "resolvedArtistNames": [
+        "Como Asesinar a Felipes"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/17WostYl0Ep0nyJmA0m2ds",
+      "embedUrl": "https://open.spotify.com/embed/track/2rQ1hRyX8ecKw3UTxB0H5a",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2rQ1hRyX8ecKw3UTxB0H5a",
+          "name": "La puerta no se abre sola",
+          "url": "https://open.spotify.com/track/2rQ1hRyX8ecKw3UTxB0H5a",
+          "embedUrl": "https://open.spotify.com/embed/track/2rQ1hRyX8ecKw3UTxB0H5a",
+          "popularity": 24
+        },
+        {
+          "id": "7Jgtb0B5RAJp6POpYDXkvs",
+          "name": "Disparan (Fill the skies)",
+          "url": "https://open.spotify.com/track/7Jgtb0B5RAJp6POpYDXkvs",
+          "embedUrl": "https://open.spotify.com/embed/track/7Jgtb0B5RAJp6POpYDXkvs",
+          "popularity": 24
+        },
+        {
+          "id": "2R0p96ZTDMrxo3I8wCCIhA",
+          "name": "Canción de una canción",
+          "url": "https://open.spotify.com/track/2R0p96ZTDMrxo3I8wCCIhA",
+          "embedUrl": "https://open.spotify.com/embed/track/2R0p96ZTDMrxo3I8wCCIhA",
+          "popularity": 23
+        },
+        {
+          "id": "0es1VDJicwzY0CROn0775g",
+          "name": "Días oscuros",
+          "url": "https://open.spotify.com/track/0es1VDJicwzY0CROn0775g",
+          "embedUrl": "https://open.spotify.com/embed/track/0es1VDJicwzY0CROn0775g",
+          "popularity": 21
+        },
+        {
+          "id": "6nSjKpZWRHwtQWlWnrkg1J",
+          "name": "Nunca será lo mismo",
+          "url": "https://open.spotify.com/track/6nSjKpZWRHwtQWlWnrkg1J",
+          "embedUrl": "https://open.spotify.com/embed/track/6nSjKpZWRHwtQWlWnrkg1J",
+          "popularity": 20
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Como Asesinar a Felipes"
+        ]
+      }
+    },
+    "Candelabro": {
+      "artistId": "1vcHRdox9r4UWUTWLHZ7Au",
+      "artistIds": [
+        "1vcHRdox9r4UWUTWLHZ7Au"
+      ],
+      "artistName": "Candelabro",
+      "resolvedArtistNames": [
+        "Candelabro"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/1vcHRdox9r4UWUTWLHZ7Au",
+      "embedUrl": "https://open.spotify.com/embed/track/6iYgiPa4uDxf9W8gxXT4vs",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6iYgiPa4uDxf9W8gxXT4vs",
+          "name": "Domingo de ramos",
+          "url": "https://open.spotify.com/track/6iYgiPa4uDxf9W8gxXT4vs",
+          "embedUrl": "https://open.spotify.com/embed/track/6iYgiPa4uDxf9W8gxXT4vs",
+          "popularity": 46
+        },
+        {
+          "id": "75g0k5RFQ9W8lSEhs7AbtP",
+          "name": "Prisión de carne",
+          "url": "https://open.spotify.com/track/75g0k5RFQ9W8lSEhs7AbtP",
+          "embedUrl": "https://open.spotify.com/embed/track/75g0k5RFQ9W8lSEhs7AbtP",
+          "popularity": 43
+        },
+        {
+          "id": "4wN2VAf6myh17BjzPnVTao",
+          "name": "Fracaso",
+          "url": "https://open.spotify.com/track/4wN2VAf6myh17BjzPnVTao",
+          "embedUrl": "https://open.spotify.com/embed/track/4wN2VAf6myh17BjzPnVTao",
+          "popularity": 42
+        },
+        {
+          "id": "0MGyiCJpysQBgVvWMHJQEJ",
+          "name": "Pecado",
+          "url": "https://open.spotify.com/track/0MGyiCJpysQBgVvWMHJQEJ",
+          "embedUrl": "https://open.spotify.com/embed/track/0MGyiCJpysQBgVvWMHJQEJ",
+          "popularity": 42
+        },
+        {
+          "id": "1DAclfOT7ZRtQiqwkEViFw",
+          "name": "Tumba",
+          "url": "https://open.spotify.com/track/1DAclfOT7ZRtQiqwkEViFw",
+          "embedUrl": "https://open.spotify.com/embed/track/1DAclfOT7ZRtQiqwkEViFw",
+          "popularity": 41
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Candelabro"
+        ]
+      }
+    },
+    "De Saloon": {
+      "artistId": "04Z3mRXKnp5PmZcJ8QCULt",
+      "artistIds": [
+        "04Z3mRXKnp5PmZcJ8QCULt"
+      ],
+      "artistName": "De Saloon",
+      "resolvedArtistNames": [
+        "De Saloon"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/04Z3mRXKnp5PmZcJ8QCULt",
+      "embedUrl": "https://open.spotify.com/embed/track/5YSm9SGD4e1MPgsmsQfSdf",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5YSm9SGD4e1MPgsmsQfSdf",
+          "name": "Nuestra señal",
+          "url": "https://open.spotify.com/track/5YSm9SGD4e1MPgsmsQfSdf",
+          "embedUrl": "https://open.spotify.com/embed/track/5YSm9SGD4e1MPgsmsQfSdf",
+          "popularity": 54
+        },
+        {
+          "id": "595j1iKJMeLn3pKXyfzYQ1",
+          "name": "Te Mueres",
+          "url": "https://open.spotify.com/track/595j1iKJMeLn3pKXyfzYQ1",
+          "embedUrl": "https://open.spotify.com/embed/track/595j1iKJMeLn3pKXyfzYQ1",
+          "popularity": 50
+        },
+        {
+          "id": "1WLo5jBtnCE9xinKT0LRQ1",
+          "name": "Déjalo",
+          "url": "https://open.spotify.com/track/1WLo5jBtnCE9xinKT0LRQ1",
+          "embedUrl": "https://open.spotify.com/embed/track/1WLo5jBtnCE9xinKT0LRQ1",
+          "popularity": 46
+        },
+        {
+          "id": "2fCFggomlQ7weCcg4UyTSq",
+          "name": "Té",
+          "url": "https://open.spotify.com/track/2fCFggomlQ7weCcg4UyTSq",
+          "embedUrl": "https://open.spotify.com/embed/track/2fCFggomlQ7weCcg4UyTSq",
+          "popularity": 46
+        },
+        {
+          "id": "3H7Esis6J2CY9pqa7VpKkd",
+          "name": "Me Vuelves a Herir",
+          "url": "https://open.spotify.com/track/3H7Esis6J2CY9pqa7VpKkd",
+          "embedUrl": "https://open.spotify.com/embed/track/3H7Esis6J2CY9pqa7VpKkd",
+          "popularity": 45
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "De Saloon"
+        ]
+      }
+    },
+    "Aura Bae": {
+      "artistId": "7jIywNxfjSZ2Dxm6OOzQPF",
+      "artistIds": [
+        "7jIywNxfjSZ2Dxm6OOzQPF"
+      ],
+      "artistName": "Aura Bae",
+      "resolvedArtistNames": [
+        "Aura BAE"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7jIywNxfjSZ2Dxm6OOzQPF",
+      "embedUrl": "https://open.spotify.com/embed/track/35ltCRmHTsUVQsaIVhzuHi",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "35ltCRmHTsUVQsaIVhzuHi",
+          "name": "La Estrella",
+          "url": "https://open.spotify.com/track/35ltCRmHTsUVQsaIVhzuHi",
+          "embedUrl": "https://open.spotify.com/embed/track/35ltCRmHTsUVQsaIVhzuHi",
+          "popularity": 39
+        },
+        {
+          "id": "2YfZe1Eicnm2JbHHjRvd8n",
+          "name": "777",
+          "url": "https://open.spotify.com/track/2YfZe1Eicnm2JbHHjRvd8n",
+          "embedUrl": "https://open.spotify.com/embed/track/2YfZe1Eicnm2JbHHjRvd8n",
+          "popularity": 38
+        },
+        {
+          "id": "5KLkoMoPTDGGZh6Fg9JL8f",
+          "name": "Palomita",
+          "url": "https://open.spotify.com/track/5KLkoMoPTDGGZh6Fg9JL8f",
+          "embedUrl": "https://open.spotify.com/embed/track/5KLkoMoPTDGGZh6Fg9JL8f",
+          "popularity": 34
+        },
+        {
+          "id": "1YbEsG9hNjUljJBXd9briS",
+          "name": "Chillin",
+          "url": "https://open.spotify.com/track/1YbEsG9hNjUljJBXd9briS",
+          "embedUrl": "https://open.spotify.com/embed/track/1YbEsG9hNjUljJBXd9briS",
+          "popularity": 33
+        },
+        {
+          "id": "348hkzsDDBKrBDOMc5b1Qf",
+          "name": "Fly",
+          "url": "https://open.spotify.com/track/348hkzsDDBKrBDOMc5b1Qf",
+          "embedUrl": "https://open.spotify.com/embed/track/348hkzsDDBKrBDOMc5b1Qf",
+          "popularity": 33
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Aura Bae"
+        ]
+      }
+    },
+    "Chicarica": {
+      "artistId": "6FCUGgR9Bf7zx8q7Sog9dN",
+      "artistIds": [
+        "6FCUGgR9Bf7zx8q7Sog9dN"
+      ],
+      "artistName": "Chicarica",
+      "resolvedArtistNames": [
+        "chicarica"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6FCUGgR9Bf7zx8q7Sog9dN",
+      "embedUrl": "https://open.spotify.com/embed/track/7sEL5sHo0sid41Kb3Iv4WK",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7sEL5sHo0sid41Kb3Iv4WK",
+          "name": "Saico",
+          "url": "https://open.spotify.com/track/7sEL5sHo0sid41Kb3Iv4WK",
+          "embedUrl": "https://open.spotify.com/embed/track/7sEL5sHo0sid41Kb3Iv4WK",
+          "popularity": 32
+        },
+        {
+          "id": "6pzKIxbePOgnaCNkbkXp0b",
+          "name": "ay tentación",
+          "url": "https://open.spotify.com/track/6pzKIxbePOgnaCNkbkXp0b",
+          "embedUrl": "https://open.spotify.com/embed/track/6pzKIxbePOgnaCNkbkXp0b",
+          "popularity": 31
+        },
+        {
+          "id": "3ZLWi0nfji2ZeiVmWEzGbd",
+          "name": "Wepa",
+          "url": "https://open.spotify.com/track/3ZLWi0nfji2ZeiVmWEzGbd",
+          "embedUrl": "https://open.spotify.com/embed/track/3ZLWi0nfji2ZeiVmWEzGbd",
+          "popularity": 31
+        },
+        {
+          "id": "3l8qlWHZf1Nrh8pqmYLdjA",
+          "name": "Santiago",
+          "url": "https://open.spotify.com/track/3l8qlWHZf1Nrh8pqmYLdjA",
+          "embedUrl": "https://open.spotify.com/embed/track/3l8qlWHZf1Nrh8pqmYLdjA",
+          "popularity": 29
+        },
+        {
+          "id": "6GclajlxxpiIXjVEnHTbLx",
+          "name": "Visita guiada",
+          "url": "https://open.spotify.com/track/6GclajlxxpiIXjVEnHTbLx",
+          "embedUrl": "https://open.spotify.com/embed/track/6GclajlxxpiIXjVEnHTbLx",
+          "popularity": 27
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Chicarica"
+        ]
+      }
+    },
+    "Royel Otis": {
+      "artistId": "5b5bt4mZQpJMoCRbiQ7diH",
+      "artistIds": [
+        "5b5bt4mZQpJMoCRbiQ7diH"
+      ],
+      "artistName": "Royel Otis",
+      "resolvedArtistNames": [
+        "Royel Otis"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5b5bt4mZQpJMoCRbiQ7diH",
+      "embedUrl": "https://open.spotify.com/embed/track/2dono2Koz7DEvGwxUsmMLq",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2dono2Koz7DEvGwxUsmMLq",
+          "name": "Linger - SiriusXM Session",
+          "url": "https://open.spotify.com/track/2dono2Koz7DEvGwxUsmMLq",
+          "embedUrl": "https://open.spotify.com/embed/track/2dono2Koz7DEvGwxUsmMLq",
+          "popularity": 76
+        },
+        {
+          "id": "2B664ulJSVBd6B8SAY3Wux",
+          "name": "Oysters In My Pocket",
+          "url": "https://open.spotify.com/track/2B664ulJSVBd6B8SAY3Wux",
+          "embedUrl": "https://open.spotify.com/embed/track/2B664ulJSVBd6B8SAY3Wux",
+          "popularity": 75
+        },
+        {
+          "id": "2TugrDKkd55mfVOMVZsfO8",
+          "name": "who’s your boyfriend",
+          "url": "https://open.spotify.com/track/2TugrDKkd55mfVOMVZsfO8",
+          "embedUrl": "https://open.spotify.com/embed/track/2TugrDKkd55mfVOMVZsfO8",
+          "popularity": 71
+        },
+        {
+          "id": "6J9VkPveNBXDC7ybLPOrLJ",
+          "name": "car",
+          "url": "https://open.spotify.com/track/6J9VkPveNBXDC7ybLPOrLJ",
+          "embedUrl": "https://open.spotify.com/embed/track/6J9VkPveNBXDC7ybLPOrLJ",
+          "popularity": 70
+        },
+        {
+          "id": "2HKDVLcHYBD8asWWttLU3W",
+          "name": "Kool Aid",
+          "url": "https://open.spotify.com/track/2HKDVLcHYBD8asWWttLU3W",
+          "embedUrl": "https://open.spotify.com/embed/track/2HKDVLcHYBD8asWWttLU3W",
+          "popularity": 70
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Royel Otis"
+        ]
+      }
+    },
+    "Katteyes": {
+      "artistId": "4kKazhy9tDfOgKSWm5g3F9",
+      "artistIds": [
+        "4kKazhy9tDfOgKSWm5g3F9"
+      ],
+      "artistName": "Katteyes",
+      "resolvedArtistNames": [
+        "Katteyes"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4kKazhy9tDfOgKSWm5g3F9",
+      "embedUrl": "https://open.spotify.com/embed/track/47aX1tXPTBpAG8Y2iAYmiy",
+      "note": "Override manual para la artista chilena.",
+      "tracks": [
+        {
+          "id": "47aX1tXPTBpAG8Y2iAYmiy",
+          "name": "TODO KE VER",
+          "url": "https://open.spotify.com/track/47aX1tXPTBpAG8Y2iAYmiy",
+          "embedUrl": "https://open.spotify.com/embed/track/47aX1tXPTBpAG8Y2iAYmiy",
+          "popularity": 81
+        },
+        {
+          "id": "2KpDYs0MexRXVAqNoHhJwk",
+          "name": "ALO",
+          "url": "https://open.spotify.com/track/2KpDYs0MexRXVAqNoHhJwk",
+          "embedUrl": "https://open.spotify.com/embed/track/2KpDYs0MexRXVAqNoHhJwk",
+          "popularity": 77
+        },
+        {
+          "id": "5wPTk2TCDDuQRfqkZukWnk",
+          "name": "Pasajero",
+          "url": "https://open.spotify.com/track/5wPTk2TCDDuQRfqkZukWnk",
+          "embedUrl": "https://open.spotify.com/embed/track/5wPTk2TCDDuQRfqkZukWnk",
+          "popularity": 74
+        },
+        {
+          "id": "0Lahr7sUDdtYnX3n3KobR6",
+          "name": "PONTE LOKITA",
+          "url": "https://open.spotify.com/track/0Lahr7sUDdtYnX3n3KobR6",
+          "embedUrl": "https://open.spotify.com/embed/track/0Lahr7sUDdtYnX3n3KobR6",
+          "popularity": 72
+        },
+        {
+          "id": "2XsNvTXYuCNCoz94bPBrPB",
+          "name": "BAILAME ASI",
+          "url": "https://open.spotify.com/track/2XsNvTXYuCNCoz94bPBrPB",
+          "embedUrl": "https://open.spotify.com/embed/track/2XsNvTXYuCNCoz94bPBrPB",
+          "popularity": 70
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "override-id"
+        ],
+        "matchedQueries": []
+      }
+    },
+    "Djo": {
+      "artistId": "5p9HO3XC5P3BLxJs5Mtrhm",
+      "artistIds": [
+        "5p9HO3XC5P3BLxJs5Mtrhm"
+      ],
+      "artistName": "Djo",
+      "resolvedArtistNames": [
+        "Djo"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5p9HO3XC5P3BLxJs5Mtrhm",
+      "embedUrl": "https://open.spotify.com/embed/track/3qhlB30KknSejmIvZZLjOD",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "3qhlB30KknSejmIvZZLjOD",
+          "name": "End of Beginning",
+          "url": "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
+          "embedUrl": "https://open.spotify.com/embed/track/3qhlB30KknSejmIvZZLjOD",
+          "popularity": 98
+        },
+        {
+          "id": "7tFI5cqfAoR7MIvmbw1qd8",
+          "name": "Delete Ya",
+          "url": "https://open.spotify.com/track/7tFI5cqfAoR7MIvmbw1qd8",
+          "embedUrl": "https://open.spotify.com/embed/track/7tFI5cqfAoR7MIvmbw1qd8",
+          "popularity": 81
+        },
+        {
+          "id": "2jjwQENSoGnYbQEK4acuC6",
+          "name": "Basic Being Basic",
+          "url": "https://open.spotify.com/track/2jjwQENSoGnYbQEK4acuC6",
+          "embedUrl": "https://open.spotify.com/embed/track/2jjwQENSoGnYbQEK4acuC6",
+          "popularity": 78
+        },
+        {
+          "id": "4kPfzkWY23WgM902kNAQLn",
+          "name": "Charlie's Garden",
+          "url": "https://open.spotify.com/track/4kPfzkWY23WgM902kNAQLn",
+          "embedUrl": "https://open.spotify.com/embed/track/4kPfzkWY23WgM902kNAQLn",
+          "popularity": 75
+        },
+        {
+          "id": "3vjs2MDHoF9xhylNg6Y9un",
+          "name": "Chateau (Feel Alright)",
+          "url": "https://open.spotify.com/track/3vjs2MDHoF9xhylNg6Y9un",
+          "embedUrl": "https://open.spotify.com/embed/track/3vjs2MDHoF9xhylNg6Y9un",
+          "popularity": 73
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Djo"
+        ]
+      }
+    },
+    "Judeline": {
+      "artistId": "1H6X7yhnXZg73f9bssaj1Q",
+      "artistIds": [
+        "1H6X7yhnXZg73f9bssaj1Q"
+      ],
+      "artistName": "Judeline",
+      "resolvedArtistNames": [
+        "Judeline"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/1H6X7yhnXZg73f9bssaj1Q",
+      "embedUrl": "https://open.spotify.com/embed/track/5Uoni5ULnC7Aq69DsRR10G",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5Uoni5ULnC7Aq69DsRR10G",
+          "name": "si preguntas por mi",
+          "url": "https://open.spotify.com/track/5Uoni5ULnC7Aq69DsRR10G",
+          "embedUrl": "https://open.spotify.com/embed/track/5Uoni5ULnC7Aq69DsRR10G",
+          "popularity": 67
+        },
+        {
+          "id": "5Bng1Bwy7PFQys6qByKmdT",
+          "name": "Heavenly",
+          "url": "https://open.spotify.com/track/5Bng1Bwy7PFQys6qByKmdT",
+          "embedUrl": "https://open.spotify.com/embed/track/5Bng1Bwy7PFQys6qByKmdT",
+          "popularity": 64
+        },
+        {
+          "id": "3QtESLVdHryjd2Lr54180O",
+          "name": "mangata",
+          "url": "https://open.spotify.com/track/3QtESLVdHryjd2Lr54180O",
+          "embedUrl": "https://open.spotify.com/embed/track/3QtESLVdHryjd2Lr54180O",
+          "popularity": 62
+        },
+        {
+          "id": "4q0E9LdUvQdNR2bSm3kkIV",
+          "name": "tiempo pasa",
+          "url": "https://open.spotify.com/track/4q0E9LdUvQdNR2bSm3kkIV",
+          "embedUrl": "https://open.spotify.com/embed/track/4q0E9LdUvQdNR2bSm3kkIV",
+          "popularity": 62
+        },
+        {
+          "id": "0EsMceg5ksKflUYXt2WMne",
+          "name": "TÚ ET MOI",
+          "url": "https://open.spotify.com/track/0EsMceg5ksKflUYXt2WMne",
+          "embedUrl": "https://open.spotify.com/embed/track/0EsMceg5ksKflUYXt2WMne",
+          "popularity": 61
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Judeline"
+        ]
+      }
+    },
+    "Guitarricadelafuente": {
+      "artistId": "0oBiYchunKTMDesVICwrvL",
+      "artistIds": [
+        "0oBiYchunKTMDesVICwrvL"
+      ],
+      "artistName": "Guitarricadelafuente",
+      "resolvedArtistNames": [
+        "Guitarricadelafuente"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0oBiYchunKTMDesVICwrvL",
+      "embedUrl": "https://open.spotify.com/embed/track/45VlOHY7pEd6IC3plYeKZ3",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "45VlOHY7pEd6IC3plYeKZ3",
+          "name": "BABIECA!",
+          "url": "https://open.spotify.com/track/45VlOHY7pEd6IC3plYeKZ3",
+          "embedUrl": "https://open.spotify.com/embed/track/45VlOHY7pEd6IC3plYeKZ3",
+          "popularity": 64
+        },
+        {
+          "id": "721Lxh9pNJJhNERON4Zjmw",
+          "name": "nana triste",
+          "url": "https://open.spotify.com/track/721Lxh9pNJJhNERON4Zjmw",
+          "embedUrl": "https://open.spotify.com/embed/track/721Lxh9pNJJhNERON4Zjmw",
+          "popularity": 64
+        },
+        {
+          "id": "6rlI9zMChJzIv5u0iSBO4l",
+          "name": "Guantanamera",
+          "url": "https://open.spotify.com/track/6rlI9zMChJzIv5u0iSBO4l",
+          "embedUrl": "https://open.spotify.com/embed/track/6rlI9zMChJzIv5u0iSBO4l",
+          "popularity": 62
+        },
+        {
+          "id": "0GqylPxaT9i7pg6Kk0w8tm",
+          "name": "Conticinio",
+          "url": "https://open.spotify.com/track/0GqylPxaT9i7pg6Kk0w8tm",
+          "embedUrl": "https://open.spotify.com/embed/track/0GqylPxaT9i7pg6Kk0w8tm",
+          "popularity": 61
+        },
+        {
+          "id": "5tXoi9LUv2Eniq6h0OHoVN",
+          "name": "Full time papi",
+          "url": "https://open.spotify.com/track/5tXoi9LUv2Eniq6h0OHoVN",
+          "embedUrl": "https://open.spotify.com/embed/track/5tXoi9LUv2Eniq6h0OHoVN",
+          "popularity": 60
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Guitarricadelafuente"
+        ]
+      }
+    },
+    "Katseye": {
+      "artistId": "3c0gDdb9lhnHGFtP4prQpn",
+      "artistIds": [
+        "3c0gDdb9lhnHGFtP4prQpn"
+      ],
+      "artistName": "Katseye",
+      "resolvedArtistNames": [
+        "KATSEYE"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3c0gDdb9lhnHGFtP4prQpn",
+      "embedUrl": "https://open.spotify.com/embed/track/1xOqGUkyxGQRdCvGpvWKmL",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1xOqGUkyxGQRdCvGpvWKmL",
+          "name": "Gabriela",
+          "url": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
+          "embedUrl": "https://open.spotify.com/embed/track/1xOqGUkyxGQRdCvGpvWKmL",
+          "popularity": 91
+        },
+        {
+          "id": "1j15Ar0qGDzIR0v3CQv3JL",
+          "name": "Gnarly",
+          "url": "https://open.spotify.com/track/1j15Ar0qGDzIR0v3CQv3JL",
+          "embedUrl": "https://open.spotify.com/embed/track/1j15Ar0qGDzIR0v3CQv3JL",
+          "popularity": 86
+        },
+        {
+          "id": "3THVfoVD5kdCxPviVaCPi7",
+          "name": "Internet Girl",
+          "url": "https://open.spotify.com/track/3THVfoVD5kdCxPviVaCPi7",
+          "embedUrl": "https://open.spotify.com/embed/track/3THVfoVD5kdCxPviVaCPi7",
+          "popularity": 85
+        },
+        {
+          "id": "6aJn7Cst74cj4lNIiPRgav",
+          "name": "Touch",
+          "url": "https://open.spotify.com/track/6aJn7Cst74cj4lNIiPRgav",
+          "embedUrl": "https://open.spotify.com/embed/track/6aJn7Cst74cj4lNIiPRgav",
+          "popularity": 85
+        },
+        {
+          "id": "58AZXyKRlsMBMcrRjpJpVG",
+          "name": "Debut",
+          "url": "https://open.spotify.com/track/58AZXyKRlsMBMcrRjpJpVG",
+          "embedUrl": "https://open.spotify.com/embed/track/58AZXyKRlsMBMcrRjpJpVG",
+          "popularity": 82
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Katseye"
+        ]
+      }
+    },
+    "Aerobica": {
+      "artistId": "0Vdpq1MzMW6xiHjnrRb0bl",
+      "artistIds": [
+        "0Vdpq1MzMW6xiHjnrRb0bl"
+      ],
+      "artistName": "Aerobica",
+      "resolvedArtistNames": [
+        "Aerobica"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0Vdpq1MzMW6xiHjnrRb0bl",
+      "embedUrl": "https://open.spotify.com/embed/track/6SG64UrZqNk7aXx8p4jj8p",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6SG64UrZqNk7aXx8p4jj8p",
+          "name": "Peligrosa (Version Aerobica)",
+          "url": "https://open.spotify.com/track/6SG64UrZqNk7aXx8p4jj8p",
+          "embedUrl": "https://open.spotify.com/embed/track/6SG64UrZqNk7aXx8p4jj8p",
+          "popularity": 25
+        },
+        {
+          "id": "7jJ2TiLem8XXLVKmOqQG8K",
+          "name": "Party Time (feat. Locomia)",
+          "url": "https://open.spotify.com/track/7jJ2TiLem8XXLVKmOqQG8K",
+          "embedUrl": "https://open.spotify.com/embed/track/7jJ2TiLem8XXLVKmOqQG8K",
+          "popularity": 22
+        },
+        {
+          "id": "6QZcYDUm4fn1UAazeJoNlD",
+          "name": "Papi",
+          "url": "https://open.spotify.com/track/6QZcYDUm4fn1UAazeJoNlD",
+          "embedUrl": "https://open.spotify.com/embed/track/6QZcYDUm4fn1UAazeJoNlD",
+          "popularity": 20
+        },
+        {
+          "id": "7AleHSvryn0JuTH4LzCY5M",
+          "name": "Amor Suave",
+          "url": "https://open.spotify.com/track/7AleHSvryn0JuTH4LzCY5M",
+          "embedUrl": "https://open.spotify.com/embed/track/7AleHSvryn0JuTH4LzCY5M",
+          "popularity": 19
+        },
+        {
+          "id": "1Oa7ClYLEOMdETclFBtQV4",
+          "name": "Corazon",
+          "url": "https://open.spotify.com/track/1Oa7ClYLEOMdETclFBtQV4",
+          "embedUrl": "https://open.spotify.com/embed/track/1Oa7ClYLEOMdETclFBtQV4",
+          "popularity": 19
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Aerobica"
+        ]
+      }
+    },
+    "Turnstile": {
+      "artistId": "2qnpHrOzdmOo1S4ox3j17x",
+      "artistIds": [
+        "2qnpHrOzdmOo1S4ox3j17x"
+      ],
+      "artistName": "Turnstile",
+      "resolvedArtistNames": [
+        "Turnstile"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2qnpHrOzdmOo1S4ox3j17x",
+      "embedUrl": "https://open.spotify.com/embed/track/0kshHISCRGn9MwpkbqafG4",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0kshHISCRGn9MwpkbqafG4",
+          "name": "BIRDS",
+          "url": "https://open.spotify.com/track/0kshHISCRGn9MwpkbqafG4",
+          "embedUrl": "https://open.spotify.com/embed/track/0kshHISCRGn9MwpkbqafG4",
+          "popularity": 66
+        },
+        {
+          "id": "0bGImSqDB2ebdeoCidUC8o",
+          "name": "BLACKOUT",
+          "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
+          "embedUrl": "https://open.spotify.com/embed/track/0bGImSqDB2ebdeoCidUC8o",
+          "popularity": 65
+        },
+        {
+          "id": "7KVIuHxbV5lvBE5Vyiw8FC",
+          "name": "I CARE",
+          "url": "https://open.spotify.com/track/7KVIuHxbV5lvBE5Vyiw8FC",
+          "embedUrl": "https://open.spotify.com/embed/track/7KVIuHxbV5lvBE5Vyiw8FC",
+          "popularity": 65
+        },
+        {
+          "id": "1zoXDi9AY4TF5JoUuCCTL6",
+          "name": "NEVER ENOUGH",
+          "url": "https://open.spotify.com/track/1zoXDi9AY4TF5JoUuCCTL6",
+          "embedUrl": "https://open.spotify.com/embed/track/1zoXDi9AY4TF5JoUuCCTL6",
+          "popularity": 65
+        },
+        {
+          "id": "2Z4nIITCxUoaZvFug5FxtO",
+          "name": "SEEIN’ STARS",
+          "url": "https://open.spotify.com/track/2Z4nIITCxUoaZvFug5FxtO",
+          "embedUrl": "https://open.spotify.com/embed/track/2Z4nIITCxUoaZvFug5FxtO",
+          "popularity": 62
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Turnstile"
+        ]
+      }
+    },
+    "Balu Brigada": {
+      "artistId": "6O9vGMmTwzihULICPCsNf2",
+      "artistIds": [
+        "6O9vGMmTwzihULICPCsNf2"
+      ],
+      "artistName": "Balu Brigada",
+      "resolvedArtistNames": [
+        "Balu Brigada"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6O9vGMmTwzihULICPCsNf2",
+      "embedUrl": "https://open.spotify.com/embed/track/2SGyf0hCuB81F85cHXuRjl",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2SGyf0hCuB81F85cHXuRjl",
+          "name": "So Cold",
+          "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl",
+          "embedUrl": "https://open.spotify.com/embed/track/2SGyf0hCuB81F85cHXuRjl",
+          "popularity": 75
+        },
+        {
+          "id": "7j6PWLaubVavCLE4peea8S",
+          "name": "Backseat",
+          "url": "https://open.spotify.com/track/7j6PWLaubVavCLE4peea8S",
+          "embedUrl": "https://open.spotify.com/embed/track/7j6PWLaubVavCLE4peea8S",
+          "popularity": 73
+        },
+        {
+          "id": "6GCcY6dVDVGxo52OZq9HVW",
+          "name": "Sideways",
+          "url": "https://open.spotify.com/track/6GCcY6dVDVGxo52OZq9HVW",
+          "embedUrl": "https://open.spotify.com/embed/track/6GCcY6dVDVGxo52OZq9HVW",
+          "popularity": 69
+        },
+        {
+          "id": "2GnyD2EllduW0BjmacUSNL",
+          "name": "Designer",
+          "url": "https://open.spotify.com/track/2GnyD2EllduW0BjmacUSNL",
+          "embedUrl": "https://open.spotify.com/embed/track/2GnyD2EllduW0BjmacUSNL",
+          "popularity": 68
+        },
+        {
+          "id": "2d0PxwVAtHR105A1gGoMKZ",
+          "name": "Moon Man",
+          "url": "https://open.spotify.com/track/2d0PxwVAtHR105A1gGoMKZ",
+          "embedUrl": "https://open.spotify.com/embed/track/2d0PxwVAtHR105A1gGoMKZ",
+          "popularity": 65
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Balu Brigada"
+        ]
+      }
+    },
+    "Rubio": {
+      "artistId": "79YjWaAoD88XGLETIsnnQV",
+      "artistIds": [
+        "79YjWaAoD88XGLETIsnnQV"
+      ],
+      "artistName": "Rubio",
+      "resolvedArtistNames": [
+        "Rubio"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/79YjWaAoD88XGLETIsnnQV",
+      "embedUrl": "https://open.spotify.com/embed/track/2mx5praseRrVqrXHve1Vv7",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2mx5praseRrVqrXHve1Vv7",
+          "name": "Hacia el Fondo",
+          "url": "https://open.spotify.com/track/2mx5praseRrVqrXHve1Vv7",
+          "embedUrl": "https://open.spotify.com/embed/track/2mx5praseRrVqrXHve1Vv7",
+          "popularity": 44
+        },
+        {
+          "id": "3kloO0cxNbUHSvC0oTY9Uc",
+          "name": "Mi Chica",
+          "url": "https://open.spotify.com/track/3kloO0cxNbUHSvC0oTY9Uc",
+          "embedUrl": "https://open.spotify.com/embed/track/3kloO0cxNbUHSvC0oTY9Uc",
+          "popularity": 42
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 2,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Rubio"
+        ]
+      }
+    },
+    "Lorde": {
+      "artistId": "163tK9Wjr9P9DmM0AVK7lm",
+      "artistIds": [
+        "163tK9Wjr9P9DmM0AVK7lm"
+      ],
+      "artistName": "Lorde",
+      "resolvedArtistNames": [
+        "Lorde"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm",
+      "embedUrl": "https://open.spotify.com/embed/track/2MvvoeRt8NcOXWESkxWn3g",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2MvvoeRt8NcOXWESkxWn3g",
+          "name": "Ribs",
+          "url": "https://open.spotify.com/track/2MvvoeRt8NcOXWESkxWn3g",
+          "embedUrl": "https://open.spotify.com/embed/track/2MvvoeRt8NcOXWESkxWn3g",
+          "popularity": 83
+        },
+        {
+          "id": "3G6hD9B2ZHOsgf4WfNu7X1",
+          "name": "Team",
+          "url": "https://open.spotify.com/track/3G6hD9B2ZHOsgf4WfNu7X1",
+          "embedUrl": "https://open.spotify.com/embed/track/3G6hD9B2ZHOsgf4WfNu7X1",
+          "popularity": 80
+        },
+        {
+          "id": "2dLLR6qlu5UJ5gk0dKz0h3",
+          "name": "Royals",
+          "url": "https://open.spotify.com/track/2dLLR6qlu5UJ5gk0dKz0h3",
+          "embedUrl": "https://open.spotify.com/embed/track/2dLLR6qlu5UJ5gk0dKz0h3",
+          "popularity": 79
+        },
+        {
+          "id": "51QEyJI5M7uyd8DOh9tqQY",
+          "name": "Buzzcut Season",
+          "url": "https://open.spotify.com/track/51QEyJI5M7uyd8DOh9tqQY",
+          "embedUrl": "https://open.spotify.com/embed/track/51QEyJI5M7uyd8DOh9tqQY",
+          "popularity": 78
+        },
+        {
+          "id": "6K8VQ84MqhsoakN5MjrnVR",
+          "name": "Supercut",
+          "url": "https://open.spotify.com/track/6K8VQ84MqhsoakN5MjrnVR",
+          "embedUrl": "https://open.spotify.com/embed/track/6K8VQ84MqhsoakN5MjrnVR",
+          "popularity": 78
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Lorde"
+        ]
+      }
+    },
+    "Tomo Como Rey": {
+      "artistId": "7DGQ1BwG33jSlcQC6krZLD",
+      "artistIds": [
+        "7DGQ1BwG33jSlcQC6krZLD"
+      ],
+      "artistName": "Tomo Como Rey",
+      "resolvedArtistNames": [
+        "Tomo Como Rey"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7DGQ1BwG33jSlcQC6krZLD",
+      "embedUrl": "https://open.spotify.com/embed/track/6MR6bByxMrbZmdGYTNNnp2",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6MR6bByxMrbZmdGYTNNnp2",
+          "name": "Arriba de la Pelota",
+          "url": "https://open.spotify.com/track/6MR6bByxMrbZmdGYTNNnp2",
+          "embedUrl": "https://open.spotify.com/embed/track/6MR6bByxMrbZmdGYTNNnp2",
+          "popularity": 39
+        },
+        {
+          "id": "0T03Cxd6xVROMyzF1Wjc0q",
+          "name": "Los Que Toman Como Rey",
+          "url": "https://open.spotify.com/track/0T03Cxd6xVROMyzF1Wjc0q",
+          "embedUrl": "https://open.spotify.com/embed/track/0T03Cxd6xVROMyzF1Wjc0q",
+          "popularity": 39
+        },
+        {
+          "id": "3bz9olhWXpz3HlzJYb5isU",
+          "name": "Weón",
+          "url": "https://open.spotify.com/track/3bz9olhWXpz3HlzJYb5isU",
+          "embedUrl": "https://open.spotify.com/embed/track/3bz9olhWXpz3HlzJYb5isU",
+          "popularity": 36
+        },
+        {
+          "id": "1nqofXrGT44XrWINzgcLVl",
+          "name": "Borrachos al Poder",
+          "url": "https://open.spotify.com/track/1nqofXrGT44XrWINzgcLVl",
+          "embedUrl": "https://open.spotify.com/embed/track/1nqofXrGT44XrWINzgcLVl",
+          "popularity": 36
+        },
+        {
+          "id": "6Zy2OUayj4eZha3t5raZgL",
+          "name": "No Tomo Más",
+          "url": "https://open.spotify.com/track/6Zy2OUayj4eZha3t5raZgL",
+          "embedUrl": "https://open.spotify.com/embed/track/6Zy2OUayj4eZha3t5raZgL",
+          "popularity": 32
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Tomo Como Rey"
+        ]
+      }
+    },
+    "Tyler, The Creator": {
+      "artistId": "4V8LLVI7PbaPR0K2TGSxFF",
+      "artistIds": [
+        "4V8LLVI7PbaPR0K2TGSxFF"
+      ],
+      "artistName": "Tyler, The Creator",
+      "resolvedArtistNames": [
+        "Tyler, The Creator"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF",
+      "embedUrl": "https://open.spotify.com/embed/track/7KA4W4McWYRpgf0fWsJZWB",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7KA4W4McWYRpgf0fWsJZWB",
+          "name": "See You Again (feat. Kali Uchis)",
+          "url": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
+          "embedUrl": "https://open.spotify.com/embed/track/7KA4W4McWYRpgf0fWsJZWB",
+          "popularity": 89
+        },
+        {
+          "id": "6jbYpRPTEFl1HFKHk1IC0m",
+          "name": "Like Him (feat. Lola Young)",
+          "url": "https://open.spotify.com/track/6jbYpRPTEFl1HFKHk1IC0m",
+          "embedUrl": "https://open.spotify.com/embed/track/6jbYpRPTEFl1HFKHk1IC0m",
+          "popularity": 84
+        },
+        {
+          "id": "6xV7Be6XEvkSnighmh2Tzj",
+          "name": "Sugar On My Tongue",
+          "url": "https://open.spotify.com/track/6xV7Be6XEvkSnighmh2Tzj",
+          "embedUrl": "https://open.spotify.com/embed/track/6xV7Be6XEvkSnighmh2Tzj",
+          "popularity": 84
+        },
+        {
+          "id": "5TxRUOsGeWeRl3xOML59Ai",
+          "name": "ARE WE STILL FRIENDS?",
+          "url": "https://open.spotify.com/track/5TxRUOsGeWeRl3xOML59Ai",
+          "embedUrl": "https://open.spotify.com/embed/track/5TxRUOsGeWeRl3xOML59Ai",
+          "popularity": 83
+        },
+        {
+          "id": "1otG6j1WHNvl9WgXLWkHTo",
+          "name": "After The Storm (feat. Tyler, The Creator & Bootsy Collins)",
+          "url": "https://open.spotify.com/track/1otG6j1WHNvl9WgXLWkHTo",
+          "embedUrl": "https://open.spotify.com/embed/track/1otG6j1WHNvl9WgXLWkHTo",
+          "popularity": 81
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Tyler, The Creator"
+        ]
+      }
+    },
+    "Orishas": {
+      "artistId": "2gKYxTUOqw9aPt7ljMwSHT",
+      "artistIds": [
+        "2gKYxTUOqw9aPt7ljMwSHT"
+      ],
+      "artistName": "Orishas",
+      "resolvedArtistNames": [
+        "Orishas"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2gKYxTUOqw9aPt7ljMwSHT",
+      "embedUrl": "https://open.spotify.com/embed/track/1ZYq2RVDEht5fuLUomK03I",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1ZYq2RVDEht5fuLUomK03I",
+          "name": "Represent",
+          "url": "https://open.spotify.com/track/1ZYq2RVDEht5fuLUomK03I",
+          "embedUrl": "https://open.spotify.com/embed/track/1ZYq2RVDEht5fuLUomK03I",
+          "popularity": 60
+        },
+        {
+          "id": "0BVYZVB6ITPs5jojmJaNQT",
+          "name": "A Lo Cubano",
+          "url": "https://open.spotify.com/track/0BVYZVB6ITPs5jojmJaNQT",
+          "embedUrl": "https://open.spotify.com/embed/track/0BVYZVB6ITPs5jojmJaNQT",
+          "popularity": 58
+        },
+        {
+          "id": "4iImxqMlF3CeNRwKKua9jn",
+          "name": "537 C U B A",
+          "url": "https://open.spotify.com/track/4iImxqMlF3CeNRwKKua9jn",
+          "embedUrl": "https://open.spotify.com/embed/track/4iImxqMlF3CeNRwKKua9jn",
+          "popularity": 56
+        },
+        {
+          "id": "5GdeEPWOJ66ciNYjDl8bkx",
+          "name": "Mistica",
+          "url": "https://open.spotify.com/track/5GdeEPWOJ66ciNYjDl8bkx",
+          "embedUrl": "https://open.spotify.com/embed/track/5GdeEPWOJ66ciNYjDl8bkx",
+          "popularity": 55
+        },
+        {
+          "id": "7zmDFfSrtSd2JeqBqRqUmV",
+          "name": "Pa'l Norte (feat. Orishas)",
+          "url": "https://open.spotify.com/track/7zmDFfSrtSd2JeqBqRqUmV",
+          "embedUrl": "https://open.spotify.com/embed/track/7zmDFfSrtSd2JeqBqRqUmV",
+          "popularity": 53
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Orishas"
+        ]
+      }
+    },
+    "Peggy Gou": {
+      "artistId": "2mLA48B366zkELXYx7hcDN",
+      "artistIds": [
+        "2mLA48B366zkELXYx7hcDN"
+      ],
+      "artistName": "Peggy Gou",
+      "resolvedArtistNames": [
+        "Peggy Gou"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2mLA48B366zkELXYx7hcDN",
+      "embedUrl": "https://open.spotify.com/embed/track/23RoR84KodL5HWvUTneQ1w",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "23RoR84KodL5HWvUTneQ1w",
+          "name": "(It Goes Like) Nanana - Edit",
+          "url": "https://open.spotify.com/track/23RoR84KodL5HWvUTneQ1w",
+          "embedUrl": "https://open.spotify.com/embed/track/23RoR84KodL5HWvUTneQ1w",
+          "popularity": 75
+        },
+        {
+          "id": "5Hijdt7rmbj9fUJdXEs6Nz",
+          "name": "(It Goes Like) Nanana",
+          "url": "https://open.spotify.com/track/5Hijdt7rmbj9fUJdXEs6Nz",
+          "embedUrl": "https://open.spotify.com/embed/track/5Hijdt7rmbj9fUJdXEs6Nz",
+          "popularity": 66
+        },
+        {
+          "id": "6FwPQVdtjwfORrrFkpGhrz",
+          "name": "Starry Night - Edit",
+          "url": "https://open.spotify.com/track/6FwPQVdtjwfORrrFkpGhrz",
+          "embedUrl": "https://open.spotify.com/embed/track/6FwPQVdtjwfORrrFkpGhrz",
+          "popularity": 62
+        },
+        {
+          "id": "1GZJu6ciZ55S8Kp1s8Z5ex",
+          "name": "It Makes You Forget (Itgehane) - Edit",
+          "url": "https://open.spotify.com/track/1GZJu6ciZ55S8Kp1s8Z5ex",
+          "embedUrl": "https://open.spotify.com/embed/track/1GZJu6ciZ55S8Kp1s8Z5ex",
+          "popularity": 59
+        },
+        {
+          "id": "41JiYRL2Ahnbjy0WRExDge",
+          "name": "like JENNIE - Peggy Gou Remix",
+          "url": "https://open.spotify.com/track/41JiYRL2Ahnbjy0WRExDge",
+          "embedUrl": "https://open.spotify.com/embed/track/41JiYRL2Ahnbjy0WRExDge",
+          "popularity": 58
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Peggy Gou"
+        ]
+      }
+    },
+    "Los Bunkers": {
+      "artistId": "3RTAXX6KGdljBsOIupyZgT",
+      "artistIds": [
+        "3RTAXX6KGdljBsOIupyZgT"
+      ],
+      "artistName": "Los Bunkers",
+      "resolvedArtistNames": [
+        "Los Bunkers"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3RTAXX6KGdljBsOIupyZgT",
+      "embedUrl": "https://open.spotify.com/embed/track/1wGNjZQoO4Ac5zotF3aZTb",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1wGNjZQoO4Ac5zotF3aZTb",
+          "name": "Bailando Solo",
+          "url": "https://open.spotify.com/track/1wGNjZQoO4Ac5zotF3aZTb",
+          "embedUrl": "https://open.spotify.com/embed/track/1wGNjZQoO4Ac5zotF3aZTb",
+          "popularity": 70
+        },
+        {
+          "id": "0chYiddNUMKEj9nGMUVNoB",
+          "name": "Llueve Sobre La Ciudad",
+          "url": "https://open.spotify.com/track/0chYiddNUMKEj9nGMUVNoB",
+          "embedUrl": "https://open.spotify.com/embed/track/0chYiddNUMKEj9nGMUVNoB",
+          "popularity": 70
+        },
+        {
+          "id": "0DgAhXlnF4UKBUvJUG0oJs",
+          "name": "Ven Aquí",
+          "url": "https://open.spotify.com/track/0DgAhXlnF4UKBUvJUG0oJs",
+          "embedUrl": "https://open.spotify.com/embed/track/0DgAhXlnF4UKBUvJUG0oJs",
+          "popularity": 68
+        },
+        {
+          "id": "6hBfF54vgIAdtb5kbbvt75",
+          "name": "Nada Nuevo Bajo El Sol",
+          "url": "https://open.spotify.com/track/6hBfF54vgIAdtb5kbbvt75",
+          "embedUrl": "https://open.spotify.com/embed/track/6hBfF54vgIAdtb5kbbvt75",
+          "popularity": 63
+        },
+        {
+          "id": "51V7uaHOqNn70NHH9tmZpp",
+          "name": "Miéntele",
+          "url": "https://open.spotify.com/track/51V7uaHOqNn70NHH9tmZpp",
+          "embedUrl": "https://open.spotify.com/embed/track/51V7uaHOqNn70NHH9tmZpp",
+          "popularity": 62
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Los Bunkers"
+        ]
+      }
+    },
+    "Los Borne": {
+      "artistId": "63bF3SHyboeLl2gGByoOeD",
+      "artistIds": [
+        "63bF3SHyboeLl2gGByoOeD"
+      ],
+      "artistName": "Los Borne",
+      "resolvedArtistNames": [
+        "Los Borne"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/63bF3SHyboeLl2gGByoOeD",
+      "embedUrl": "https://open.spotify.com/embed/track/6ERmhMqwaUWG6LdmtJAtym",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6ERmhMqwaUWG6LdmtJAtym",
+          "name": "Kind",
+          "url": "https://open.spotify.com/track/6ERmhMqwaUWG6LdmtJAtym",
+          "embedUrl": "https://open.spotify.com/embed/track/6ERmhMqwaUWG6LdmtJAtym",
+          "popularity": 10
+        },
+        {
+          "id": "60t3xSBLHkUiLtaG3xu9p0",
+          "name": "Poor Little Man",
+          "url": "https://open.spotify.com/track/60t3xSBLHkUiLtaG3xu9p0",
+          "embedUrl": "https://open.spotify.com/embed/track/60t3xSBLHkUiLtaG3xu9p0",
+          "popularity": 7
+        },
+        {
+          "id": "5acaxHIGQxx3QvLQ2Trnmg",
+          "name": "Niños",
+          "url": "https://open.spotify.com/track/5acaxHIGQxx3QvLQ2Trnmg",
+          "embedUrl": "https://open.spotify.com/embed/track/5acaxHIGQxx3QvLQ2Trnmg",
+          "popularity": 4
+        },
+        {
+          "id": "3zhbP48aLGRxErQ9nRAYFW",
+          "name": "Walking Shy",
+          "url": "https://open.spotify.com/track/3zhbP48aLGRxErQ9nRAYFW",
+          "embedUrl": "https://open.spotify.com/embed/track/3zhbP48aLGRxErQ9nRAYFW",
+          "popularity": 2
+        },
+        {
+          "id": "4P8abH3RdwGeeup2ZZ923f",
+          "name": "Desaparezco",
+          "url": "https://open.spotify.com/track/4P8abH3RdwGeeup2ZZ923f",
+          "embedUrl": "https://open.spotify.com/embed/track/4P8abH3RdwGeeup2ZZ923f",
+          "popularity": 2
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Los Borne"
+        ]
+      }
+    },
+    "Hesse Kassel": {
+      "artistId": "5H88ECGf9hb6CqElLAKgld",
+      "artistIds": [
+        "5H88ECGf9hb6CqElLAKgld"
+      ],
+      "artistName": "Hesse Kassel",
+      "resolvedArtistNames": [
+        "Hesse Kassel"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5H88ECGf9hb6CqElLAKgld",
+      "embedUrl": "https://open.spotify.com/embed/track/4CpTehJ87nNwGCIJrSybkS",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4CpTehJ87nNwGCIJrSybkS",
+          "name": "Postparto",
+          "url": "https://open.spotify.com/track/4CpTehJ87nNwGCIJrSybkS",
+          "embedUrl": "https://open.spotify.com/embed/track/4CpTehJ87nNwGCIJrSybkS",
+          "popularity": 37
+        },
+        {
+          "id": "4ENqgYr9cfTBqYVAdpsOLK",
+          "name": "Anova",
+          "url": "https://open.spotify.com/track/4ENqgYr9cfTBqYVAdpsOLK",
+          "embedUrl": "https://open.spotify.com/embed/track/4ENqgYr9cfTBqYVAdpsOLK",
+          "popularity": 35
+        },
+        {
+          "id": "74QKApngU5g9vaRaIPcu4D",
+          "name": "Americana",
+          "url": "https://open.spotify.com/track/74QKApngU5g9vaRaIPcu4D",
+          "embedUrl": "https://open.spotify.com/embed/track/74QKApngU5g9vaRaIPcu4D",
+          "popularity": 32
+        },
+        {
+          "id": "3jtSYrpQDTOZOy7tia6Z4h",
+          "name": "Vida En Terranova",
+          "url": "https://open.spotify.com/track/3jtSYrpQDTOZOy7tia6Z4h",
+          "embedUrl": "https://open.spotify.com/embed/track/3jtSYrpQDTOZOy7tia6Z4h",
+          "popularity": 32
+        },
+        {
+          "id": "1FUDauCBBDofvuKNm4YQMH",
+          "name": "Moussa",
+          "url": "https://open.spotify.com/track/1FUDauCBBDofvuKNm4YQMH",
+          "embedUrl": "https://open.spotify.com/embed/track/1FUDauCBBDofvuKNm4YQMH",
+          "popularity": 30
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Hesse Kassel"
+        ]
+      }
+    },
+    "Santo Barrio": {
+      "artistId": "6beLuXzMKO2cWSMdy1gP7s",
+      "artistIds": [
+        "6beLuXzMKO2cWSMdy1gP7s"
+      ],
+      "artistName": "Santo Barrio",
+      "resolvedArtistNames": [
+        "Santo Barrio"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6beLuXzMKO2cWSMdy1gP7s",
+      "embedUrl": "https://open.spotify.com/embed/track/1qkFJpHiMnNf8ExcaBr9Sj",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1qkFJpHiMnNf8ExcaBr9Sj",
+          "name": "El Toque",
+          "url": "https://open.spotify.com/track/1qkFJpHiMnNf8ExcaBr9Sj",
+          "embedUrl": "https://open.spotify.com/embed/track/1qkFJpHiMnNf8ExcaBr9Sj",
+          "popularity": 30
+        },
+        {
+          "id": "7epGqy4EJzcPiw4Ze9yhVG",
+          "name": "Pega Fuerte",
+          "url": "https://open.spotify.com/track/7epGqy4EJzcPiw4Ze9yhVG",
+          "embedUrl": "https://open.spotify.com/embed/track/7epGqy4EJzcPiw4Ze9yhVG",
+          "popularity": 28
+        },
+        {
+          "id": "63PUhGBL15kZQlPxPrJUjM",
+          "name": "Tony Manero",
+          "url": "https://open.spotify.com/track/63PUhGBL15kZQlPxPrJUjM",
+          "embedUrl": "https://open.spotify.com/embed/track/63PUhGBL15kZQlPxPrJUjM",
+          "popularity": 25
+        },
+        {
+          "id": "3Sx6jENhji3QruffmpKeSM",
+          "name": "Traigo el Aguante - Remastered",
+          "url": "https://open.spotify.com/track/3Sx6jENhji3QruffmpKeSM",
+          "embedUrl": "https://open.spotify.com/embed/track/3Sx6jENhji3QruffmpKeSM",
+          "popularity": 24
+        },
+        {
+          "id": "6phVGacGEVpFawUYShvLGS",
+          "name": "Botella",
+          "url": "https://open.spotify.com/track/6phVGacGEVpFawUYShvLGS",
+          "embedUrl": "https://open.spotify.com/embed/track/6phVGacGEVpFawUYShvLGS",
+          "popularity": 22
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Santo Barrio"
+        ]
+      }
+    },
+    "Miss Javi": {
+      "artistId": "3F1yFIWpxB0VQrj4Fa1ZG7",
+      "artistIds": [
+        "3F1yFIWpxB0VQrj4Fa1ZG7"
+      ],
+      "artistName": "Miss Javi",
+      "resolvedArtistNames": [
+        "Miss Javi"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3F1yFIWpxB0VQrj4Fa1ZG7",
+      "embedUrl": "https://open.spotify.com/embed/track/5Z3iAVkqWE3zSTOMvtwZ3n",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5Z3iAVkqWE3zSTOMvtwZ3n",
+          "name": "Las Regiones de mi País - Con Letra",
+          "url": "https://open.spotify.com/track/5Z3iAVkqWE3zSTOMvtwZ3n",
+          "embedUrl": "https://open.spotify.com/embed/track/5Z3iAVkqWE3zSTOMvtwZ3n",
+          "popularity": 1
+        },
+        {
+          "id": "5KtZu5s54QWk27MtRA7XU0",
+          "name": "La Cumbia de los Puntos Cardinales - Con Letra",
+          "url": "https://open.spotify.com/track/5KtZu5s54QWk27MtRA7XU0",
+          "embedUrl": "https://open.spotify.com/embed/track/5KtZu5s54QWk27MtRA7XU0",
+          "popularity": 1
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 2,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Miss Javi"
+        ]
+      }
+    },
+    "Cristobal Briceño y Grupo Crisis": {
+      "artistId": "0TE3FlkFJ5OgdyulXv99iX",
+      "artistIds": [
+        "0TE3FlkFJ5OgdyulXv99iX"
+      ],
+      "artistName": "Cristobal Briceño y Grupo Crisis",
+      "resolvedArtistNames": [
+        "Cristóbal Briceño"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0TE3FlkFJ5OgdyulXv99iX",
+      "embedUrl": "https://open.spotify.com/embed/track/1CEORMOLcfyFiW5aoPjub9",
+      "note": "Usar el perfil de Cristobal Briceño.",
+      "tracks": [
+        {
+          "id": "1CEORMOLcfyFiW5aoPjub9",
+          "name": "Tren A Limache / Linda Morenita",
+          "url": "https://open.spotify.com/track/1CEORMOLcfyFiW5aoPjub9",
+          "embedUrl": "https://open.spotify.com/embed/track/1CEORMOLcfyFiW5aoPjub9",
+          "popularity": 36
+        },
+        {
+          "id": "6D8z4gsOxqXuAf4jddEhXr",
+          "name": "No Tendré Poder (Pero Tengo Energía)",
+          "url": "https://open.spotify.com/track/6D8z4gsOxqXuAf4jddEhXr",
+          "embedUrl": "https://open.spotify.com/embed/track/6D8z4gsOxqXuAf4jddEhXr",
+          "popularity": 34
+        },
+        {
+          "id": "0fY35ldPpyO9mkLfr6BURF",
+          "name": "Ya No Te Quiero (Ana Torroja)",
+          "url": "https://open.spotify.com/track/0fY35ldPpyO9mkLfr6BURF",
+          "embedUrl": "https://open.spotify.com/embed/track/0fY35ldPpyO9mkLfr6BURF",
+          "popularity": 33
+        },
+        {
+          "id": "2buWPLJ34Nt8gM3dtI544s",
+          "name": "Pídeme la luna",
+          "url": "https://open.spotify.com/track/2buWPLJ34Nt8gM3dtI544s",
+          "embedUrl": "https://open.spotify.com/embed/track/2buWPLJ34Nt8gM3dtI544s",
+          "popularity": 33
+        },
+        {
+          "id": "1nq9aYPiBS9XRg3wBYaUUn",
+          "name": "Sabor A Nada",
+          "url": "https://open.spotify.com/track/1nq9aYPiBS9XRg3wBYaUUn",
+          "embedUrl": "https://open.spotify.com/embed/track/1nq9aYPiBS9XRg3wBYaUUn",
+          "popularity": 31
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "override-id"
+        ],
+        "matchedQueries": []
+      }
+    },
+    "Anttonias": {
+      "artistId": "3zso8kvuPiTFBXe5g6ERJW",
+      "artistIds": [
+        "3zso8kvuPiTFBXe5g6ERJW"
+      ],
+      "artistName": "Anttonias",
+      "resolvedArtistNames": [
+        "Anttonias"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3zso8kvuPiTFBXe5g6ERJW",
+      "embedUrl": "https://open.spotify.com/embed/track/2oZZ6CG13yOJNZ48FTB1Uq",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2oZZ6CG13yOJNZ48FTB1Uq",
+          "name": "Atado a tu sentimiento",
+          "url": "https://open.spotify.com/track/2oZZ6CG13yOJNZ48FTB1Uq",
+          "embedUrl": "https://open.spotify.com/embed/track/2oZZ6CG13yOJNZ48FTB1Uq",
+          "popularity": 43
+        },
+        {
+          "id": "6klc6dbAZN9OEXRVW7TLVE",
+          "name": "Dulces corazones",
+          "url": "https://open.spotify.com/track/6klc6dbAZN9OEXRVW7TLVE",
+          "embedUrl": "https://open.spotify.com/embed/track/6klc6dbAZN9OEXRVW7TLVE",
+          "popularity": 38
+        },
+        {
+          "id": "2lveYEoA88rqCilRgkZIBY",
+          "name": "Adicciones, coronas y flores",
+          "url": "https://open.spotify.com/track/2lveYEoA88rqCilRgkZIBY",
+          "embedUrl": "https://open.spotify.com/embed/track/2lveYEoA88rqCilRgkZIBY",
+          "popularity": 36
+        },
+        {
+          "id": "2JgpBNfo7ggp6TC2GJ4qZk",
+          "name": "Almendra",
+          "url": "https://open.spotify.com/track/2JgpBNfo7ggp6TC2GJ4qZk",
+          "embedUrl": "https://open.spotify.com/embed/track/2JgpBNfo7ggp6TC2GJ4qZk",
+          "popularity": 34
+        },
+        {
+          "id": "7v4QzzevlcXISFBgFrd7QP",
+          "name": "Deja Vu",
+          "url": "https://open.spotify.com/track/7v4QzzevlcXISFBgFrd7QP",
+          "embedUrl": "https://open.spotify.com/embed/track/7v4QzzevlcXISFBgFrd7QP",
+          "popularity": 33
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Anttonias"
+        ]
+      }
+    },
+    "Mauricio Hernandez": {
+      "artistId": "3esZUW7JxGnb65Lq1Sgg1s",
+      "artistIds": [
+        "3esZUW7JxGnb65Lq1Sgg1s"
+      ],
+      "artistName": "Mauricio Hernandez",
+      "resolvedArtistNames": [
+        "Mauricio Hernandez"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3esZUW7JxGnb65Lq1Sgg1s",
+      "embedUrl": "https://open.spotify.com/embed/track/2qtdlxMGlEwkrjS2QEaBEU",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "2qtdlxMGlEwkrjS2QEaBEU",
+          "name": "Over Again",
+          "url": "https://open.spotify.com/track/2qtdlxMGlEwkrjS2QEaBEU",
+          "embedUrl": "https://open.spotify.com/embed/track/2qtdlxMGlEwkrjS2QEaBEU",
+          "popularity": 17
+        },
+        {
+          "id": "2iQoPcGHUv6mxPAoo5uSjA",
+          "name": "Summer Vibes",
+          "url": "https://open.spotify.com/track/2iQoPcGHUv6mxPAoo5uSjA",
+          "embedUrl": "https://open.spotify.com/embed/track/2iQoPcGHUv6mxPAoo5uSjA",
+          "popularity": 15
+        },
+        {
+          "id": "03uINnU8gkF6WtahJrjV2b",
+          "name": "Confessions",
+          "url": "https://open.spotify.com/track/03uINnU8gkF6WtahJrjV2b",
+          "embedUrl": "https://open.spotify.com/embed/track/03uINnU8gkF6WtahJrjV2b",
+          "popularity": 13
+        },
+        {
+          "id": "64b6k2paxeL6DhQ44hoRoa",
+          "name": "Summer Vibes - Radio Edit",
+          "url": "https://open.spotify.com/track/64b6k2paxeL6DhQ44hoRoa",
+          "embedUrl": "https://open.spotify.com/embed/track/64b6k2paxeL6DhQ44hoRoa",
+          "popularity": 12
+        },
+        {
+          "id": "2hPskOoF4oAzM0PPtx2COF",
+          "name": "Playing With Fire (MOTi Edit)",
+          "url": "https://open.spotify.com/track/2hPskOoF4oAzM0PPtx2COF",
+          "embedUrl": "https://open.spotify.com/embed/track/2hPskOoF4oAzM0PPtx2COF",
+          "popularity": 12
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Mauricio Hernandez"
+        ]
+      }
+    },
+    "La Caravana Magica": {
+      "artistId": "66LlAqQ9e0KHIsjkPj1Khl",
+      "artistIds": [
+        "66LlAqQ9e0KHIsjkPj1Khl"
+      ],
+      "artistName": "La Caravana Magica",
+      "resolvedArtistNames": [
+        "La Caravana Magica"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/66LlAqQ9e0KHIsjkPj1Khl",
+      "embedUrl": "https://open.spotify.com/embed/track/0HIR5UaAkgHJz9eMioIq6G",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0HIR5UaAkgHJz9eMioIq6G",
+          "name": "Siempre Volveré",
+          "url": "https://open.spotify.com/track/0HIR5UaAkgHJz9eMioIq6G",
+          "embedUrl": "https://open.spotify.com/embed/track/0HIR5UaAkgHJz9eMioIq6G",
+          "popularity": 41
+        },
+        {
+          "id": "7LRQmzt6fwI6Rgi6Keumst",
+          "name": "Gata Only",
+          "url": "https://open.spotify.com/track/7LRQmzt6fwI6Rgi6Keumst",
+          "embedUrl": "https://open.spotify.com/embed/track/7LRQmzt6fwI6Rgi6Keumst",
+          "popularity": 40
+        },
+        {
+          "id": "5j2YjCeaPvoNYvkEJ8UNZF",
+          "name": "Me Gustas Tanto",
+          "url": "https://open.spotify.com/track/5j2YjCeaPvoNYvkEJ8UNZF",
+          "embedUrl": "https://open.spotify.com/embed/track/5j2YjCeaPvoNYvkEJ8UNZF",
+          "popularity": 38
+        },
+        {
+          "id": "3Iogp3KApzAToSHnhLmZbf",
+          "name": "Control de Calidad",
+          "url": "https://open.spotify.com/track/3Iogp3KApzAToSHnhLmZbf",
+          "embedUrl": "https://open.spotify.com/embed/track/3Iogp3KApzAToSHnhLmZbf",
+          "popularity": 36
+        },
+        {
+          "id": "3irgDvzSVnc5RTDLSEoev5",
+          "name": "Todo Se Paga en Esta Vida",
+          "url": "https://open.spotify.com/track/3irgDvzSVnc5RTDLSEoev5",
+          "embedUrl": "https://open.spotify.com/embed/track/3irgDvzSVnc5RTDLSEoev5",
+          "popularity": 21
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "La Caravana Magica"
+        ]
+      }
+    },
+    "Joaquina": {
+      "artistId": "081F5qgtVMfcHZKDY1IEa0",
+      "artistIds": [
+        "081F5qgtVMfcHZKDY1IEa0"
+      ],
+      "artistName": "Joaquina",
+      "resolvedArtistNames": [
+        "Joaquina"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/081F5qgtVMfcHZKDY1IEa0",
+      "embedUrl": "https://open.spotify.com/embed/track/03E4111ppLF3qUQme0Sw70",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "03E4111ppLF3qUQme0Sw70",
+          "name": "Cimarrón",
+          "url": "https://open.spotify.com/track/03E4111ppLF3qUQme0Sw70",
+          "embedUrl": "https://open.spotify.com/embed/track/03E4111ppLF3qUQme0Sw70",
+          "popularity": 63
+        },
+        {
+          "id": "1GFGKmCrG2LjXZCah0i8mG",
+          "name": "Rabia",
+          "url": "https://open.spotify.com/track/1GFGKmCrG2LjXZCah0i8mG",
+          "embedUrl": "https://open.spotify.com/embed/track/1GFGKmCrG2LjXZCah0i8mG",
+          "popularity": 48
+        },
+        {
+          "id": "2NCV9stP4wBkIi7QsKcyJG",
+          "name": "torpe",
+          "url": "https://open.spotify.com/track/2NCV9stP4wBkIi7QsKcyJG",
+          "embedUrl": "https://open.spotify.com/embed/track/2NCV9stP4wBkIi7QsKcyJG",
+          "popularity": 48
+        },
+        {
+          "id": "5FhhHvzn4z9RTDPx6lH8Hd",
+          "name": "escapar de mí",
+          "url": "https://open.spotify.com/track/5FhhHvzn4z9RTDPx6lH8Hd",
+          "embedUrl": "https://open.spotify.com/embed/track/5FhhHvzn4z9RTDPx6lH8Hd",
+          "popularity": 45
+        },
+        {
+          "id": "4h3UlQtw65wj5tiYZ4TZ3s",
+          "name": "pesimista",
+          "url": "https://open.spotify.com/track/4h3UlQtw65wj5tiYZ4TZ3s",
+          "embedUrl": "https://open.spotify.com/embed/track/4h3UlQtw65wj5tiYZ4TZ3s",
+          "popularity": 43
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Joaquina"
+        ]
+      }
+    },
+    "Caleb Calloway": {
+      "artistId": "11usEAQkFE6UJwsyAKkchi",
+      "artistIds": [
+        "11usEAQkFE6UJwsyAKkchi"
+      ],
+      "artistName": "Caleb Calloway",
+      "resolvedArtistNames": [
+        "Caleb Calloway"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/11usEAQkFE6UJwsyAKkchi",
+      "embedUrl": "https://open.spotify.com/embed/track/5uYAJlNp8ZmGPdkrhMwmLM",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5uYAJlNp8ZmGPdkrhMwmLM",
+          "name": "Deportivo",
+          "url": "https://open.spotify.com/track/5uYAJlNp8ZmGPdkrhMwmLM",
+          "embedUrl": "https://open.spotify.com/embed/track/5uYAJlNp8ZmGPdkrhMwmLM",
+          "popularity": 69
+        },
+        {
+          "id": "3RvpoTcHjRrF8bopKXx9vB",
+          "name": "JETLAG",
+          "url": "https://open.spotify.com/track/3RvpoTcHjRrF8bopKXx9vB",
+          "embedUrl": "https://open.spotify.com/embed/track/3RvpoTcHjRrF8bopKXx9vB",
+          "popularity": 61
+        },
+        {
+          "id": "3gQwRTXQIbxKJbojcq8wf9",
+          "name": "Tengo un Pal",
+          "url": "https://open.spotify.com/track/3gQwRTXQIbxKJbojcq8wf9",
+          "embedUrl": "https://open.spotify.com/embed/track/3gQwRTXQIbxKJbojcq8wf9",
+          "popularity": 52
+        },
+        {
+          "id": "62Ivi1ONWg0DU125ZeOk5k",
+          "name": "Sata",
+          "url": "https://open.spotify.com/track/62Ivi1ONWg0DU125ZeOk5k",
+          "embedUrl": "https://open.spotify.com/embed/track/62Ivi1ONWg0DU125ZeOk5k",
+          "popularity": 50
+        },
+        {
+          "id": "61zBrSzch8LvD0oeOhC2LN",
+          "name": "Epica",
+          "url": "https://open.spotify.com/track/61zBrSzch8LvD0oeOhC2LN",
+          "embedUrl": "https://open.spotify.com/embed/track/61zBrSzch8LvD0oeOhC2LN",
+          "popularity": 48
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Caleb Calloway"
+        ]
+      }
+    },
+    "Caleuchistico": {
+      "artistId": "4TkYnjrqA8xowBmaN1ch8n",
+      "artistIds": [
+        "4TkYnjrqA8xowBmaN1ch8n"
+      ],
+      "artistName": "Caleuchistico",
+      "resolvedArtistNames": [
+        "Caleuchístico"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4TkYnjrqA8xowBmaN1ch8n",
+      "embedUrl": "https://open.spotify.com/embed/track/753wYDrHFnNNpEFuF7iwe0",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "753wYDrHFnNNpEFuF7iwe0",
+          "name": "Perro Volantín",
+          "url": "https://open.spotify.com/track/753wYDrHFnNNpEFuF7iwe0",
+          "embedUrl": "https://open.spotify.com/embed/track/753wYDrHFnNNpEFuF7iwe0",
+          "popularity": 18
+        },
+        {
+          "id": "7wbiVXGeKvXsn9NhGSJyMs",
+          "name": "Moai Moai",
+          "url": "https://open.spotify.com/track/7wbiVXGeKvXsn9NhGSJyMs",
+          "embedUrl": "https://open.spotify.com/embed/track/7wbiVXGeKvXsn9NhGSJyMs",
+          "popularity": 18
+        },
+        {
+          "id": "0rjnI0dVYjs2MgpvlbFWui",
+          "name": "Don Bonifacio el Último Organillero",
+          "url": "https://open.spotify.com/track/0rjnI0dVYjs2MgpvlbFWui",
+          "embedUrl": "https://open.spotify.com/embed/track/0rjnI0dVYjs2MgpvlbFWui",
+          "popularity": 15
+        },
+        {
+          "id": "1O8ALlOVs1zHtSvpFAKOJC",
+          "name": "El Caleuche",
+          "url": "https://open.spotify.com/track/1O8ALlOVs1zHtSvpFAKOJC",
+          "embedUrl": "https://open.spotify.com/embed/track/1O8ALlOVs1zHtSvpFAKOJC",
+          "popularity": 14
+        },
+        {
+          "id": "2ldK6bs8PFhZpKacmJZwLt",
+          "name": "La Pincoya",
+          "url": "https://open.spotify.com/track/2ldK6bs8PFhZpKacmJZwLt",
+          "embedUrl": "https://open.spotify.com/embed/track/2ldK6bs8PFhZpKacmJZwLt",
+          "popularity": 14
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Caleuchistico"
+        ]
+      }
+    },
+    "Bandalos Chinos": {
+      "artistId": "0wn2qDKzeFlhjRUtJAwJjp",
+      "artistIds": [
+        "0wn2qDKzeFlhjRUtJAwJjp"
+      ],
+      "artistName": "Bandalos Chinos",
+      "resolvedArtistNames": [
+        "Bandalos Chinos"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0wn2qDKzeFlhjRUtJAwJjp",
+      "embedUrl": "https://open.spotify.com/embed/track/1tyI6Sq6oBLsMmIgvBfQrI",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1tyI6Sq6oBLsMmIgvBfQrI",
+          "name": "Vámonos De Viaje",
+          "url": "https://open.spotify.com/track/1tyI6Sq6oBLsMmIgvBfQrI",
+          "embedUrl": "https://open.spotify.com/embed/track/1tyI6Sq6oBLsMmIgvBfQrI",
+          "popularity": 65
+        },
+        {
+          "id": "5VFNWuzWCalL6oZwV4GJF7",
+          "name": "Departamento",
+          "url": "https://open.spotify.com/track/5VFNWuzWCalL6oZwV4GJF7",
+          "embedUrl": "https://open.spotify.com/embed/track/5VFNWuzWCalL6oZwV4GJF7",
+          "popularity": 63
+        },
+        {
+          "id": "1DcZiy6gWQOG2IhhM6HBui",
+          "name": "Mi Fiesta",
+          "url": "https://open.spotify.com/track/1DcZiy6gWQOG2IhhM6HBui",
+          "embedUrl": "https://open.spotify.com/embed/track/1DcZiy6gWQOG2IhhM6HBui",
+          "popularity": 62
+        },
+        {
+          "id": "7G66IvCUCgXucQ6C5TEsFp",
+          "name": "Demasiado",
+          "url": "https://open.spotify.com/track/7G66IvCUCgXucQ6C5TEsFp",
+          "embedUrl": "https://open.spotify.com/embed/track/7G66IvCUCgXucQ6C5TEsFp",
+          "popularity": 61
+        },
+        {
+          "id": "4YetZqZqyaXMQ7FzKk9Krt",
+          "name": "Cállame",
+          "url": "https://open.spotify.com/track/4YetZqZqyaXMQ7FzKk9Krt",
+          "embedUrl": "https://open.spotify.com/embed/track/4YetZqZqyaXMQ7FzKk9Krt",
+          "popularity": 58
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Bandalos Chinos"
+        ]
+      }
+    },
+    "Manuel Garcia": {
+      "artistId": "4LIR7XQRqn0CyXMYSjKoTX",
+      "artistIds": [
+        "4LIR7XQRqn0CyXMYSjKoTX"
+      ],
+      "artistName": "Manuel Garcia",
+      "resolvedArtistNames": [
+        "Manuel García"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4LIR7XQRqn0CyXMYSjKoTX",
+      "embedUrl": "https://open.spotify.com/embed/track/67ed4jjP4A0IfcQfgCnGWl",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "67ed4jjP4A0IfcQfgCnGWl",
+          "name": "La Danza de las Libélulas",
+          "url": "https://open.spotify.com/track/67ed4jjP4A0IfcQfgCnGWl",
+          "embedUrl": "https://open.spotify.com/embed/track/67ed4jjP4A0IfcQfgCnGWl",
+          "popularity": 56
+        },
+        {
+          "id": "6u8L5aiTaBvA45tflwXQR1",
+          "name": "Hablar de Ti",
+          "url": "https://open.spotify.com/track/6u8L5aiTaBvA45tflwXQR1",
+          "embedUrl": "https://open.spotify.com/embed/track/6u8L5aiTaBvA45tflwXQR1",
+          "popularity": 46
+        },
+        {
+          "id": "4PkVa3T0Y0KS3piaCzOl62",
+          "name": "Al Final De Este Viaje En La Vida",
+          "url": "https://open.spotify.com/track/4PkVa3T0Y0KS3piaCzOl62",
+          "embedUrl": "https://open.spotify.com/embed/track/4PkVa3T0Y0KS3piaCzOl62",
+          "popularity": 45
+        },
+        {
+          "id": "3CJrQ1p7Y2R9ahyT9Wh1bV",
+          "name": "El Viejo Comunista",
+          "url": "https://open.spotify.com/track/3CJrQ1p7Y2R9ahyT9Wh1bV",
+          "embedUrl": "https://open.spotify.com/embed/track/3CJrQ1p7Y2R9ahyT9Wh1bV",
+          "popularity": 44
+        },
+        {
+          "id": "4rzqsW1SsHF78cQNmwsBAe",
+          "name": "Tanto Creo en Ti",
+          "url": "https://open.spotify.com/track/4rzqsW1SsHF78cQNmwsBAe",
+          "embedUrl": "https://open.spotify.com/embed/track/4rzqsW1SsHF78cQNmwsBAe",
+          "popularity": 43
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Manuel Garcia"
+        ]
+      }
+    },
+    "Niebla Niebla": {
+      "artistId": "7ahBEm29YzveuTOPz6jS06",
+      "artistIds": [
+        "7ahBEm29YzveuTOPz6jS06"
+      ],
+      "artistName": "Niebla Niebla",
+      "resolvedArtistNames": [
+        "NIEBLA NIEBLA"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7ahBEm29YzveuTOPz6jS06",
+      "embedUrl": "https://open.spotify.com/embed/track/7oKeC8gBbSM1DPaSGpFmal",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7oKeC8gBbSM1DPaSGpFmal",
+          "name": "NIEBLA NIEBLA",
+          "url": "https://open.spotify.com/track/7oKeC8gBbSM1DPaSGpFmal",
+          "embedUrl": "https://open.spotify.com/embed/track/7oKeC8gBbSM1DPaSGpFmal",
+          "popularity": 25
+        },
+        {
+          "id": "0Zo6vCNpIZwVgdeUfTbEJj",
+          "name": "IMPERFECTA",
+          "url": "https://open.spotify.com/track/0Zo6vCNpIZwVgdeUfTbEJj",
+          "embedUrl": "https://open.spotify.com/embed/track/0Zo6vCNpIZwVgdeUfTbEJj",
+          "popularity": 23
+        },
+        {
+          "id": "2OQDmkg5gUH9naAtKN6bLC",
+          "name": "ALGO CELESTIAL",
+          "url": "https://open.spotify.com/track/2OQDmkg5gUH9naAtKN6bLC",
+          "embedUrl": "https://open.spotify.com/embed/track/2OQDmkg5gUH9naAtKN6bLC",
+          "popularity": 23
+        },
+        {
+          "id": "36GaSUjrhZZ8RIVrVlpd6V",
+          "name": "PASADO MAÑANA",
+          "url": "https://open.spotify.com/track/36GaSUjrhZZ8RIVrVlpd6V",
+          "embedUrl": "https://open.spotify.com/embed/track/36GaSUjrhZZ8RIVrVlpd6V",
+          "popularity": 22
+        },
+        {
+          "id": "6S0Sc4MdYaP8VLgXAn4yds",
+          "name": "SIEMPRE CONTIGO BABY",
+          "url": "https://open.spotify.com/track/6S0Sc4MdYaP8VLgXAn4yds",
+          "embedUrl": "https://open.spotify.com/embed/track/6S0Sc4MdYaP8VLgXAn4yds",
+          "popularity": 21
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Niebla Niebla"
+        ]
+      }
+    },
+    "Danny Ocean": {
+      "artistId": "5H1nN1SzW0qNeUEZvuXjAj",
+      "artistIds": [
+        "5H1nN1SzW0qNeUEZvuXjAj"
+      ],
+      "artistName": "Danny Ocean",
+      "resolvedArtistNames": [
+        "Danny Ocean"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5H1nN1SzW0qNeUEZvuXjAj",
+      "embedUrl": "https://open.spotify.com/embed/track/6ifUES3keWjwXgae8pXI3o",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6ifUES3keWjwXgae8pXI3o",
+          "name": "Me Rehúso",
+          "url": "https://open.spotify.com/track/6ifUES3keWjwXgae8pXI3o",
+          "embedUrl": "https://open.spotify.com/embed/track/6ifUES3keWjwXgae8pXI3o",
+          "popularity": 86
+        },
+        {
+          "id": "7ns16ylM6sbxo9ZWIwyE5d",
+          "name": "Imagínate",
+          "url": "https://open.spotify.com/track/7ns16ylM6sbxo9ZWIwyE5d",
+          "embedUrl": "https://open.spotify.com/embed/track/7ns16ylM6sbxo9ZWIwyE5d",
+          "popularity": 80
+        },
+        {
+          "id": "3HgvO4B5LLmdPOT2d8cSZd",
+          "name": "Mónaco",
+          "url": "https://open.spotify.com/track/3HgvO4B5LLmdPOT2d8cSZd",
+          "embedUrl": "https://open.spotify.com/embed/track/3HgvO4B5LLmdPOT2d8cSZd",
+          "popularity": 80
+        },
+        {
+          "id": "2339UOI2SU3L1nJtUnx0GF",
+          "name": "Corazón",
+          "url": "https://open.spotify.com/track/2339UOI2SU3L1nJtUnx0GF",
+          "embedUrl": "https://open.spotify.com/embed/track/2339UOI2SU3L1nJtUnx0GF",
+          "popularity": 79
+        },
+        {
+          "id": "1UdzJEpgJxtuXAlCOvD4S0",
+          "name": "Fuera del mercado",
+          "url": "https://open.spotify.com/track/1UdzJEpgJxtuXAlCOvD4S0",
+          "embedUrl": "https://open.spotify.com/embed/track/1UdzJEpgJxtuXAlCOvD4S0",
+          "popularity": 77
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Danny Ocean"
+        ]
+      }
+    },
+    "Hamdi": {
+      "artistId": "7vvicoei9BbKpZix8qSeLg",
+      "artistIds": [
+        "7vvicoei9BbKpZix8qSeLg"
+      ],
+      "artistName": "Hamdi",
+      "resolvedArtistNames": [
+        "Hamdi"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7vvicoei9BbKpZix8qSeLg",
+      "embedUrl": "https://open.spotify.com/embed/track/401geNb9B5l7bFzi53Z3oP",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "401geNb9B5l7bFzi53Z3oP",
+          "name": "OK OK - Hamdi remix",
+          "url": "https://open.spotify.com/track/401geNb9B5l7bFzi53Z3oP",
+          "embedUrl": "https://open.spotify.com/embed/track/401geNb9B5l7bFzi53Z3oP",
+          "popularity": 65
+        },
+        {
+          "id": "29OFLlrrfKIEVwbVMTjBYe",
+          "name": "Push",
+          "url": "https://open.spotify.com/track/29OFLlrrfKIEVwbVMTjBYe",
+          "embedUrl": "https://open.spotify.com/embed/track/29OFLlrrfKIEVwbVMTjBYe",
+          "popularity": 57
+        },
+        {
+          "id": "1NSWEN2D4tSseirwne0bhD",
+          "name": "Counting - Taiki Nulight Remix",
+          "url": "https://open.spotify.com/track/1NSWEN2D4tSseirwne0bhD",
+          "embedUrl": "https://open.spotify.com/embed/track/1NSWEN2D4tSseirwne0bhD",
+          "popularity": 51
+        },
+        {
+          "id": "4n7PlmHa8DU1elvSbYTOFY",
+          "name": "Skanka - P Money Vocal Dub",
+          "url": "https://open.spotify.com/track/4n7PlmHa8DU1elvSbYTOFY",
+          "embedUrl": "https://open.spotify.com/embed/track/4n7PlmHa8DU1elvSbYTOFY",
+          "popularity": 50
+        },
+        {
+          "id": "0jozSNmRCcQvIzuae6xQ78",
+          "name": "Counting",
+          "url": "https://open.spotify.com/track/0jozSNmRCcQvIzuae6xQ78",
+          "embedUrl": "https://open.spotify.com/embed/track/0jozSNmRCcQvIzuae6xQ78",
+          "popularity": 47
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Hamdi"
+        ]
+      }
+    },
+    "Otroarte Musica": {
+      "artistId": "05DUgo04pnvmErY8qG6EQ3",
+      "artistIds": [
+        "05DUgo04pnvmErY8qG6EQ3"
+      ],
+      "artistName": "Otroarte Musica",
+      "resolvedArtistNames": [
+        "OtroArte Musica"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/05DUgo04pnvmErY8qG6EQ3",
+      "embedUrl": "https://open.spotify.com/embed/track/31cGz8bmjsbwhfg3lE4V1S",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "31cGz8bmjsbwhfg3lE4V1S",
+          "name": "La Canción del Caracol",
+          "url": "https://open.spotify.com/track/31cGz8bmjsbwhfg3lE4V1S",
+          "embedUrl": "https://open.spotify.com/embed/track/31cGz8bmjsbwhfg3lE4V1S",
+          "popularity": 7
+        },
+        {
+          "id": "7cJyBFnAZScruNUO5YVlBU",
+          "name": "Elefunky",
+          "url": "https://open.spotify.com/track/7cJyBFnAZScruNUO5YVlBU",
+          "embedUrl": "https://open.spotify.com/embed/track/7cJyBFnAZScruNUO5YVlBU",
+          "popularity": 7
+        },
+        {
+          "id": "3g4o40zLUu3FcAsDDuoDaD",
+          "name": "Lágrimas de Cocodrilo",
+          "url": "https://open.spotify.com/track/3g4o40zLUu3FcAsDDuoDaD",
+          "embedUrl": "https://open.spotify.com/embed/track/3g4o40zLUu3FcAsDDuoDaD",
+          "popularity": 5
+        },
+        {
+          "id": "6Q10WXXK2xhdTjns2j48S1",
+          "name": "Vespulas Germanicas",
+          "url": "https://open.spotify.com/track/6Q10WXXK2xhdTjns2j48S1",
+          "embedUrl": "https://open.spotify.com/embed/track/6Q10WXXK2xhdTjns2j48S1",
+          "popularity": 5
+        },
+        {
+          "id": "7Lt9pK2VxxpCm2ijX03Vjr",
+          "name": "Los Saltamontes",
+          "url": "https://open.spotify.com/track/7Lt9pK2VxxpCm2ijX03Vjr",
+          "embedUrl": "https://open.spotify.com/embed/track/7Lt9pK2VxxpCm2ijX03Vjr",
+          "popularity": 5
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Otroarte Musica"
+        ]
+      }
+    },
+    "Marina": {
+      "artistId": "6CwfuxIqcltXDGjfZsMd9A",
+      "artistIds": [
+        "6CwfuxIqcltXDGjfZsMd9A"
+      ],
+      "artistName": "Marina",
+      "resolvedArtistNames": [
+        "MARINA"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6CwfuxIqcltXDGjfZsMd9A",
+      "embedUrl": "https://open.spotify.com/embed/track/4sOX1nhpKwFWPvoMMExi3q",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4sOX1nhpKwFWPvoMMExi3q",
+          "name": "Primadonna",
+          "url": "https://open.spotify.com/track/4sOX1nhpKwFWPvoMMExi3q",
+          "embedUrl": "https://open.spotify.com/embed/track/4sOX1nhpKwFWPvoMMExi3q",
+          "popularity": 81
+        },
+        {
+          "id": "6IbnUaczZBT34DhaD6S18F",
+          "name": "Bubblegum Bitch",
+          "url": "https://open.spotify.com/track/6IbnUaczZBT34DhaD6S18F",
+          "embedUrl": "https://open.spotify.com/embed/track/6IbnUaczZBT34DhaD6S18F",
+          "popularity": 80
+        },
+        {
+          "id": "2sEk5R8ErGIFxbZ7rX6S2S",
+          "name": "How to Be a Heartbreaker",
+          "url": "https://open.spotify.com/track/2sEk5R8ErGIFxbZ7rX6S2S",
+          "embedUrl": "https://open.spotify.com/embed/track/2sEk5R8ErGIFxbZ7rX6S2S",
+          "popularity": 70
+        },
+        {
+          "id": "6lKRMylSZMtA7EqPl0pcdI",
+          "name": "Are You Satisfied?",
+          "url": "https://open.spotify.com/track/6lKRMylSZMtA7EqPl0pcdI",
+          "embedUrl": "https://open.spotify.com/embed/track/6lKRMylSZMtA7EqPl0pcdI",
+          "popularity": 69
+        },
+        {
+          "id": "5UmLoBLWWRnqGhPfVWRgGd",
+          "name": "Seventeen",
+          "url": "https://open.spotify.com/track/5UmLoBLWWRnqGhPfVWRgGd",
+          "embedUrl": "https://open.spotify.com/embed/track/5UmLoBLWWRnqGhPfVWRgGd",
+          "popularity": 63
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Marina"
+        ]
+      }
+    },
+    "TV Girl": {
+      "artistId": "0Y6dVaC9DZtPNH4591M42W",
+      "artistIds": [
+        "0Y6dVaC9DZtPNH4591M42W"
+      ],
+      "artistName": "TV Girl",
+      "resolvedArtistNames": [
+        "TV Girl"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W",
+      "embedUrl": "https://open.spotify.com/embed/track/6dBUzqjtbnIa1TwYbyw5CM",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "6dBUzqjtbnIa1TwYbyw5CM",
+          "name": "Lovers Rock",
+          "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM",
+          "embedUrl": "https://open.spotify.com/embed/track/6dBUzqjtbnIa1TwYbyw5CM",
+          "popularity": 87
+        },
+        {
+          "id": "6QeYSvYqYUsfBzsApbjDHO",
+          "name": "Cigarettes out the Window",
+          "url": "https://open.spotify.com/track/6QeYSvYqYUsfBzsApbjDHO",
+          "embedUrl": "https://open.spotify.com/embed/track/6QeYSvYqYUsfBzsApbjDHO",
+          "popularity": 86
+        },
+        {
+          "id": "3IznIgmXtrUaoPWpQTy5jB",
+          "name": "Not Allowed",
+          "url": "https://open.spotify.com/track/3IznIgmXtrUaoPWpQTy5jB",
+          "embedUrl": "https://open.spotify.com/embed/track/3IznIgmXtrUaoPWpQTy5jB",
+          "popularity": 84
+        },
+        {
+          "id": "39sDitIeCMrVX2QyXHY46t",
+          "name": "Blue Hair",
+          "url": "https://open.spotify.com/track/39sDitIeCMrVX2QyXHY46t",
+          "embedUrl": "https://open.spotify.com/embed/track/39sDitIeCMrVX2QyXHY46t",
+          "popularity": 83
+        },
+        {
+          "id": "7JEzAlwHhCD2M1cYE6BeqJ",
+          "name": "Loving Machine",
+          "url": "https://open.spotify.com/track/7JEzAlwHhCD2M1cYE6BeqJ",
+          "embedUrl": "https://open.spotify.com/embed/track/7JEzAlwHhCD2M1cYE6BeqJ",
+          "popularity": 82
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "TV Girl"
+        ]
+      }
+    },
+    "FaceBrooklyn": {
+      "artistId": "0HGYhpDqId26b8YElUubo8",
+      "artistIds": [
+        "0HGYhpDqId26b8YElUubo8"
+      ],
+      "artistName": "FaceBrooklyn",
+      "resolvedArtistNames": [
+        "FaceBrooklyn"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/0HGYhpDqId26b8YElUubo8",
+      "embedUrl": "https://open.spotify.com/embed/track/5JVcZypdXkwfZAmtTzJSRE",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "5JVcZypdXkwfZAmtTzJSRE",
+          "name": "Zundada de fondo",
+          "url": "https://open.spotify.com/track/5JVcZypdXkwfZAmtTzJSRE",
+          "embedUrl": "https://open.spotify.com/embed/track/5JVcZypdXkwfZAmtTzJSRE",
+          "popularity": 58
+        },
+        {
+          "id": "6sDUNBiHIMYI5dC6TeGQNs",
+          "name": "epitafio",
+          "url": "https://open.spotify.com/track/6sDUNBiHIMYI5dC6TeGQNs",
+          "embedUrl": "https://open.spotify.com/embed/track/6sDUNBiHIMYI5dC6TeGQNs",
+          "popularity": 56
+        },
+        {
+          "id": "4pfBkz1XiRqGZ0ksjJ4YrA",
+          "name": "SI, SI",
+          "url": "https://open.spotify.com/track/4pfBkz1XiRqGZ0ksjJ4YrA",
+          "embedUrl": "https://open.spotify.com/embed/track/4pfBkz1XiRqGZ0ksjJ4YrA",
+          "popularity": 49
+        },
+        {
+          "id": "51B1Ud21Dqhx1l6xgjlnDR",
+          "name": "meteoro",
+          "url": "https://open.spotify.com/track/51B1Ud21Dqhx1l6xgjlnDR",
+          "embedUrl": "https://open.spotify.com/embed/track/51B1Ud21Dqhx1l6xgjlnDR",
+          "popularity": 48
+        },
+        {
+          "id": "6nsKE09qqvX1WSuczFzpot",
+          "name": "sssubelo",
+          "url": "https://open.spotify.com/track/6nsKE09qqvX1WSuczFzpot",
+          "embedUrl": "https://open.spotify.com/embed/track/6nsKE09qqvX1WSuczFzpot",
+          "popularity": 48
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "FaceBrooklyn"
+        ]
+      }
+    },
+    "Claudio Valenzuela Trio": {
+      "artistId": "20XFyUIDpgHen9Lxmx6VhE",
+      "artistIds": [
+        "20XFyUIDpgHen9Lxmx6VhE"
+      ],
+      "artistName": "Claudio Valenzuela Trio",
+      "resolvedArtistNames": [
+        "Claudio Valenzuela"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/20XFyUIDpgHen9Lxmx6VhE",
+      "embedUrl": "https://open.spotify.com/embed/track/3ixUxQCuTBjIrYzUsjI3ok",
+      "note": "Usar el perfil de Claudio Valenzuela.",
+      "tracks": [
+        {
+          "id": "3ixUxQCuTBjIrYzUsjI3ok",
+          "name": "Abrazar Un Volcán",
+          "url": "https://open.spotify.com/track/3ixUxQCuTBjIrYzUsjI3ok",
+          "embedUrl": "https://open.spotify.com/embed/track/3ixUxQCuTBjIrYzUsjI3ok",
+          "popularity": 21
+        },
+        {
+          "id": "4ZEHL9bAIji34TY1q45X5D",
+          "name": "Mi Montaña",
+          "url": "https://open.spotify.com/track/4ZEHL9bAIji34TY1q45X5D",
+          "embedUrl": "https://open.spotify.com/embed/track/4ZEHL9bAIji34TY1q45X5D",
+          "popularity": 20
+        },
+        {
+          "id": "0SVG8jdPCufgCMW9dT7drj",
+          "name": "Ese Trozo De Ti",
+          "url": "https://open.spotify.com/track/0SVG8jdPCufgCMW9dT7drj",
+          "embedUrl": "https://open.spotify.com/embed/track/0SVG8jdPCufgCMW9dT7drj",
+          "popularity": 20
+        },
+        {
+          "id": "2Or0RJlgkKzj2Kr17fPIW0",
+          "name": "Seré Lo Que Quiera",
+          "url": "https://open.spotify.com/track/2Or0RJlgkKzj2Kr17fPIW0",
+          "embedUrl": "https://open.spotify.com/embed/track/2Or0RJlgkKzj2Kr17fPIW0",
+          "popularity": 20
+        },
+        {
+          "id": "7IFHHhLBsKMw4rdoIAYe6o",
+          "name": "Se Que Te Amo",
+          "url": "https://open.spotify.com/track/7IFHHhLBsKMw4rdoIAYe6o",
+          "embedUrl": "https://open.spotify.com/embed/track/7IFHHhLBsKMw4rdoIAYe6o",
+          "popularity": 20
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "override-id"
+        ],
+        "matchedQueries": []
+      }
+    },
+    "Tikitiklip": {
+      "artistId": "3wq7eRS9W4kkDpUtR8vlnk",
+      "artistIds": [
+        "3wq7eRS9W4kkDpUtR8vlnk"
+      ],
+      "artistName": "Tikitiklip",
+      "resolvedArtistNames": [
+        "Tikitiklip"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/3wq7eRS9W4kkDpUtR8vlnk",
+      "embedUrl": "https://open.spotify.com/embed/track/4NDEZKTBc8APNnXyqahsUa",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4NDEZKTBc8APNnXyqahsUa",
+          "name": "El Soldado Trifaldón",
+          "url": "https://open.spotify.com/track/4NDEZKTBc8APNnXyqahsUa",
+          "embedUrl": "https://open.spotify.com/embed/track/4NDEZKTBc8APNnXyqahsUa",
+          "popularity": 35
+        },
+        {
+          "id": "3Lp7dCsDEcob0ndUgHhKOa",
+          "name": "Tolín Tolín Tolán",
+          "url": "https://open.spotify.com/track/3Lp7dCsDEcob0ndUgHhKOa",
+          "embedUrl": "https://open.spotify.com/embed/track/3Lp7dCsDEcob0ndUgHhKOa",
+          "popularity": 35
+        },
+        {
+          "id": "22v65uq4rd1834gnQqBxD0",
+          "name": "El Rey de Papel",
+          "url": "https://open.spotify.com/track/22v65uq4rd1834gnQqBxD0",
+          "embedUrl": "https://open.spotify.com/embed/track/22v65uq4rd1834gnQqBxD0",
+          "popularity": 34
+        },
+        {
+          "id": "14a58zXn7HYA9nFLVZvQww",
+          "name": "Don Crispín",
+          "url": "https://open.spotify.com/track/14a58zXn7HYA9nFLVZvQww",
+          "embedUrl": "https://open.spotify.com/embed/track/14a58zXn7HYA9nFLVZvQww",
+          "popularity": 33
+        },
+        {
+          "id": "7d36ukG2Qe8n0BKWeCJCtW",
+          "name": "Arrurrú",
+          "url": "https://open.spotify.com/track/7d36ukG2Qe8n0BKWeCJCtW",
+          "embedUrl": "https://open.spotify.com/embed/track/7d36ukG2Qe8n0BKWeCJCtW",
+          "popularity": 32
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Tikitiklip"
+        ]
+      }
+    },
+    "Addison Rae": {
+      "artistId": "4gvjmrtzydbMpyJaXUtwvP",
+      "artistIds": [
+        "4gvjmrtzydbMpyJaXUtwvP"
+      ],
+      "artistName": "Addison Rae",
+      "resolvedArtistNames": [
+        "Addison Rae"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4gvjmrtzydbMpyJaXUtwvP",
+      "embedUrl": "https://open.spotify.com/embed/track/7B3BwNecBhKvNwSMOOl7Gk",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7B3BwNecBhKvNwSMOOl7Gk",
+          "name": "Fame is a Gun",
+          "url": "https://open.spotify.com/track/7B3BwNecBhKvNwSMOOl7Gk",
+          "embedUrl": "https://open.spotify.com/embed/track/7B3BwNecBhKvNwSMOOl7Gk",
+          "popularity": 88
+        },
+        {
+          "id": "6ouhsRJ7gExB7LCYjITk4Y",
+          "name": "Diet Pepsi",
+          "url": "https://open.spotify.com/track/6ouhsRJ7gExB7LCYjITk4Y",
+          "embedUrl": "https://open.spotify.com/embed/track/6ouhsRJ7gExB7LCYjITk4Y",
+          "popularity": 80
+        },
+        {
+          "id": "3kDO0ttXrVCWbKCS3sQeC1",
+          "name": "Aquamarine",
+          "url": "https://open.spotify.com/track/3kDO0ttXrVCWbKCS3sQeC1",
+          "embedUrl": "https://open.spotify.com/embed/track/3kDO0ttXrVCWbKCS3sQeC1",
+          "popularity": 70
+        },
+        {
+          "id": "3H6xZgwRZx8McVUJzmMxWe",
+          "name": "Headphones On",
+          "url": "https://open.spotify.com/track/3H6xZgwRZx8McVUJzmMxWe",
+          "embedUrl": "https://open.spotify.com/embed/track/3H6xZgwRZx8McVUJzmMxWe",
+          "popularity": 70
+        },
+        {
+          "id": "7KwPWmB1gA9zRubseJ7OB2",
+          "name": "High Fashion",
+          "url": "https://open.spotify.com/track/7KwPWmB1gA9zRubseJ7OB2",
+          "embedUrl": "https://open.spotify.com/embed/track/7KwPWmB1gA9zRubseJ7OB2",
+          "popularity": 66
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Addison Rae"
+        ]
+      }
+    },
+    "2Hollis & Rommulas": {
+      "artistId": "72NhFAGG5Pt91VbheJeEPG",
+      "artistIds": [
+        "72NhFAGG5Pt91VbheJeEPG",
+        "4QsDoxai6urbmrML19OYa3"
+      ],
+      "artistName": "2Hollis & Rommulas",
+      "resolvedArtistNames": [
+        "2hollis",
+        "rommulas"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/72NhFAGG5Pt91VbheJeEPG",
+      "embedUrl": "https://open.spotify.com/embed/track/0Gz4Q1Bmyef5yA0G6LIIQZ",
+      "note": "Combinar top tracks de 2hollis y rommulas.",
+      "tracks": [
+        {
+          "id": "0Gz4Q1Bmyef5yA0G6LIIQZ",
+          "name": "poster boy",
+          "url": "https://open.spotify.com/track/0Gz4Q1Bmyef5yA0G6LIIQZ",
+          "embedUrl": "https://open.spotify.com/embed/track/0Gz4Q1Bmyef5yA0G6LIIQZ",
+          "popularity": 80
+        },
+        {
+          "id": "6C2nVSSeXNqfoY8t6tliZ4",
+          "name": "jeans",
+          "url": "https://open.spotify.com/track/6C2nVSSeXNqfoY8t6tliZ4",
+          "embedUrl": "https://open.spotify.com/embed/track/6C2nVSSeXNqfoY8t6tliZ4",
+          "popularity": 69
+        },
+        {
+          "id": "2oRNyf4qlAzGz6LljMcDJp",
+          "name": "cliche",
+          "url": "https://open.spotify.com/track/2oRNyf4qlAzGz6LljMcDJp",
+          "embedUrl": "https://open.spotify.com/embed/track/2oRNyf4qlAzGz6LljMcDJp",
+          "popularity": 64
+        },
+        {
+          "id": "2h7vLf7jv2KsRb7fV77w5H",
+          "name": "crush",
+          "url": "https://open.spotify.com/track/2h7vLf7jv2KsRb7fV77w5H",
+          "embedUrl": "https://open.spotify.com/embed/track/2h7vLf7jv2KsRb7fV77w5H",
+          "popularity": 63
+        },
+        {
+          "id": "46bUjfJt7SVePcWtBVKa7W",
+          "name": "flash",
+          "url": "https://open.spotify.com/track/46bUjfJt7SVePcWtBVKa7W",
+          "embedUrl": "https://open.spotify.com/embed/track/46bUjfJt7SVePcWtBVKa7W",
+          "popularity": 62
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact",
+          "exact"
+        ],
+        "matchedQueries": [
+          "2hollis",
+          "rommulas"
+        ]
+      }
+    },
+    "Ricky & Mau": {
+      "artistId": "2wkoKEfS6dXwThbyTnZWFU",
+      "artistIds": [
+        "2wkoKEfS6dXwThbyTnZWFU"
+      ],
+      "artistName": "Ricky & Mau",
+      "resolvedArtistNames": [
+        "Mau y Ricky"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2wkoKEfS6dXwThbyTnZWFU",
+      "embedUrl": "https://open.spotify.com/embed/track/56f5qnyAlZdlz8wrUDA50h",
+      "note": "Buscar como Mau y Ricky.",
+      "tracks": [
+        {
+          "id": "56f5qnyAlZdlz8wrUDA50h",
+          "name": "Desconocidos",
+          "url": "https://open.spotify.com/track/56f5qnyAlZdlz8wrUDA50h",
+          "embedUrl": "https://open.spotify.com/embed/track/56f5qnyAlZdlz8wrUDA50h",
+          "popularity": 72
+        },
+        {
+          "id": "7uQmJ1jgNzBpATSoWKSPFu",
+          "name": "Ya No Tiene Novio",
+          "url": "https://open.spotify.com/track/7uQmJ1jgNzBpATSoWKSPFu",
+          "embedUrl": "https://open.spotify.com/embed/track/7uQmJ1jgNzBpATSoWKSPFu",
+          "popularity": 72
+        },
+        {
+          "id": "7GzRxRiDEBBa42S6Nx3IHJ",
+          "name": "Te Quiero",
+          "url": "https://open.spotify.com/track/7GzRxRiDEBBa42S6Nx3IHJ",
+          "embedUrl": "https://open.spotify.com/embed/track/7GzRxRiDEBBa42S6Nx3IHJ",
+          "popularity": 69
+        },
+        {
+          "id": "0UQwlF2pRkr1lMN6kNNUj3",
+          "name": "La Boca",
+          "url": "https://open.spotify.com/track/0UQwlF2pRkr1lMN6kNNUj3",
+          "embedUrl": "https://open.spotify.com/embed/track/0UQwlF2pRkr1lMN6kNNUj3",
+          "popularity": 66
+        },
+        {
+          "id": "4YF13O2n16dcTyGgVmiGvN",
+          "name": "Llorar y Llorar - con Carin Leon",
+          "url": "https://open.spotify.com/track/4YF13O2n16dcTyGgVmiGvN",
+          "embedUrl": "https://open.spotify.com/embed/track/4YF13O2n16dcTyGgVmiGvN",
+          "popularity": 66
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Mau y Ricky"
+        ]
+      }
+    },
+    "Lewis Capaldi": {
+      "artistId": "4GNC7GD6oZMSxPGyXy4MNB",
+      "artistIds": [
+        "4GNC7GD6oZMSxPGyXy4MNB"
+      ],
+      "artistName": "Lewis Capaldi",
+      "resolvedArtistNames": [
+        "Lewis Capaldi"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/4GNC7GD6oZMSxPGyXy4MNB",
+      "embedUrl": "https://open.spotify.com/embed/track/7qEHsqek33rTcFNT9PFqLf",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7qEHsqek33rTcFNT9PFqLf",
+          "name": "Someone You Loved",
+          "url": "https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf",
+          "embedUrl": "https://open.spotify.com/embed/track/7qEHsqek33rTcFNT9PFqLf",
+          "popularity": 86
+        },
+        {
+          "id": "2gMXnyrvIjhVBUZwvLZDMP",
+          "name": "Before You Go",
+          "url": "https://open.spotify.com/track/2gMXnyrvIjhVBUZwvLZDMP",
+          "embedUrl": "https://open.spotify.com/embed/track/2gMXnyrvIjhVBUZwvLZDMP",
+          "popularity": 83
+        },
+        {
+          "id": "4Of7rzpRpV1mWRbhp5rAqG",
+          "name": "Bruises",
+          "url": "https://open.spotify.com/track/4Of7rzpRpV1mWRbhp5rAqG",
+          "embedUrl": "https://open.spotify.com/embed/track/4Of7rzpRpV1mWRbhp5rAqG",
+          "popularity": 78
+        },
+        {
+          "id": "60iSKGrGazRzICtMjADNSM",
+          "name": "Hold Me While You Wait",
+          "url": "https://open.spotify.com/track/60iSKGrGazRzICtMjADNSM",
+          "embedUrl": "https://open.spotify.com/embed/track/60iSKGrGazRzICtMjADNSM",
+          "popularity": 76
+        },
+        {
+          "id": "5vXPLxljVKyHDHuv3kIuKV",
+          "name": "Survive",
+          "url": "https://open.spotify.com/track/5vXPLxljVKyHDHuv3kIuKV",
+          "embedUrl": "https://open.spotify.com/embed/track/5vXPLxljVKyHDHuv3kIuKV",
+          "popularity": 75
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Lewis Capaldi"
+        ]
+      }
+    },
+    "2 Minutos": {
+      "artistId": "5sASmkskUJsvYDSYKRkkYd",
+      "artistIds": [
+        "5sASmkskUJsvYDSYKRkkYd"
+      ],
+      "artistName": "2 Minutos",
+      "resolvedArtistNames": [
+        "2 minutos"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5sASmkskUJsvYDSYKRkkYd",
+      "embedUrl": "https://open.spotify.com/embed/track/1gom5NgPAZQOjpVLyh4HML",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1gom5NgPAZQOjpVLyh4HML",
+          "name": "Ya No Sos Igual",
+          "url": "https://open.spotify.com/track/1gom5NgPAZQOjpVLyh4HML",
+          "embedUrl": "https://open.spotify.com/embed/track/1gom5NgPAZQOjpVLyh4HML",
+          "popularity": 54
+        },
+        {
+          "id": "2TtBbbiEVzT1VqamHlwJ5s",
+          "name": "Amor Suicida",
+          "url": "https://open.spotify.com/track/2TtBbbiEVzT1VqamHlwJ5s",
+          "embedUrl": "https://open.spotify.com/embed/track/2TtBbbiEVzT1VqamHlwJ5s",
+          "popularity": 46
+        },
+        {
+          "id": "6n9WOSViQ5sgJj41L9R2wo",
+          "name": "Canción de Amor",
+          "url": "https://open.spotify.com/track/6n9WOSViQ5sgJj41L9R2wo",
+          "embedUrl": "https://open.spotify.com/embed/track/6n9WOSViQ5sgJj41L9R2wo",
+          "popularity": 45
+        },
+        {
+          "id": "0DHmFQwguPKszh1Mt4mfv9",
+          "name": "Como Caramelo De Limón",
+          "url": "https://open.spotify.com/track/0DHmFQwguPKszh1Mt4mfv9",
+          "embedUrl": "https://open.spotify.com/embed/track/0DHmFQwguPKszh1Mt4mfv9",
+          "popularity": 44
+        },
+        {
+          "id": "6FAiXOSSxVQ6FORwSZ7QKr",
+          "name": "Le hace falta un Beso",
+          "url": "https://open.spotify.com/track/6FAiXOSSxVQ6FORwSZ7QKr",
+          "embedUrl": "https://open.spotify.com/embed/track/6FAiXOSSxVQ6FORwSZ7QKr",
+          "popularity": 44
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "2 Minutos"
+        ]
+      }
+    },
+    "Akriila": {
+      "artistId": "39hfuTf4PHfnHgIl0QBDGL",
+      "artistIds": [
+        "39hfuTf4PHfnHgIl0QBDGL"
+      ],
+      "artistName": "Akriila",
+      "resolvedArtistNames": [
+        "AKRIILA"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/39hfuTf4PHfnHgIl0QBDGL",
+      "embedUrl": "https://open.spotify.com/embed/track/3fgScn3fp098tqIVgVosd5",
+      "note": "Usar el perfil oficial de AKRIILA.",
+      "tracks": [
+        {
+          "id": "3fgScn3fp098tqIVgVosd5",
+          "name": "Llora Llora",
+          "url": "https://open.spotify.com/track/3fgScn3fp098tqIVgVosd5",
+          "embedUrl": "https://open.spotify.com/embed/track/3fgScn3fp098tqIVgVosd5",
+          "popularity": 71
+        },
+        {
+          "id": "3q4UXDFDa6is0TDHhZJ70e",
+          "name": "mal comunicada",
+          "url": "https://open.spotify.com/track/3q4UXDFDa6is0TDHhZJ70e",
+          "embedUrl": "https://open.spotify.com/embed/track/3q4UXDFDa6is0TDHhZJ70e",
+          "popularity": 64
+        },
+        {
+          "id": "6sDUNBiHIMYI5dC6TeGQNs",
+          "name": "epitafio",
+          "url": "https://open.spotify.com/track/6sDUNBiHIMYI5dC6TeGQNs",
+          "embedUrl": "https://open.spotify.com/embed/track/6sDUNBiHIMYI5dC6TeGQNs",
+          "popularity": 56
+        },
+        {
+          "id": "3ubXujtdHQjKWm8JAAn9OP",
+          "name": "www.hotxulito.com",
+          "url": "https://open.spotify.com/track/3ubXujtdHQjKWm8JAAn9OP",
+          "embedUrl": "https://open.spotify.com/embed/track/3ubXujtdHQjKWm8JAAn9OP",
+          "popularity": 56
+        },
+        {
+          "id": "4Qm4cTIPYTPKL0VHcKy0tm",
+          "name": "arreglo floral",
+          "url": "https://open.spotify.com/track/4Qm4cTIPYTPKL0VHcKy0tm",
+          "embedUrl": "https://open.spotify.com/embed/track/4Qm4cTIPYTPKL0VHcKy0tm",
+          "popularity": 55
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "override-id"
+        ],
+        "matchedQueries": []
+      }
+    },
+    "Quilapayún": {
+      "artistId": "76sZcEL2ZXBTqNeFJAhlup",
+      "artistIds": [
+        "76sZcEL2ZXBTqNeFJAhlup"
+      ],
+      "artistName": "Quilapayún",
+      "resolvedArtistNames": [
+        "Quilapayún"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/76sZcEL2ZXBTqNeFJAhlup",
+      "embedUrl": "https://open.spotify.com/embed/track/7fSZa5OqnRnhJBdeRZlbjh",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "7fSZa5OqnRnhJBdeRZlbjh",
+          "name": "El pueblo unido jamás será vencido",
+          "url": "https://open.spotify.com/track/7fSZa5OqnRnhJBdeRZlbjh",
+          "embedUrl": "https://open.spotify.com/embed/track/7fSZa5OqnRnhJBdeRZlbjh",
+          "popularity": 43
+        },
+        {
+          "id": "7xTdDHBepVRqP9BqobHI75",
+          "name": "La Muralla",
+          "url": "https://open.spotify.com/track/7xTdDHBepVRqP9BqobHI75",
+          "embedUrl": "https://open.spotify.com/embed/track/7xTdDHBepVRqP9BqobHI75",
+          "popularity": 35
+        },
+        {
+          "id": "4v6Tsd2hcFcYZ5te30Uv3E",
+          "name": "Vamos Mujer - Remasterizado 2014",
+          "url": "https://open.spotify.com/track/4v6Tsd2hcFcYZ5te30Uv3E",
+          "embedUrl": "https://open.spotify.com/embed/track/4v6Tsd2hcFcYZ5te30Uv3E",
+          "popularity": 34
+        },
+        {
+          "id": "1A86WWeBll16XCkMx7W7n0",
+          "name": "La Batea",
+          "url": "https://open.spotify.com/track/1A86WWeBll16XCkMx7W7n0",
+          "embedUrl": "https://open.spotify.com/embed/track/1A86WWeBll16XCkMx7W7n0",
+          "popularity": 33
+        },
+        {
+          "id": "2tYBgrJTj5965oR6F9zizY",
+          "name": "Qué Dirá el Santo Padre - En Vivo",
+          "url": "https://open.spotify.com/track/2tYBgrJTj5965oR6F9zizY",
+          "embedUrl": "https://open.spotify.com/embed/track/2tYBgrJTj5965oR6F9zizY",
+          "popularity": 33
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Quilapayún"
+        ]
+      }
+    },
+    "Skrillex": {
+      "artistId": "5he5w2lnU9x7JFhnwcekXX",
+      "artistIds": [
+        "5he5w2lnU9x7JFhnwcekXX"
+      ],
+      "artistName": "Skrillex",
+      "resolvedArtistNames": [
+        "Skrillex"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/5he5w2lnU9x7JFhnwcekXX",
+      "embedUrl": "https://open.spotify.com/embed/track/66hayvUbTotekKU3H4ta1f",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "66hayvUbTotekKU3H4ta1f",
+          "name": "Where Are Ü Now (with Justin Bieber)",
+          "url": "https://open.spotify.com/track/66hayvUbTotekKU3H4ta1f",
+          "embedUrl": "https://open.spotify.com/embed/track/66hayvUbTotekKU3H4ta1f",
+          "popularity": 77
+        },
+        {
+          "id": "6VRhkROS2SZHGlp0pxndbJ",
+          "name": "Bangarang (feat. Sirah)",
+          "url": "https://open.spotify.com/track/6VRhkROS2SZHGlp0pxndbJ",
+          "embedUrl": "https://open.spotify.com/embed/track/6VRhkROS2SZHGlp0pxndbJ",
+          "popularity": 71
+        },
+        {
+          "id": "3Bp0XlRQv0URQMM6ABKhEE",
+          "name": "VOLVER",
+          "url": "https://open.spotify.com/track/3Bp0XlRQv0URQMM6ABKhEE",
+          "embedUrl": "https://open.spotify.com/embed/track/3Bp0XlRQv0URQMM6ABKhEE",
+          "popularity": 71
+        },
+        {
+          "id": "6AbVJjzv7thIvmMCuhZrmK",
+          "name": "Make It Bun Dem",
+          "url": "https://open.spotify.com/track/6AbVJjzv7thIvmMCuhZrmK",
+          "embedUrl": "https://open.spotify.com/embed/track/6AbVJjzv7thIvmMCuhZrmK",
+          "popularity": 69
+        },
+        {
+          "id": "1q0PYXTbDsirp2l74ng6pn",
+          "name": "In Da Getto",
+          "url": "https://open.spotify.com/track/1q0PYXTbDsirp2l74ng6pn",
+          "embedUrl": "https://open.spotify.com/embed/track/1q0PYXTbDsirp2l74ng6pn",
+          "popularity": 69
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Skrillex"
+        ]
+      }
+    },
+    "Riize": {
+      "artistId": "2jOm3cYujQx6o1dxuiuqaX",
+      "artistIds": [
+        "2jOm3cYujQx6o1dxuiuqaX"
+      ],
+      "artistName": "Riize",
+      "resolvedArtistNames": [
+        "RIIZE"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/2jOm3cYujQx6o1dxuiuqaX",
+      "embedUrl": "https://open.spotify.com/embed/track/1nEhhkEidrTOtc46fCvRFp",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "1nEhhkEidrTOtc46fCvRFp",
+          "name": "Fame",
+          "url": "https://open.spotify.com/track/1nEhhkEidrTOtc46fCvRFp",
+          "embedUrl": "https://open.spotify.com/embed/track/1nEhhkEidrTOtc46fCvRFp",
+          "popularity": 63
+        },
+        {
+          "id": "5aZUKmHWosIdaehziLYEq4",
+          "name": "All of You",
+          "url": "https://open.spotify.com/track/5aZUKmHWosIdaehziLYEq4",
+          "embedUrl": "https://open.spotify.com/embed/track/5aZUKmHWosIdaehziLYEq4",
+          "popularity": 62
+        },
+        {
+          "id": "2J194R0KIKbK7bTHfUHPDB",
+          "name": "Boom Boom Bass",
+          "url": "https://open.spotify.com/track/2J194R0KIKbK7bTHfUHPDB",
+          "embedUrl": "https://open.spotify.com/embed/track/2J194R0KIKbK7bTHfUHPDB",
+          "popularity": 58
+        },
+        {
+          "id": "3Dah48XTdzVtbIl4dUn6l4",
+          "name": "Get A Guitar",
+          "url": "https://open.spotify.com/track/3Dah48XTdzVtbIl4dUn6l4",
+          "embedUrl": "https://open.spotify.com/embed/track/3Dah48XTdzVtbIl4dUn6l4",
+          "popularity": 57
+        },
+        {
+          "id": "6fmhKXTt98FlguELVyqVOf",
+          "name": "Bag Bad Back",
+          "url": "https://open.spotify.com/track/6fmhKXTt98FlguELVyqVOf",
+          "embedUrl": "https://open.spotify.com/embed/track/6fmhKXTt98FlguELVyqVOf",
+          "popularity": 54
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Riize"
+        ]
+      }
+    },
+    "Brutalismus 3000": {
+      "artistId": "6LtXxYMIiKSy2EGHnz1f5j",
+      "artistIds": [
+        "6LtXxYMIiKSy2EGHnz1f5j"
+      ],
+      "artistName": "Brutalismus 3000",
+      "resolvedArtistNames": [
+        "Brutalismus 3000"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/6LtXxYMIiKSy2EGHnz1f5j",
+      "embedUrl": "https://open.spotify.com/embed/track/4nOOoo9OJbgnTBNHe5b6nD",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "4nOOoo9OJbgnTBNHe5b6nD",
+          "name": "Romantika",
+          "url": "https://open.spotify.com/track/4nOOoo9OJbgnTBNHe5b6nD",
+          "embedUrl": "https://open.spotify.com/embed/track/4nOOoo9OJbgnTBNHe5b6nD",
+          "popularity": 61
+        },
+        {
+          "id": "3IVrlcM5gDoj3lghHY9m7I",
+          "name": "Satan Was A Babyboomer",
+          "url": "https://open.spotify.com/track/3IVrlcM5gDoj3lghHY9m7I",
+          "embedUrl": "https://open.spotify.com/embed/track/3IVrlcM5gDoj3lghHY9m7I",
+          "popularity": 58
+        },
+        {
+          "id": "4vtkYOgMCIG3pVLdLGjWEV",
+          "name": "SPIRAL",
+          "url": "https://open.spotify.com/track/4vtkYOgMCIG3pVLdLGjWEV",
+          "embedUrl": "https://open.spotify.com/embed/track/4vtkYOgMCIG3pVLdLGjWEV",
+          "popularity": 56
+        },
+        {
+          "id": "2quJCirmxL0onIdjhmX5ml",
+          "name": "DIE LIEBE KOMMT NICHT AUS BERLIN",
+          "url": "https://open.spotify.com/track/2quJCirmxL0onIdjhmX5ml",
+          "embedUrl": "https://open.spotify.com/embed/track/2quJCirmxL0onIdjhmX5ml",
+          "popularity": 55
+        },
+        {
+          "id": "4qrBAShPdBpxCe0Yl2DXYT",
+          "name": "Europaträume",
+          "url": "https://open.spotify.com/track/4qrBAShPdBpxCe0Yl2DXYT",
+          "embedUrl": "https://open.spotify.com/embed/track/4qrBAShPdBpxCe0Yl2DXYT",
+          "popularity": 53
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Brutalismus 3000"
+        ]
+      }
+    },
+    "Chappell Roan": {
+      "artistId": "7GlBOeep6PqTfFi59PTUUN",
+      "artistIds": [
+        "7GlBOeep6PqTfFi59PTUUN"
+      ],
+      "artistName": "Chappell Roan",
+      "resolvedArtistNames": [
+        "Chappell Roan"
+      ],
+      "artistUrl": "https://open.spotify.com/artist/7GlBOeep6PqTfFi59PTUUN",
+      "embedUrl": "https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu",
+      "note": "Top tracks por popularidad en Spotify Search.",
+      "tracks": [
+        {
+          "id": "0WbMK4wrZ1wFSty9F7FCgu",
+          "name": "Good Luck, Babe!",
+          "url": "https://open.spotify.com/track/0WbMK4wrZ1wFSty9F7FCgu",
+          "embedUrl": "https://open.spotify.com/embed/track/0WbMK4wrZ1wFSty9F7FCgu",
+          "popularity": 90
+        },
+        {
+          "id": "1k2pQc5i348DCHwbn5KTdc",
+          "name": "Pink Pony Club",
+          "url": "https://open.spotify.com/track/1k2pQc5i348DCHwbn5KTdc",
+          "embedUrl": "https://open.spotify.com/embed/track/1k2pQc5i348DCHwbn5KTdc",
+          "popularity": 83
+        },
+        {
+          "id": "2SsY5k7UWFqgye3PUMG3Oq",
+          "name": "The Subway",
+          "url": "https://open.spotify.com/track/2SsY5k7UWFqgye3PUMG3Oq",
+          "embedUrl": "https://open.spotify.com/embed/track/2SsY5k7UWFqgye3PUMG3Oq",
+          "popularity": 82
+        },
+        {
+          "id": "3WSOUb3U7tqURbBSgZTrZX",
+          "name": "Casual",
+          "url": "https://open.spotify.com/track/3WSOUb3U7tqURbBSgZTrZX",
+          "embedUrl": "https://open.spotify.com/embed/track/3WSOUb3U7tqURbBSgZTrZX",
+          "popularity": 80
+        },
+        {
+          "id": "7FOgcfdz9Nx5V9lCNXdBYv",
+          "name": "Red Wine Supernova",
+          "url": "https://open.spotify.com/track/7FOgcfdz9Nx5V9lCNXdBYv",
+          "embedUrl": "https://open.spotify.com/embed/track/7FOgcfdz9Nx5V9lCNXdBYv",
+          "popularity": 79
+        }
+      ],
+      "diagnostics": {
+        "trackCount": 5,
+        "matchedBy": [
+          "exact"
+        ],
+        "matchedQueries": [
+          "Chappell Roan"
+        ]
+      }
+    }
+  },
+  "unresolvedArtists": [
+    "RØZ"
+  ],
+  "suspiciousArtists": [
+    {
+      "artist": "Gepe",
+      "resolvedArtistNames": [
+        "REVELATION ARTIST DEVELOPMENT"
+      ],
+      "reasons": [
+        "Se uso fallback al primer resultado de Spotify."
+      ]
+    },
+    {
+      "artist": "Ruel",
+      "resolvedArtistNames": [
+        "Ruelle"
+      ],
+      "reasons": [
+        "El match del artista fue parcial por nombre."
+      ]
+    }
+  ],
+  "skippedArtists": [
+    {
+      "artist": "School of Rock",
+      "reason": "No usar preview de Spotify; corresponde a proyecto/escuela y no a un artista unico del lineup."
+    },
+    {
+      "artist": "Wassa Wassa",
+      "reason": "No se encontro un perfil confiable de Spotify para este proyecto."
+    },
+    {
+      "artist": "¥ØU$UK€ ¥UK1MAT$U",
+      "reason": "No se encontro un perfil oficial confiable en Spotify para este DJ; mejor dejarlo sin preview por ahora."
+    }
+  ]
+}
